@@ -114,18 +114,21 @@
 		line-height: 265px;
 		background-color: #000;
 		margin-bottom: 11px;
+		display: inline-block;
+		overflow: hidden;
+		&:after{
+			content: "";
+			display: inline-block;
+			@include sized-sprite($icons, strelka);
+			position: absolute;
+			top: 228px;
+			left: 356px;
+		}
 		img{
 			max-width: 395px;
-			max-height: 265px;
+			min-height: 265px;
 			vertical-align: middle;
 		}
-	}
-	.super-news__next{
-		display: inline-block;
-		@include sized-sprite($icons, strelka);
-		position: absolute;
-		top: 228px;
-		left: 356px;
 	}
 	.super-news__text{
 		font-size: 18px;
@@ -134,10 +137,10 @@
 }
 /* LIST NEWS */
 ul.list-news{
-	height: 360px;
+	min-height: 360px;
 	list-style: none;
 	float: right;
-	background: url(../img/bord_shadow.png) -1px 0 repeat-y;
+	background: url(../img/bord_shadow.png) 0 0 repeat-y;
 	li{
 		width: 215px;
 		margin-left: 19px;
@@ -149,38 +152,16 @@ ul.list-news{
 			&:before{
 				content: "";
 				width: 15px;
-				height: 21px;
+				height: 23px;
 				display: block;
 				position: absolute;
 				top: 20px;
-				left: -20px;
+				left: -19px;
 				background: url(../img/bord_arrow.png) 0px 0px no-repeat;
 			}
 		}
 		&:last-child{
 			border-bottom: none;
-		}
-	}
-	.meta{
-		padding: 5px 0 2px;
-		font-size: 11px;
-		color: #777;
-		a{
-			color: #777;
-			text-decoration: underline;
-			&:hover{
-				text-decoration: none;
-			}
-		}
-		a.comments{
-			padding-left: 2px;
-			&:before{
-				content: "";
-				@include sized-sprite($icons, comments);
-				display: inline-block;
-				padding-right: 3px;
-				vertical-align: middle;
-			}
 		}
 	}
 	.body{
@@ -202,22 +183,31 @@ ul.list-news{
 .banners{
 	margin-top: 10px;
 	margin-bottom: 30px;
-	img{
-		max-width: 308px;
-		max-height: 170px;
+	a{
+		display: inline-block;
+		width: 308px;
+		height: 170px;
+		line-height: 170px;
+		overflow: hidden;
 		&:first-child{
 			margin-right: 20px;
 		}
 	}
+	img{
+		max-width: 308px;
+		min-height: 170px;
+		vertical-align: middle;
+	}
 }
 /* preview */
 .preview{
-	border: 1px solid red;
+	@include box-shadow(0 0 6px rgba(0,0,0,.26));
 	padding: 19px 14px;
-	position: relative;
+	overflow: hidden;
+	margin-bottom: 25px;
 	.preview__peple{
 		width: 205px;
-		display: inline-block;
+		float: left;
 	}
 	.meta{
 		font-size: 12px;
@@ -241,9 +231,215 @@ ul.list-news{
 		}
 	}
 	.preview__img{
-		display: inline-block;
+		width: 132px;
+		height: 100px;
+		line-height: 100px;
+		overflow: hidden;
+		position: relative;
+		float: left;
+		top: 70px;
+		left: 0px;
+		cursor: pointer;
+		img{
+			max-width: 132px;
+			min-height: 100px;
+			vertical-align: middle;
+		}
+	}
+	.preview__questions{
+		float: right;
+		width: 255px;
+		.preview__top{
+			width: 255px;
+			color: #ca2a8f;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+			border-bottom: 1px solid #dcdcdc;
+		}
+	}
+	.preview__item{
+		color: #ca2a8f;
+		font-size: 10px;
+		text-transform: uppercase;
+		margin: 10px 0 10px 10px;
+		b{
+			display: inline-block;
+			color: #000;
+			font-size: 14px;
+			text-transform: none;
+		}
+	}
+}
+/* all news */
+.all-news{
+	padding: 20px 0;
+	position: relative;
+	z-index: 1;
+	margin-right: -15px;
+	margin-top: -1px;
+	&:before{
 		position: absolute;
-		top: 90px;
-		left: 220px;
+		width: 640px;
+		height: 1px;
+		background: #dcdcdc;
+		top: 0;
+		left: 0;
+		content: "";
+	}
+	.all-news__item{
+		width: 200px;
+		padding-top: 4px;
+		display: inline-block;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		.item__href{
+			width: 200px;
+			height: 137px;
+			line-height: 137px;
+			display: block;
+			position: relative;
+			overflow: hidden;
+			img{
+				max-width: 200px;
+				min-height: 137px;
+				vertical-align: middle;
+			}
+
+		}
+	}
+	a.item__note{
+		color: #000;
+		font-weight: bold;
+	}
+}
+/* "picture-day */
+.picture-day{
+	padding: 25px 0px 12px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	background: #251f51;
+	position: relative;
+	.picture-day__item{
+		width: 221px;
+		display: inline-block;
+		margin: 0 8px;
+		text-align: left;
+	}
+	.picture-day__img{
+		width: 220px;
+		height: 156px;
+		line-height: 156px;
+		margin-bottom: 10px;
+		overflow: hidden;
+		display: inline-block;
+		cursor: pointer;
+		&:hover{
+			@include box-shadow(0 0 0 5px #a3cbe9);
+		}
+		img{
+			max-width: 220px;
+			min-height: 156px;
+			vertical-align: middle;
+
+		}
+	}
+	.picture-day__meta{
+		text-transform: uppercase;
+		color: #777;
+		font-size: 10px;
+		line-height: 1.2;
+	}
+	.picture-day__descr{
+		display: inline-block;
+		color: #FFF;
+		font-size: 12px;
+		margin: 5px 0;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.picture-day__nav{
+		background: url(../img/nav_bg.png) 3px 0 repeat-x;
+		position: relative;
+		margin: 10px 13px 0;
+		.picture-day__prew, .picture-day__next{
+			display: inline-block;
+			position: absolute;
+			top: 0;
+		}
+		.picture-day__prew{
+			@include sized-sprite($icons, pic_arrow-l);
+			left: 0;
+			cursor: pointer;
+		}
+		.picture-day__next{
+			right: 0;
+			@include sized-sprite($icons, pic_arrow-r);
+			cursor: pointer;
+		}
+	}
+}
+// wrap
+.wrap{
+	padding: 35px 18px 12px 11px;
+	background-color: #fff;
+	@include box-shadow(0 0 6px rgba(0,0,0,.26));
+	position: relative;
+	margin-bottom: 40px;
+	a.wrap__item{
+		display: block;
+		position: relative;
+		margin-bottom: 10px;
+		&:hover{
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+	.wrap__meta{
+		width: 240px;
+		padding: 0 10px;
+		height: 26px;
+		line-height: 26px;
+		background: rgba(0,10,57,0.4);
+		color: #FFF;
+		font-weight: bold;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.wrap__img{
+		width: 260px;
+		height: 173px;
+		line-height: 173px;
+		overflow: hidden;
+		img{
+			max-width: 260px;
+			min-height: 173px;
+			vertical-align: middle;
+		}
+	}
+	.wrap__note{
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+}
+.anonse{
+	font-size: 12px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	.anonse__date{
+		@include date;
+		width: 45px;
+		font-style: normal;
+		float: left;
+	}
+	.anonse__descr{
+		width: 200px;
+		font-weight: normal;
+		float: left;
 	}
 }

@@ -1,61 +1,87 @@
-@charset "IBM866";
-.conteiner { width: 970px; margin: 0 auto; }
+/*
+Syntax error: Undefined mixin 'date'.
+        on line 435 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss, in `date'
+        from line 435 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss
 
-/* SCEOLLABLE */
-.wrap-scrollable { margin: 15px 0 25px; }
-.wrap-scrollable h2 { display: inline-block; text-transform: uppercase; font-size: 20px; font-weight: bold; color: #ca2a8f; vertical-align: middle; }
-
-.scrollable { display: inline-block; vertical-align: middle; }
-.scrollable .scrollable__prew { display: inline-block; background: url('../img/icons-s37d9fa5243.png') 0 -640px no-repeat; width: 20px; height: 27px; }
-.scrollable .scrollable__next { display: inline-block; background: url('../img/icons-s37d9fa5243.png') 0 -603px no-repeat; width: 20px; height: 27px; }
-.scrollable ul { overflow: hidden; display: inline-block; list-style: none; }
-.scrollable ul li { height: 27px; line-height: 27px; margin: 0 2px; float: left; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background-color: #a2d1f3; }
-.scrollable ul li a { padding: 0px 13px; display: block; color: #251f51; font-weight: bold; text-decoration: none; }
-.scrollable ul li a:hover { text-decoration: underline; }
-
-/* GENERAL NEWS */
-.general-news { position: relative; display: inline-block; }
-.general-news .general-news__note { display: inline-block; position: absolute; top: -2px; left: 0px; }
-.general-news .title { margin-right: 13px; margin-top: 13px; }
-.general-news h2 { display: inline-block; color: #ca2a8f; font-size: 24px; font-weight: bold; vertical-align: bottom; margin-left: 4px; }
-.general-news .general-news__descr { width: 405px; height: 40px; margin-left: 25px; margin-top: 10px; color: #FFF; overflow: hidden; font-size: 14px; line-height: 1.2; }
-.general-news .general-news__descr:after { content: ""; margin-left: 5px; width: 0px; height: 0px; border-style: solid; border-width: 5px 0 5px 9px; border-color: transparent transparent transparent #ffffff; display: inline-block; }
-
-/* SLIDER NEWS */
-.seconary-news { padding: 30px 0; border-bottom: 1px solid #dcdcdc; }
-
-/* SUPER NEWS */
-.super-news { width: 395px; float: left; position: relative; }
-.super-news .super-news__img { width: 395px; height: 265px; line-height: 265px; background-color: #000; margin-bottom: 11px; }
-.super-news .super-news__img img { max-width: 395px; max-height: 265px; vertical-align: middle; }
-.super-news .super-news__next { display: inline-block; background: url('../img/icons-s37d9fa5243.png') 0 -264px no-repeat; width: 24px; height: 24px; position: absolute; top: 228px; left: 356px; }
-.super-news .super-news__text { font-size: 18px; line-height: 1.2; }
-
-/* LIST NEWS */
-ul.list-news { height: 360px; list-style: none; float: right; background: url(../img/bord_shadow.png) -1px 0 repeat-y; }
-ul.list-news li { width: 215px; margin-left: 19px; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; background: #FFF; position: relative; }
-ul.list-news li:hover:before { content: ""; width: 15px; height: 21px; display: block; position: absolute; top: 20px; left: -20px; background: url(../img/bord_arrow.png) 0px 0px no-repeat; }
-ul.list-news li:last-child { border-bottom: none; }
-ul.list-news .meta { padding: 5px 0 2px; font-size: 11px; color: #777; }
-ul.list-news .meta a { color: #777; text-decoration: underline; }
-ul.list-news .meta a:hover { text-decoration: none; }
-ul.list-news .meta a.comments { padding-left: 2px; }
-ul.list-news .meta a.comments:before { content: ""; background: url('../img/icons-s37d9fa5243.png') 0 -914px no-repeat; width: 10px; height: 10px; display: inline-block; padding-right: 3px; vertical-align: middle; }
-ul.list-news .body { padding-bottom: 14px; font-size: 14px; line-height: 1.2; color: #000; display: inline-block; }
-ul.list-news .body:hover { font-weight: bold; text-decoration: none; }
-ul.list-news .select { font-weight: bold; }
-
-/* banners */
-.banners { margin-top: 10px; margin-bottom: 30px; }
-.banners img { max-width: 308px; max-height: 170px; }
-.banners img:first-child { margin-right: 20px; }
-
-/* preview */
-.preview { border: 1px solid red; padding: 19px 14px; position: relative; }
-.preview .preview__peple { width: 205px; display: inline-block; }
-.preview .meta { font-size: 12px; color: #ca2a8f; }
-.preview .meta span { color: #777; text-transform: uppercase; }
-.preview h3 { font-size: 18px; margin-bottom: 10px; line-height: 1.2; }
-.preview .preview__human { font-weight: bold; margin-bottom: 5px; color: #333; }
-.preview .preview__human i { font-weight: normal; }
-.preview .preview__img { display: inline-block; position: absolute; top: 90px; left: 220px; }
+Backtrace:
+C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss:435:in `date'
+C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss:435
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/root_node.rb:20:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+C:/RailsInstaller/Ruby1.9.3/bin/compass:23:in `load'
+C:/RailsInstaller/Ruby1.9.3/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'date'.\A         on line 435 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss, in `date'\A         from line 435 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss"; }

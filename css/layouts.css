@@ -3,4 +3,4 @@
 .l { width: 640px; float: left; /*  */ }
 .l .l-col1 { float: left; width: 20%; }
 
-.r { width: 290px; height: 500px; background-color: blue; float: right; }
+.r { width: 290px; float: right; margin-top: 10px; }

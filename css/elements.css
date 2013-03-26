@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'sized-sprite'.
-        on line 25 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss, in `sized-sprite'
-        from line 25 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss
+        on line 30 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss, in `sized-sprite'
+        from line 30 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss
 
 Backtrace:
-C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss:25:in `sized-sprite'
-C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss:25
+C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss:30:in `sized-sprite'
+C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss:30
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -84,4 +84,4 @@ C:/RailsInstaller/Ruby1.9.3/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'sized-sprite'.\A         on line 25 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss, in `sized-sprite'\A         from line 25 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss"; }
+  content: "Syntax error: Undefined mixin 'sized-sprite'.\A         on line 30 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss, in `sized-sprite'\A         from line 30 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss"; }
