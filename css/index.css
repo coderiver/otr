@@ -58,4 +58,4 @@ ul.list-news .select { font-weight: bold; }
 .preview h3 { font-size: 18px; margin-bottom: 10px; line-height: 1.2; }
 .preview .preview__human { font-weight: bold; margin-bottom: 5px; color: #333; }
 .preview .preview__human i { font-weight: normal; }
-.preview .preview__img { display: inline-block; position: absolute; top: 90px; left: 0; }
+.preview .preview__img { display: inline-block; position: absolute; top: 90px; left: 220px; }
