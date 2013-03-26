@@ -387,7 +387,7 @@ ul.list-news{
 	background-color: #fff;
 	@include box-shadow(0 0 6px rgba(0,0,0,.26));
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 	a.wrap__item{
 		display: block;
 		position: relative;
@@ -425,6 +425,12 @@ ul.list-news{
 		text-transform: uppercase;
 		font-size: 14px;
 	}
+	.wrap__note_red{
+		color: #ca2a8f;
+	}
+}
+.wrap_mb0{
+	margin-bottom: 0;
 }
 .anonse{
 	font-size: 12px;
@@ -441,5 +447,55 @@ ul.list-news{
 		width: 200px;
 		font-weight: normal;
 		float: left;
+	}
+}
+// god-loves-you
+.god-loves-you{
+	width: 290px;
+	background: #868686;
+	color: #fff;
+	@include box-shadow(0 0 6px rgba(0,0,0,.26));
+	.god-loves-you__meta{
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFF;
+		padding: 5px 0 0;
+	}
+	.god-loves-you__1, .god-loves-you__2, .god-loves-you__3{
+		width: 77px;
+		display: inline-block;
+		color: #FFF;
+		text-align: center;
+	}
+	.god-loves-you__counter{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		position: relative;
+		&:before{
+			content: "";
+			width: 265px;
+			height: 1px;
+			background: #9b9b9b;
+			position: absolute;
+			top: 0;
+			left: 11px;
+		}
+		b{
+			width: 160px;
+			font-weight: normal;
+			display: inline-block;
+			text-align: right;
+			line-height: 1.2;
+		}
+		i{
+			padding: 0 13px;
+			height: 25px;
+			line-height: 25px;
+			background-color: red;
+			vertical-align: top;
+			display: inline-block;
+		}
 	}
 }

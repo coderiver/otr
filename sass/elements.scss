@@ -91,6 +91,24 @@ a{
 		@include sized-sprite($icons, nav_border2);
 	}
 }
+.title_red{
+	background: #ca2a8f;
+	color: #FFF;
+	&:before{
+		content: "";
+		@include sized-sprite($icons, title-l);
+		position: absolute;
+		left: -8px;
+		top: 0;
+	}
+	&:after{
+		content: "";
+		@include sized-sprite($icons, title-r);
+		position: absolute;
+		right: -8px;
+		top: 0;
+	}
+}
 .more{
 	font-size: 11px;
 	color: #ca2a8f;
