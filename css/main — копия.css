@@ -1,0 +1,12 @@
+.conteiner { width: 970px; margin: 0 auto; }
+
+.wrap-scrollable { margin: 15px 0 25px; }
+.wrap-scrollable h2 { display: inline-block; text-transform: uppercase; font-size: 20px; font-weight: bold; color: #ca2a8f; vertical-align: middle; }
+
+.scrollable { display: inline-block; vertical-align: middle; }
+.scrollable .scrollable__prew { display: inline-block; background: url('../img/icons-s9e09acd834.png') 0 -606px no-repeat; width: 20px; height: 27px; }
+.scrollable .scrollable__next { display: inline-block; background: url('../img/icons-s9e09acd834.png') 0 -569px no-repeat; width: 20px; height: 27px; }
+.scrollable ul { overflow: hidden; display: inline-block; list-style: none; }
+.scrollable ul li { height: 27px; line-height: 27px; margin: 0 2px; float: left; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background-color: #a2d1f3; }
+.scrollable ul li a { padding: 0px 13px; display: block; color: #251f51; font-weight: bold; text-decoration: none; }
+.scrollable ul li a:hover { text-decoration: underline; }
