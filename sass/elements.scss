@@ -160,14 +160,53 @@ a{
 	.button__p0-20{
 		padding: 0 20px;
 	}
+	.button_m3-0-5{
+		margin: 5px 0 3px;
+	}
+	.button_mt19{
+		margin-top: 19px;
+	}
 	.button_interview{
 		padding: 0 30px;
 		margin-top: 15px;
+	}
+	.button_mt25{
+		margin-top: 25px;
 	}
 	.button__ico{
 		padding: 0 20px 5px 40px;
 		background: url(../img/ico_mess.png) 11px 12px no-repeat #a2d1f3;
 		line-height: 34px;
+	}
+	.button_lol{
+		
+	}
+}
+.button_tl{
+	text-align: left;
+}
+.anonse{
+	font-size: 12px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	.anonse__date{
+		@include date;
+		padding-right: 15px;
+		font-style: normal;
+		float: left;
+		span{
+			color: #777;
+			font-size: 11px;
+		}
+	}
+	.anonse__descr{
+		width: 200px;
+		font-weight: normal;
+		float: left;
+	}
+	.anonse__descr_w{
+		width: auto;
 	}
 }
 .ololo-1{
@@ -225,5 +264,43 @@ a{
 		position: absolute;
 		bottom: -11px;
 		left: 5px;
+	}
+}
+.sexy-title_pos{
+	top: -9px;
+	left: -22px;
+}
+.share{
+	vertical-align: middle;
+	span{
+		color: #777;
+		font-size: 11px;
+		line-height: 1.2;
+	}
+	.share__item{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 1px;
+	}
+	.share__hz1{
+		@include sized-sprite($icons, ico_xz);
+	}
+	.share__vk{
+		@include sized-sprite($icons, ico_vk);
+	}
+	.share__fb{
+		@include sized-sprite($icons, ico_fb);
+	}
+	.share__tw{
+		@include sized-sprite($icons, ico_tw);
+	}
+	.share__xz2{
+		@include sized-sprite($icons, ico_xz2);
+	}
+	.share__goo{
+		@include sized-sprite($icons, ico_goo);
+	}
+	.share__xz3{
+		@include sized-sprite($icons, ico_xz3);
 	}
 }

@@ -437,25 +437,14 @@ ul.list-news{
 		color: #ca2a8f;
 	}
 }
+.wrap_pad{
+	padding: 0px 18px 12px 11px;
+}
+.wrap_pad2{
+	padding: 20px 18px 12px 11px;
+}
 .wrap_mb0{
 	margin-bottom: 0;
-}
-.anonse{
-	font-size: 12px;
-	overflow: hidden;
-	margin-bottom: 5px;
-	margin-top: 5px;
-	.anonse__date{
-		@include date;
-		width: 45px;
-		font-style: normal;
-		float: left;
-	}
-	.anonse__descr{
-		width: 200px;
-		font-weight: normal;
-		float: left;
-	}
 }
 // god-loves-you
 .god-loves-you{
@@ -608,7 +597,7 @@ ul.list-news{
 		background-color: #dfdfdf;
 		padding: 0px 9px;
 		display: inline-block;
-		margin-right: 3px;
+		margin-right: 1px;
 		height: 23px;
 		line-height: 23px;
 		&:hover{

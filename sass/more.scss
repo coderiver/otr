@@ -1,0 +1,165 @@
+@import "lib/base";
+
+//entry
+.entry{
+	font-size: 14px;
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 20px;
+	.h1{
+		font-size: 29px;
+		color: #251f51;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.2;
+	}
+	.entry__video{
+		margin: 20px 0 10px;
+	}
+	p{
+		padding: 10px 0;
+		line-height: 1.2;
+	}
+}
+
+// foto-user
+.foto-user{
+	padding: 15px 0 20px;
+	border-bottom: 1px solid #dcdcdc;
+	.foto-user__img{
+		width: 640px;
+		overflow: hidden;
+		margin-bottom: 10px;
+		img{
+			max-width: 640px;
+			vertical-align: middle;
+		}
+	}
+}
+
+// perquisition
+.perquisition{
+	margin-bottom: 40px;
+	.h2{
+		width: 640px;
+		padding-bottom: 5px;
+		margin-bottom: 12px;
+		display: inline-block;
+		border-bottom: 1px solid #dcdcdc;
+		font-size: 18px;
+		font-weight: bold;
+		color: #251f51;
+		text-transform: uppercase;
+	}
+	.perquisition__entry{
+		padding: 0 15px;
+		line-height: 1.2;
+	}
+	.perquisition__meta{
+		font-weight: bold;
+		font-size: 14px;
+		margin-bottom: 8px;
+	}
+	.perquisition__inp{
+		display: block;
+		input{
+			vertical-align: middle;
+			margin: 5px 7px 5px 0;
+		}
+	}
+}
+
+// soc-comm
+.soc-comm{
+	overflow: hidden;
+	font-size: 14px;
+	border-bottom: 1px solid #ebebeb;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	.soc-comm__top{
+		margin: 3px 5px;
+	}
+	.soc-comm__ico{
+		display: inline-block;
+		float: left;
+		margin-right: 7px;
+	}
+	.soc-comm__user{
+		float: left;
+		color: #2c295a;
+		line-height: 1.2;
+	}
+	.soc-comm__day{
+		float: right;
+		font-size: 11px;
+		color: #777;
+	}
+	.soc-comm__text{
+		margin-right: 30px;
+		line-height: 1.3;
+	}
+}
+.soc-form{
+	width: 565px;
+	min-height: 152px;
+	padding: 20px 20px 15px;
+	margin-top: 20px;
+	background: #e9e9e9;
+	textarea{
+		min-width: 485px;
+		min-height: 100px;
+		display: block;
+		padding: 5px 10px;
+		font-size: 11px;
+		resize: vertical;
+	}
+	input{
+		display: block;
+	}
+	.sub{
+		height: 27px;
+		padding: 0 23px;
+		margin-top: 15px;
+		@include border-radius(4px);
+		background-color: #858585;
+		font-size: 11px;
+		color: #FFF;
+		text-transform: uppercase;
+		cursor: pointer;
+		border: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// r
+.micro-news{
+	line-height: 1.2;
+	border-bottom: 1px solid #9b9b9b;
+	padding-bottom: 10px;
+	.micro-news__title{
+		font-size: 14px;
+		font-weight: bold;
+		margin: 5px 0;
+	}
+}
+.qq-preview{
+	font-size: 14px;
+	margin-top: 9px;
+	i{
+		@include date;
+		font-style: normal;
+		font-size: 10px;
+		display: block;
+	}
+}
