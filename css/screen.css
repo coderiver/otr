@@ -242,3 +242,7 @@ ul.list-news .select { font-weight: bold; }
 .interview__shkala .interview__active2 { width: 45%; }
 .interview__shkala .interview__active3 { width: 55%; }
 .interview__shkala .interview__active4 { width: 25%; }
+
+.social { padding: 14px 0 5px; }
+.social .social__button { color: #000; text-transform: uppercase; font-weight: bold; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background-color: #dfdfdf; padding: 0px 9px; display: inline-block; margin-right: 3px; height: 23px; line-height: 23px; }
+.social .social__button:hover { color: #FFF; background-color: #000; text-decoration: none; }

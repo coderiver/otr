@@ -588,3 +588,25 @@ ul.list-news{
 		width: 25%;
 	}
 }
+
+// social
+.social{
+	padding: 14px 0 5px;
+	.social__button{
+		color: #000;
+		text-transform: uppercase;
+		font-weight: bold;
+		@include border-radius(4px);
+		background-color: #dfdfdf;
+		padding: 0px 9px;
+		display: inline-block;
+		margin-right: 3px;
+		height: 23px;
+		line-height: 23px;
+		&:hover{
+			color: #FFF;
+			background-color: #000;
+			text-decoration: none;
+		}
+	}
+}
