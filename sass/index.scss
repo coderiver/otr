@@ -201,13 +201,21 @@ ul.list-news{
 }
 /* preview */
 .preview{
+	width: 612px;
 	@include box-shadow(0 0 6px rgba(0,0,0,.26));
 	padding: 19px 14px;
-	overflow: hidden;
+	/*	overflow: hidden;*/
+	display: inline-block;
 	margin-bottom: 25px;
+	position: relative;
 	.preview__peple{
 		width: 205px;
 		float: left;
+	}
+	.sexy-title{
+		position: absolute;
+		top: -10px;
+		left: 215px;
 	}
 	.meta{
 		font-size: 12px;

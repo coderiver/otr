@@ -207,3 +207,23 @@ a{
 	border-width: 8px 0 8px 9px;
 	border-color: transparent transparent transparent #94c9ee;
 }
+.sexy-title{
+	background: url(../img/sexy-title.png) 0 0 no-repeat;
+	background-repeat: repeat-x repeat-y;
+	background-size: 100% 100%;
+	display: inline-block;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 39px;
+	padding: 0 10px;
+	position: relative;
+	&:after{
+		content: "";
+		@include sized-sprite($icons, sexy-title_ar);
+		position: absolute;
+		bottom: -11px;
+		left: 5px;
+	}
+}

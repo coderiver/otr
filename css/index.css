@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'date'.
-        on line 441 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss, in `date'
-        from line 441 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss
+        on line 449 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss, in `date'
+        from line 449 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss
 
 Backtrace:
-C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss:441:in `date'
-C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss:441
+C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss:449:in `date'
+C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss:449
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -84,4 +84,4 @@ C:/RailsInstaller/Ruby1.9.3/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'date'.\A         on line 441 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss, in `date'\A         from line 441 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss"; }
+  content: "Syntax error: Undefined mixin 'date'.\A         on line 449 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss, in `date'\A         from line 449 of C:/Users/goshazvir/Documents/GitHub/otr/sass/index.scss"; }
