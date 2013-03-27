@@ -454,6 +454,7 @@ ul.list-news{
 	width: 290px;
 	background: #868686;
 	color: #fff;
+	margin-bottom: 30px;
 	@include box-shadow(0 0 6px rgba(0,0,0,.26));
 	.god-loves-you__meta{
 		font-size: 14px;
@@ -464,15 +465,24 @@ ul.list-news{
 		padding: 5px 0 0;
 	}
 	.god-loves-you__1, .god-loves-you__2, .god-loves-you__3{
-		width: 77px;
+		width: 83px;
 		display: inline-block;
 		color: #FFF;
 		text-align: center;
+		margin: 12px 5px;
+		vertical-align: top;
+		position: relative;
+		.my__arrow{
+			position: absolute;
+			top: 17px;
+			right: -7px;
+		}
 	}
 	.god-loves-you__counter{
 		padding-top: 15px;
 		padding-bottom: 15px;
 		position: relative;
+		margin-top: 10px;
 		&:before{
 			content: "";
 			width: 265px;
@@ -493,9 +503,88 @@ ul.list-news{
 			padding: 0 13px;
 			height: 25px;
 			line-height: 25px;
-			background-color: red;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			@include border-radius(4px);
+			@include background-clip(padding-box);
+			background-color: #636363;
+			@include box-shadow(inset 2px 3px 4px rgba(0,0,0,.1));
 			vertical-align: top;
 			display: inline-block;
+			margin-left: 15px;
 		}
+	}
+	.god-loves-you__circle{
+		width: 50px;
+		height: 50px;
+		@include border-radius(25px);
+		display: inline-block;
+		@include background-clip(padding-box);
+		background-color: #93c7ed;
+		margin-bottom: 5px;
+		img{
+			padding: 11px 0;
+		}
+	}
+	.god-loves-you__circle_bl{
+		@include background-clip(padding-box);
+		background-color: #f0cfe4;
+	}
+	.god-loves-you__text{
+		line-height: 1.2;
+	}
+}
+
+// interview
+.interview{
+	.interview__meta{
+		position: absolute;
+		right: 19px;
+		top: 10px;
+		text-transform: uppercase;
+		font-size: 10px;
+		color: #ca2a8f;
+	}
+	h3{
+		margin-bottom: 10px;
+	}
+}
+.itnerview__wrap{
+	margin-bottom: 8px;
+}
+.interview__item{
+	b{
+		font-weight: normal;
+	}
+	span{
+		color: #717171;
+	}
+}
+.interview__shkala{
+	width: 100%;
+	height: 5px;
+	@include border-radius(2px);
+	background-color: #d4d4d4;
+	margin: 5px 0;
+	position: relative;
+	.interview__active{
+		width: 30%;
+		height: 5px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		@include border-radius(2px);
+		@include background-clip(padding-box);
+		background-color: #c12b8a;
+	}
+	.interview__active2{
+		width: 45%;
+	}
+	.interview__active3{
+		width: 55%;
+	}
+	.interview__active4{
+		width: 25%;
 	}
 }
