@@ -2,6 +2,7 @@
 .nav{
 	width: 100%;
 	background: #251f51;
+	position: relative;
 	ul{
 		width: 970px;
 		margin: 0 auto;
@@ -10,20 +11,72 @@
 		li{
 			height: 38px;
 			line-height: 38px;
-			position: relative;
 			float: left;
 			border-left: 1px solid #484275;
+			&:hover{
+				ul{
+ 					display: block;
+					li{
+						a{
+							display: block;
+						}
+					}
+				}
+				a{
+					text-decoration: none;
+					background-color: #e3f1fb;
+					color: #251f51;
+				}
+			}
 			a{
 				color: #fff;
 				font: 14px Arial,sans-serif;
 				font-weight: bold;
 				text-decoration: none;
 				padding: 0 24px;
-				&:hover{
-					text-decoration: underline;
+				height: 38px;
+				line-height: 38px;
+				display: inline-block;
+			}
+			ul{
+				display: none;
+				position: absolute;
+				background-color: #e3f1fb;
+				height: auto;
+				width: auto;
+				padding: 0px 20px 0;
+				top: 37px;
+				z-index: 3000;
+				li{
+					float: none;
+					background-color: #e3f1fb;
+					border-top: 1px dotted #b7dbf5;
+					padding: 0;
+					border-left: none;
+					height: 21px;
+					line-height: 21px;
+					&:first-child{
+						border-top: none;
+					}
+					&:last-child{
+						border-top: none;
+					}
+					a{
+						height: 20px;
+						line-height: 20px;
+						font-size: 13px;
+						color: #251f51;
+						padding: 0;
+						display: block;
+						border-top: #e3f1fb;
+						&:hover{
+							border-top: 1px solid #f0f8fd;
+							background: #FFF;
+							line-height: 18px;
+						}
+					}
 				}
 			}
-
 		}
 		li.nav__small {
 			border-left: 0;
@@ -31,7 +84,6 @@
 				font-size: 12px;
 			}
 		}
-
 	}
 	li.nav__select{
 		background-color: #ca2a8f;
@@ -42,6 +94,32 @@
 			position: absolute;
 			right: -9px;
 			top:0;
+		}
+		&:hover{
+			&:after{
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 38px 9px 0 9px;
+				border-color: #e3f1fb transparent transparent transparent;
+				position: absolute;
+				right: -9px;
+				top:0;
+			}
+		}
+	}
+}
+.all{
+	height: 21px;
+	line-height: 21px;
+	padding-top: 30px;
+	display: inline-block;
+	text-decoration: underline;
+	border-top: none;
+	a{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
 		}
 	}
 }
