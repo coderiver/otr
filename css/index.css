@@ -69,6 +69,10 @@ ul.list-news .select { font-weight: bold; }
 .all-news .all-news__item .item__href { width: 200px; height: 137px; line-height: 137px; display: block; position: relative; overflow: hidden; }
 .all-news .all-news__item .item__href img { max-width: 200px; min-height: 137px; vertical-align: middle; }
 .all-news a.item__note { color: #000; font-weight: bold; }
+.all-news a.item__note_small { font-size: 12px; line-height: 1.2; display: inline-block; font-weight: normal; }
+.all-news a.item__note_small b { font-size: 14px; display: block; margin-bottom: 5px; }
+
+.all-news_mp { margin-top: 35px; padding: 30px 0 20px; }
 
 /* "picture-day */
 .picture-day { padding: 25px 0px 12px; text-align: center; margin-top: 15px; margin-bottom: 25px; background: #251f51; position: relative; }

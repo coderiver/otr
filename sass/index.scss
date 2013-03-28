@@ -321,6 +321,21 @@ ul.list-news{
 		color: #000;
 		font-weight: bold;
 	}
+	a.item__note_small{
+		font-size: 12px;
+		line-height: 1.2;
+		display: inline-block;
+		font-weight: normal;
+		b{
+			font-size: 14px;
+			display: block;
+			margin-bottom: 5px;
+		}
+	}
+}
+.all-news_mp{
+	margin-top: 35px;
+	padding: 30px 0 20px;
 }
 /* "picture-day */
 .picture-day{

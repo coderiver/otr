@@ -12,6 +12,23 @@
 		text-transform: uppercase;
 		line-height: 1.2;
 	}
+	.h2{
+		font-size: 20px;
+		text-transform: uppercase;
+		display: inline-block;
+	}
+	.efir-time{
+		display: inline-block;
+		font-weight: bold;
+		float: right;
+		font-size: 12px;
+		margin-top: 5px;
+		text-align: right;
+		.efir-time__time{
+			color: #251f51;
+			text-transform: uppercase;
+		}
+	}
 	.entry__video{
 		margin: 20px 0 10px;
 	}
