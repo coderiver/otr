@@ -16,6 +16,7 @@
 		font-weight: bold;
 		color: #ca2a8f;
 		vertical-align: middle;
+		margin-right: 5px;
 	}
 }
 .scrollable{
@@ -199,6 +200,11 @@ ul.list-news{
 		vertical-align: middle;
 	}
 }
+.banners_color{
+	background: #868686;
+	padding: 25px 10px;
+	margin: 0px -10px 30px;
+}
 /* preview */
 .preview{
 	width: 612px;
@@ -331,6 +337,18 @@ ul.list-news{
 			display: block;
 			margin-bottom: 5px;
 		}
+	}
+}
+.all-news_bt-none{
+	padding: 0px;
+	&:before{
+		position: absolute;
+		width: 640px;
+		height: 1px;
+		background: #fff;
+		top: 0;
+		left: 0;
+		content: "";
 	}
 }
 .all-news_mp{

@@ -114,6 +114,10 @@ a{
 	color: #ca2a8f;
 	text-transform: uppercase;
 }
+.more_db{
+	display: block;
+	line-height: 1.6;
+}
 .time{
 	font-size: 11px;
 	color: #ca2a8f;
@@ -177,9 +181,6 @@ a{
 		padding: 0 20px 5px 40px;
 		background: url(../img/ico_mess.png) 11px 12px no-repeat #a2d1f3;
 		line-height: 34px;
-	}
-	.button_lol{
-		
 	}
 }
 .button_tl{
@@ -303,4 +304,7 @@ a{
 	.share__xz3{
 		@include sized-sprite($icons, ico_xz3);
 	}
+}
+.share_mb10{
+	margin-bottom: 10px;
 }

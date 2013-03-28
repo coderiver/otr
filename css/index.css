@@ -3,7 +3,7 @@
 
 /* SCEOLLABLE */
 .wrap-scrollable { margin: 15px 0 25px; }
-.wrap-scrollable h2 { display: inline-block; text-transform: uppercase; font-size: 20px; font-weight: bold; color: #ca2a8f; vertical-align: middle; }
+.wrap-scrollable h2 { display: inline-block; text-transform: uppercase; font-size: 20px; font-weight: bold; color: #ca2a8f; vertical-align: middle; margin-right: 5px; }
 
 .scrollable { display: inline-block; vertical-align: middle; }
 .scrollable .scrollable__prew { display: inline-block; background: url('../img/icons-s0ef069446f.png') 0 -844px no-repeat; width: 20px; height: 27px; }
@@ -46,6 +46,8 @@ ul.list-news .select { font-weight: bold; }
 .banners a:first-child { margin-right: 20px; }
 .banners img { max-width: 308px; min-height: 170px; vertical-align: middle; }
 
+.banners_color { background: #868686; padding: 25px 10px; margin: 0px -10px 30px; }
+
 /* preview */
 .preview { width: 612px; -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.26); -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.26); box-shadow: 0 0 6px rgba(0, 0, 0, 0.26); padding: 19px 14px; /*	overflow: hidden;*/ display: inline-block; margin-bottom: 25px; position: relative; }
 .preview .preview__peple { width: 205px; float: left; }
@@ -71,6 +73,9 @@ ul.list-news .select { font-weight: bold; }
 .all-news a.item__note { color: #000; font-weight: bold; }
 .all-news a.item__note_small { font-size: 12px; line-height: 1.2; display: inline-block; font-weight: normal; }
 .all-news a.item__note_small b { font-size: 14px; display: block; margin-bottom: 5px; }
+
+.all-news_bt-none { padding: 0px; }
+.all-news_bt-none:before { position: absolute; width: 640px; height: 1px; background: #fff; top: 0; left: 0; content: ""; }
 
 .all-news_mp { margin-top: 35px; padding: 30px 0 20px; }
 
