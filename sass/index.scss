@@ -356,18 +356,31 @@ ul.list-news{
 	padding: 30px 0 20px;
 }
 /* "picture-day */
+.ss-picture-day{
+	position: relative;
+	height: 313px;
+	background: #251f51;
+	margin-bottom: 25px;
+}
 .picture-day{
-	padding: 25px 0px 12px;
+	padding: 25px 0px 0px;
 	text-align: center;
 	margin-top: 15px;
-	margin-bottom: 25px;
 	background: #251f51;
 	position: relative;
+	overflow:hidden;
+	width: 970px;
+	height: 250px;
+  .picture-day__items{
+  	width:2000em;
+ 	position:absolute;
+  }
 	.picture-day__item{
 		width: 221px;
 		display: inline-block;
-		margin: 0 8px;
+		margin: 0 11px;
 		text-align: left;
+		float: left;
 	}
 	.picture-day__img{
 		width: 220px;
@@ -384,7 +397,6 @@ ul.list-news{
 			max-width: 220px;
 			min-height: 156px;
 			vertical-align: middle;
-
 		}
 	}
 	.picture-day__meta{
@@ -401,25 +413,30 @@ ul.list-news{
 		font-weight: bold;
 		cursor: pointer;
 	}
-	.picture-day__nav{
-		background: url(../img/nav_bg.png) 3px 0 repeat-x;
-		position: relative;
-		margin: 10px 13px 0;
-		.picture-day__prew, .picture-day__next{
-			display: inline-block;
-			position: absolute;
-			top: 0;
-		}
-		.picture-day__prew{
-			@include sized-sprite($icons, pic_arrow-l);
-			left: 0;
-			cursor: pointer;
-		}
-		.picture-day__next{
-			right: 0;
-			@include sized-sprite($icons, pic_arrow-r);
-			cursor: pointer;
-		}
+}
+.picture-day__prew{
+	@include sized-sprite($icons, pic_arrow-l);
+	left: 0;
+	cursor: pointer;
+	display: inline-block;
+}
+.picture-day__next{
+	right: 0;
+	@include sized-sprite($icons, pic_arrow-r);
+	cursor: pointer;
+	display: inline-block;
+}
+.picture-day__nav{
+	background: url(../img/nav_bg.png) 3px 0 repeat-x;
+	position: relative;
+	margin: 0px 13px 0;
+
+	display: inline-block;
+	width: 944px;
+	.picture-day__prew, .picture-day__next{
+		display: inline-block;
+		position: absolute;
+		top: 0;
 	}
 }
 // wrap
