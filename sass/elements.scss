@@ -229,6 +229,35 @@ a{
 		right: -11px;
 	}
 }
+.foto-user .ololo-1_big{
+	top: 30px;
+	height: 26px;
+	font-size: 14px;
+	text-transform: uppercase;
+	position: absolute;
+	line-height: 27px;
+	@include box-shadow(0px 3px 0 rgba(0,0,0,.41));
+	&:after{
+		content: "";
+		@include sized-sprite($icons, ololo-border3);
+		@include box-shadow(0px 3px 0 rgba(0,0,0,.41));
+		position: absolute;
+		top: 0;
+		right: -9px;
+	}
+}
+.foto-user__meta{
+	position: absolute;
+	top: 32px;
+	right: 4px;
+	padding: 0 8px;
+	color: #FFF;
+	 font-size: 11px;
+	 text-transform: uppercase;
+	 height: 20px;
+	 line-height: 20px;
+	 background: #52759f;
+}
 .super-arrow{
 	content: "";
 	display: inline-block;
