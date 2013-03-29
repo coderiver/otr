@@ -24,11 +24,46 @@
 	vertical-align: middle;
 	.scrollable__prew{
 		display: inline-block;
-		@include sized-sprite($icons, scr_arrow-l);
+		width: 20px;
+		height: 27px;
+		border-radius: 3px;
+		background: #d4d4d4;
+		position: relative;
+		i{
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 6.5px 8px 6.5px 0;
+			border-color: transparent #fff transparent transparent;			position: absolute;
+			top: 8px;
+			right: 7px;
+		}
+		&:hover{
+			background: #868686;
+			@include transition(all .3s ease-in-out);
+		}
 	}
 	.scrollable__next{
 		display: inline-block;
-		@include sized-sprite($icons, scr_arrow-r);
+		width: 20px;
+		height: 27px;
+		border-radius: 3px;
+		background: #d4d4d4;
+		position: relative;
+		i{
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 6.5px 0 6.5px 8px;
+			border-color: transparent transparent transparent #fff;
+			position: absolute;
+			top: 8px;
+			left: 7px;
+		}
+		&:hover{
+			background: #868686;
+			@include transition(all .3s ease-in-out);
+		}
 	}
 	ul{
 		overflow: hidden;
@@ -42,6 +77,10 @@
 			@include border-radius(4px);
 			@include background-clip(padding-box);
 			background-color: #a2d1f3;
+			&:hover{
+				background-color: #251f51;
+				@include transition(all .3s ease-in-out);
+			}
 			a{
 				padding: 0px 13px;
 				display: block;
@@ -49,7 +88,7 @@
 				font-weight: bold;
 				text-decoration: none;
 				&:hover{
-					text-decoration: underline;
+					color: #fff;
 				}
 			}
 		}
