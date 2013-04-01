@@ -5,13 +5,16 @@
 .programm .select-prog { width: 205px; height: 25px; padding: 0 10px; line-height: 25px; vertical-align: top; margin-top: 6px; color: #777; border: 1px solid #c2c2c2; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; background-color: #fff; -webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); display: inline-block; position: absolute; right: 0; font-size: 12px; }
 .programm .select-prog:after { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 5px 4.5px 0 4.5px; border-color: #221952 transparent transparent transparent; position: absolute; top: 12px; right: 8px; }
 .programm select { width: 227px; height: 25px; opacity: 0; margin-top: 6px; padding: 0 2px; line-height: 25px; position: absolute; right: 0; vertical-align: top; color: #777; border: 1px solid #c2c2c2; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; background-color: #fff; -webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); }
-.programm .programm__abc { text-transform: uppercase; color: #eb2593; font-size: 16px; margin-top: 15px; }
-.programm .programm__abc span { margin-right: 1px; }
+.programm .programm__abc { text-transform: uppercase; font-size: 16px; margin-top: 15px; }
+.programm .programm__abc a { margin-right: 1px; color: #eb2593; cursor: pointer; }
 .programm .programm__abc .gray { color: #c6c6c6; }
 .programm .lang-wrap { display: inline-block; float: right; }
-.programm .programm__lang { background: #a3d1f3; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; padding: 0px 15px; display: inline-block; color: #221952; font-weight: bold; text-decoration: none; height: 27px; line-height: 27px; font-size: 12px; }
-.programm .programm__lang:hover { color: white; background: #221952; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.programm .lang-wrap .programm__lang { background: #a3d1f3; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; padding: 0px 15px; display: inline-block; color: #221952; font-weight: bold; text-decoration: none; height: 27px; line-height: 27px; font-size: 12px; color: #221952; }
+.programm .lang-wrap .programm__lang:hover { color: white; background: #221952; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.programm .lang-wrap .active { background: #221952 !important; color: #FFF; }
 .programm .programm__menu { height: 40px; margin: 13px 0 0; text-align: justify; }
 .programm .programm__menu .align { width: 100%; height: 0; }
 .programm .programm__menu a { height: 27px; line-height: 27px; background: #eb2593; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; padding: 0px 15px; display: inline-block; color: #fff; font-weight: bold; text-decoration: none; font-size: 12px; text-transform: uppercase; }
 .programm .programm__menu a:hover { color: white; background: #221952; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+.programm__menu a.active { background: #221952; color: #FFF; }
