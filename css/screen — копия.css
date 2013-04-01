@@ -1,16 +1,14 @@
 /*
-Syntax error: File to import not found or unreadable: elements.
+Syntax error: File to import not found or unreadable: programs.
               Load paths:
                 C:/Users/goshazvir/Documents/GitHub/otr/sass
                 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets
                 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets
                 Compass::SpriteImporter
-        on line 6 of C:/Users/goshazvir/Documents/GitHub/otr/sass/screen Ч копи€.scss
-
-1: C:/Users/goshazvir/Documents/GitHub/otr/sass/screen Ч копи€.scss
+        on line 9 of C:/Users/goshazvir/Documents/GitHub/otr/sass/screen Ч копи€.scss
 
 Backtrace:
-C:/Users/goshazvir/Documents/GitHub/otr/sass/screen Ч копи€.scss:6
+C:/Users/goshazvir/Documents/GitHub/otr/sass/screen Ч копи€.scss:9
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/import_node.rb:45:in `import'
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -73,4 +71,4 @@ C:/RailsInstaller/Ruby1.9.3/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: elements.\A               Load paths:\A                 C:/Users/goshazvir/Documents/GitHub/otr/sass\A                 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 6 of C:/Users/goshazvir/Documents/GitHub/otr/sass/screen Ч копи€.scss\A \A 1: C:/Users/goshazvir/Documents/GitHub/otr/sass/screen Ч копи€.scss"; }
+  content: "Syntax error: File to import not found or unreadable: programs.\A               Load paths:\A                 C:/Users/goshazvir/Documents/GitHub/otr/sass\A                 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 9 of C:/Users/goshazvir/Documents/GitHub/otr/sass/screen Ч копи€.scss"; }

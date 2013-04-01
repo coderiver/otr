@@ -1,87 +1,83 @@
-/*
-Syntax error: Undefined mixin 'sized-sprite'.
-        on line 30 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss, in `sized-sprite'
-        from line 30 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss
+.clr { clear: both; }
 
-Backtrace:
-C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss:30:in `sized-sprite'
-C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss:30
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/tree/root_node.rb:20:in `render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-C:/RailsInstaller/Ruby1.9.3/bin/compass:23:in `load'
-C:/RailsInstaller/Ruby1.9.3/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'sized-sprite'.\A         on line 30 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss, in `sized-sprite'\A         from line 30 of C:/Users/goshazvir/Documents/GitHub/otr/sass/elements.scss"; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.title { height: 35px; line-height: 35px; padding: 0 4px 0 2px; display: inline-block; background: #eb2593; color: #fff; font-family: "Arial"; font-size: 18px; font-weight: bold; position: relative; text-transform: uppercase; }
+.title:before { content: ""; background: url('../img/icons-sf5f82424a8.png') 0 -1418px no-repeat; width: 10px; height: 44px; position: absolute; left: -10px; top: 0; }
+.title:after { content: ""; position: absolute; right: -9px; top: 0; width: 0px; height: 0px; border-style: solid; border-width: 17.5px 0 17.5px 9px; border-color: transparent transparent transparent #eb2593; }
+
+.title_2 { display: inline-block; background: #79caf0; color: #221952; position: absolute; top: -11px; left: 0; }
+.title_2:before { content: ""; background: url('../img/icons-sf5f82424a8.png') 0 -714px no-repeat; width: 10px; height: 44px; position: absolute; left: -10px; top: 0; }
+.title_2:after { content: ""; display: inline-block; border-width: 0; background: url('../img/icons-sf5f82424a8.png') 0 -1249px no-repeat; width: 9px; height: 35px; }
+
+.title_pic { position: absolute; top: 12px; z-index: 100; }
+
+.title_2-2 { display: inline-block; background: #79caf0; color: #221952; position: relative; z-index: 100; border-bottom: 1px solid #fff; margin-bottom: -1px; }
+.title_2-2:before { content: ""; background: url('../img/icons-sf5f82424a8.png') 0 -714px no-repeat; width: 10px; height: 44px; position: absolute; left: -10px; top: 0; }
+.title_2-2:after { content: ""; display: inline-block; border-width: 0; background: url('../img/icons-sf5f82424a8.png') 0 -1249px no-repeat; width: 9px; height: 35px; }
+
+.title_red { background: #eb2593; color: #FFF; }
+.title_red:before { content: ""; background: url('../img/icons-sf5f82424a8.png') 0 -1418px no-repeat; width: 10px; height: 44px; position: absolute; left: -8px; top: 0; }
+.title_red:after { content: ""; background: url('../img/icons-sf5f82424a8.png') 0 -1156px no-repeat; width: 8px; height: 35px; position: absolute; right: -8px; top: 0; }
+
+.more { font-size: 11px; color: #eb2593; text-transform: uppercase; }
+
+.more_db { display: block; line-height: 1.6; }
+
+.time { font-size: 11px; color: #eb2593; }
+
+.meta { padding: 5px 0 2px; font-size: 11px; color: #777; }
+.meta a { color: #777; text-decoration: underline; }
+.meta a:hover { text-decoration: none; }
+.meta a.comments { padding-left: 2px; }
+.meta a.comments:before { content: ""; background: url('../img/icons-sf5f82424a8.png') 0 -1372px no-repeat; width: 10px; height: 10px; display: inline-block; padding-right: 3px; vertical-align: middle; }
+
+.wrap-button { text-align: center; }
+.wrap-button .button { height: 27px; line-height: 27px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background-color: #8dd2f5; color: #000; font-size: 11px; text-transform: uppercase; display: inline-block; padding: 0 40px; font-weight: bold; }
+.wrap-button .button__p0-20 { padding: 0 20px; }
+.wrap-button .button_m3-0-5 { margin: 5px 0 3px; }
+.wrap-button .button_mt19 { margin-top: 19px; }
+.wrap-button .button_interview { padding: 0 30px; margin-top: 15px; }
+.wrap-button .button_mt25 { margin-top: 25px; }
+.wrap-button .button__ico { padding: 0 20px 5px 40px; background: url(../img/ico_mess.png) 11px 12px no-repeat #8dd2f5; line-height: 34px; color: #221952; }
+
+.button_tl { text-align: left; }
+
+.anonse { font-size: 12px; overflow: hidden; margin-bottom: 5px; margin-top: 5px; }
+.anonse .anonse__date { font-size: 12px; color: #eb2593; text-transform: uppercase; padding-right: 15px; font-style: normal; float: left; }
+.anonse .anonse__date span { color: #777; font-size: 11px; }
+.anonse .anonse__descr { width: 200px; font-weight: normal; float: left; }
+.anonse .anonse__descr_w { width: auto; }
+
+.ololo-1 { height: 20px; line-height: 20px; padding: 0 3px 0 5px; background-color: #a3cbe9; color: #221952; position: absolute; top: 10px; left: 0; -webkit-box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.41); -moz-box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.41); box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.41); }
+.ololo-1:after { content: ""; background: url('../img/icons-sf5f82424a8.png') 0 -1294px no-repeat; width: 11px; height: 23px; position: absolute; top: 0; right: -11px; }
+
+.foto-user .ololo-1_big { top: 30px; height: 26px; font-size: 14px; text-transform: uppercase; position: absolute; line-height: 27px; -webkit-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); -moz-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); }
+.foto-user .ololo-1_big:after { content: ""; background: url('../img/icons-sf5f82424a8.png') 0 -768px no-repeat; width: 9px; height: 26px; -webkit-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); -moz-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); position: absolute; top: 0; right: -9px; }
+
+.foto-user__meta { position: absolute; top: 32px; right: 4px; padding: 0 8px; color: #FFF; font-size: 11px; text-transform: uppercase; height: 20px; line-height: 20px; background: #52759f; }
+
+.super-arrow { content: ""; display: inline-block; background: url('../img/icons-sf5f82424a8.png') 0 -316px no-repeat; width: 24px; height: 24px; position: absolute; top: 100px; left: 161px; }
+
+.super-arrow_tw { top: 140px; left: 226px; }
+
+.my__arrow { width: 0px; height: 0px; border-style: solid; border-width: 8px 0 8px 9px; border-color: transparent transparent transparent #94c9ee; }
+
+.sexy-title { background: url(../img/sexy-title.png) 0 0 no-repeat; background-repeat: repeat-x repeat-y; background-size: 100% 100%; display: inline-block; color: #FFF; text-transform: uppercase; font-size: 17px; font-weight: bold; line-height: 39px; padding: 0 10px; position: relative; }
+.sexy-title:after { content: ""; background: url('../img/icons-sf5f82424a8.png') 0 -1327px no-repeat; width: 18px; height: 11px; position: absolute; bottom: -11px; left: 5px; }
+
+.sexy-title_pos { top: -9px; left: -22px; }
+
+.share { vertical-align: middle; }
+.share span { color: #777; font-size: 11px; line-height: 1.2; }
+.share .share__item { display: inline-block; vertical-align: middle; margin: 0 1px; }
+.share .share__hz1 { background: url('../img/icons-sf5f82424a8.png') 0 -648px no-repeat; width: 16px; height: 16px; }
+.share .share__vk { background: url('../img/icons-sf5f82424a8.png') 0 -596px no-repeat; width: 16px; height: 16px; }
+.share .share__fb { background: url('../img/icons-sf5f82424a8.png') 0 -1348px no-repeat; width: 14px; height: 14px; }
+.share .share__tw { background: url('../img/icons-sf5f82424a8.png') 0 -622px no-repeat; width: 17px; height: 16px; }
+.share .share__xz2 { background: url('../img/icons-sf5f82424a8.png') 0 -290px no-repeat; width: 17px; height: 16px; }
+.share .share__goo { background: url('../img/icons-sf5f82424a8.png') 0 -196px no-repeat; width: 16px; height: 16px; }
+.share .share__xz3 { background: url('../img/icons-sf5f82424a8.png') 0 -1392px no-repeat; width: 16px; height: 16px; }
+
+.share_mb10 { margin-bottom: 10px; }

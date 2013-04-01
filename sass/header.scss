@@ -1,7 +1,8 @@
+@import "lib/base";
 /* NAV */
 .nav{
 	width: 100%;
-	background: #251f51;
+	background: #221952;
 	position: relative;
 	ul{
 		width: 970px;
@@ -24,8 +25,8 @@
 				}
 				a{
 					text-decoration: none;
-					background-color: #e3f1fb;
-					color: #251f51;
+					background-color: #dcf1fb;
+					color: #221952;
 				}
 			}
 			a{
@@ -41,7 +42,7 @@
 			ul{
 				display: none;
 				position: absolute;
-				background-color: #e3f1fb;
+				background-color: #dcf1fb;
 				height: auto;
 				width: auto;
 				padding: 0px 20px 0;
@@ -49,7 +50,7 @@
 				z-index: 3000;
 				li{
 					float: none;
-					background-color: #e3f1fb;
+					background-color: #dcf1fb;
 					border-top: 1px dotted #b7dbf5;
 					padding: 0;
 					border-left: none;
@@ -65,10 +66,10 @@
 						height: 20px;
 						line-height: 20px;
 						font-size: 13px;
-						color: #251f51;
+						color: #221952;
 						padding: 0;
 						display: block;
-						border-top: #e3f1fb;
+						border-top: #dcf1fb;
 						&:hover{
 							border-top: 1px solid #f0f8fd;
 							background: #FFF;
@@ -86,7 +87,7 @@
 		}
 	}
 	li.nav__select{
-		background-color: #ca2a8f;
+		background-color: #eb2593; 
 		position: relative;
 		&:after{
 			content: "";
@@ -101,7 +102,7 @@
 				height: 0px;
 				border-style: solid;
 				border-width: 38px 9px 0 9px;
-				border-color: #e3f1fb transparent transparent transparent;
+				border-color: #dcf1fb transparent transparent transparent;
 				position: absolute;
 				right: -9px;
 				top:0;
@@ -229,13 +230,13 @@ ul.reg{
 	}
 	.radio__descr{
 		width: 73px;
-		color: #251f51;
+		color: #221952;
 		line-height: 27px;
 		height: 27px;
 		display: inline-block;
 		background-color: #a3d1f3;
 		border-radius: 0 4px 4px 0;
-		background-color: #a2d1f3;
+		background-color: #8dd2f5;
 		padding-left: 6px;
 		padding-right: 12px;
 		position: absolute;

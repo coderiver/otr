@@ -14,7 +14,7 @@
 		text-transform: uppercase;
 		font-size: 20px;
 		font-weight: bold;
-		color: #ca2a8f;
+		color: #eb2593;
 		vertical-align: middle;
 		margin-right: 5px;
 	}
@@ -27,7 +27,7 @@
 		width: 20px;
 		height: 27px;
 		border-radius: 3px;
-		background: #d4d4d4;
+		background: #d5d5d5;
 		position: relative;
 		i{
 			width: 0px;
@@ -48,7 +48,7 @@
 		width: 20px;
 		height: 27px;
 		border-radius: 3px;
-		background: #d4d4d4;
+		background: #d5d5d5;
 		position: relative;
 		i{
 			width: 0px;
@@ -58,7 +58,7 @@
 			border-color: transparent transparent transparent #fff;
 			position: absolute;
 			top: 8px;
-			left: 7px;
+			left: 8px;
 		}
 		&:hover{
 			background: #868686;
@@ -76,15 +76,18 @@
 			float: left;
 			@include border-radius(4px);
 			@include background-clip(padding-box);
-			background-color: #a2d1f3;
+			background-color: #8dd2f5;
 			&:hover{
-				background-color: #251f51;
+				background-color: #221952;
 				@include transition(all .3s ease-in-out);
+			}
+			&:active{
+				background: #221952;
 			}
 			a{
 				padding: 0px 13px;
 				display: block;
-				color: #251f51;
+				color: #221952;
 				font-weight: bold;
 				text-decoration: none;
 				&:hover{
@@ -110,7 +113,7 @@
 	}
 	h2{
 		display: inline-block;
-		color: #ca2a8f;
+		color: #eb2593;
 		font-size: 24px;
 		font-weight: bold;
 		vertical-align: bottom;
@@ -264,7 +267,7 @@ ul.list-news{
 	}
 	.meta{
 		font-size: 12px;
-		color: #ca2a8f;
+		color: #eb2593;
 		span{
 			color: #777;
 			text-transform: uppercase;
@@ -304,7 +307,7 @@ ul.list-news{
 		width: 255px;
 		.preview__top{
 			width: 255px;
-			color: #ca2a8f;
+			color: #eb2593;
 			text-transform: uppercase;
 			text-align: center;
 			font-weight: bold;
@@ -313,7 +316,7 @@ ul.list-news{
 		}
 	}
 	.preview__item{
-		color: #ca2a8f;
+		color: #eb2593;
 		font-size: 10px;
 		text-transform: uppercase;
 		margin: 10px 0 10px 10px;
@@ -347,6 +350,7 @@ ul.list-news{
 		display: inline-block;
 		margin-right: 15px;
 		margin-bottom: 15px;
+		vertical-align: top;
 		.item__href{
 			width: 200px;
 			height: 137px;
@@ -361,10 +365,21 @@ ul.list-news{
 			}
 
 		}
+		b.pre-title{
+			margin: 3px 0;
+			font-size: 14px;
+			display: block;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		b span{
+			font-weight: normal;
+		}
 	}
 	a.item__note{
 		color: #000;
-		font-weight: bold;
+		font-weight: normal;
 	}
 	a.item__note_small{
 		font-size: 12px;
@@ -376,6 +391,38 @@ ul.list-news{
 			display: block;
 			margin-bottom: 5px;
 		}
+	}
+}
+.all-news_big{
+	padding: 0;
+	.all-news__item{
+		width: 310px;
+		margin-bottom: 20px;
+		position: relative;
+		.item__href{
+			width: 310px;
+			height: 220px;
+			line-height: 220px;
+			img {
+				max-width: 310px;
+				min-height: 220px;
+				vertical-align: middle;
+			}
+		}
+		.super-arrow{
+			position: absolute;
+			top: 185px;
+			left: 275px;
+		}
+	}
+	&:before{
+		position: absolute;
+		width: 640px;
+		height: 1px;
+		background: none;
+		top: 0;
+		left: 0;
+		content: "";
 	}
 }
 .all-news_bt-none{
@@ -398,14 +445,14 @@ ul.list-news{
 .ss-picture-day{
 	position: relative;
 	height: 313px;
-	background: #251f51;
+	background: #221952;
 	margin-bottom: 25px;
 }
 .picture-day{
 	padding: 25px 0px 0px;
 	text-align: center;
 	margin-top: 15px;
-	background: #251f51;
+	background: #221952;
 	position: relative;
 	overflow:hidden;
 	width: 970px;
@@ -523,7 +570,7 @@ ul.list-news{
 		font-size: 14px;
 	}
 	.wrap__note_red{
-		color: #ca2a8f;
+		color: #eb2593;
 	}
 }
 .wrap_pad{
@@ -607,7 +654,7 @@ ul.list-news{
 		@include border-radius(25px);
 		display: inline-block;
 		@include background-clip(padding-box);
-		background-color: #93c7ed;
+		background-color: #78c9f0;
 		margin-bottom: 5px;
 		img{
 			padding: 11px 0;
@@ -615,7 +662,7 @@ ul.list-news{
 	}
 	.god-loves-you__circle_bl{
 		@include background-clip(padding-box);
-		background-color: #f0cfe4;
+		background-color: #fcd0e5;
 	}
 	.god-loves-you__text{
 		line-height: 1.2;
@@ -630,7 +677,7 @@ ul.list-news{
 		top: 10px;
 		text-transform: uppercase;
 		font-size: 10px;
-		color: #ca2a8f;
+		color: #eb2593;
 	}
 	h3{
 		margin-bottom: 10px;
@@ -651,7 +698,7 @@ ul.list-news{
 	width: 100%;
 	height: 5px;
 	@include border-radius(2px);
-	background-color: #d4d4d4;
+	background-color: #d5d5d5;
 	margin: 5px 0;
 	position: relative;
 	.interview__active{
@@ -662,7 +709,7 @@ ul.list-news{
 		top: 0;
 		@include border-radius(2px);
 		@include background-clip(padding-box);
-		background-color: #c12b8a;
+		background-color: #e1278e;
 	}
 	.interview__active2{
 		width: 45%;
@@ -683,7 +730,7 @@ ul.list-news{
 		text-transform: uppercase;
 		font-weight: bold;
 		@include border-radius(4px);
-		background-color: #dfdfdf;
+		background-color: #e0e0e0;
 		padding: 0px 9px;
 		display: inline-block;
 		margin-right: 1px;

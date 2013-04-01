@@ -1,0 +1,119 @@
+@import "lib/base";
+.mar0-0-15{
+	margin: 0 0 15px;
+}
+//programm
+.programm{
+	margin-top: -4px;
+	position: relative;
+	h2{
+		font-size: 29px;
+		text-transform: uppercase;
+		color: #221952;
+		display: inline-block
+	}
+	.select-prog{
+		width: 205px;
+		height: 25px;
+		padding: 0 10px;
+		line-height: 25px;
+		vertical-align: top;
+		margin-top: 6px;
+		color: #777;
+		border: 1px solid #c2c2c2;
+		@include border-radius(2px);
+		background-color: #fff;
+		@include box-shadow(inset 1px 2px 4px rgba(0,0,0,.1));
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		font-size: 12px;
+		&:after{
+			content: "";
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 5px 4.5px 0 4.5px;
+			border-color: #221952 transparent transparent transparent;
+			position: absolute;
+			top: 12px;
+			right: 8px;
+		}
+	}
+	select{
+		width: 227px;
+		height: 25px;
+		opacity: 0;
+		margin-top: 6px;
+		padding: 0 2px;
+		line-height: 25px;
+		position: absolute;
+		right: 0;
+		vertical-align: top;
+		color: #777;
+		border: 1px solid #c2c2c2;
+		@include border-radius(2px);
+		background-color: #fff;
+		@include box-shadow(inset 1px 2px 4px rgba(0,0,0,.1));
+	}
+	.programm__abc{
+		text-transform: uppercase;
+		color: #eb2593;
+		font-size: 16px;
+		margin-top: 15px;
+		span{
+			margin-right: 1px;
+		}
+		.gray{
+			color: #c6c6c6;
+		}
+	}
+	.lang-wrap{
+		display: inline-block;
+		float: right;
+	}
+	.programm__lang{
+		background: #a3d1f3;
+		@include border-radius(4px);
+		padding: 0px 15px;
+		display: inline-block;
+		color: #221952;
+		font-weight: bold;
+		text-decoration: none;
+		height: 27px;
+		line-height: 27px;
+		font-size: 12px;
+		&:hover{
+			color: #FFF ;
+			background: #221952 ;
+			@include transition(all .3s ease-in-out);
+		}
+	}
+	.programm__menu{
+		height: 40px;
+		margin: 13px 0 0;
+		text-align: justify;
+		.align{
+			width: 100%;
+			height: 0;
+		}
+		a{
+			height: 27px; 
+			line-height: 27px;
+			background: #eb2593;
+			@include border-radius(4px);
+			padding: 0px 15px;
+			display: inline-block;
+			color: #fff;
+			font-weight: bold;
+			text-decoration: none;
+			font-size: 12px;
+			text-transform: uppercase;
+			&:hover{
+				color: #FFF ;
+				background: #221952 ;
+				@include transition(all .3s ease-in-out);
+			}
+		}
+	}
+}

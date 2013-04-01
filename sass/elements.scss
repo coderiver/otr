@@ -1,6 +1,7 @@
+@import "lib/base";
 @mixin date{
 	font-size: 12px;
-	color: #ca2a8f;
+	color: #eb2593;
 	text-transform: uppercase;
 }
 .clr{
@@ -18,7 +19,7 @@ a{
 	line-height: 35px;
 	padding: 0 4px 0 2px;
 	display: inline-block;
-	background: #ca2a8f;
+	background: #eb2593;
 	color: #fff;
 	font-family: "Arial";
 	font-size: 18px;
@@ -41,13 +42,13 @@ a{
 		height: 0px;
 		border-style: solid;
 		border-width: 17.5px 0 17.5px 9px;
-		border-color: transparent transparent transparent #ca2a8f;
+		border-color: transparent transparent transparent #eb2593;
 	}
 }
 .title_2{
 	display: inline-block;
-	background: #94c8ee;
-	color: #251f51;
+	background: #79caf0;
+	color: #221952;
 	position: absolute;
 	top: -11px;
 	left: 0;
@@ -62,7 +63,7 @@ a{
 		content: "";
 		display: inline-block;
 		border-width: 0;
-		@include sized-sprite($icons, nav_border2);
+		@include sized-sprite($icons, nav_border2); 
 	}
 }
 .title_pic{
@@ -72,8 +73,8 @@ a{
 }
 .title_2-2{
 	display: inline-block;
-	background: #94c8ee;
-	color: #251f51;
+	background: #79caf0;
+	color: #221952;
 	position: relative;
 	z-index: 100;
 	border-bottom: 1px solid #fff;
@@ -93,7 +94,7 @@ a{
 	}
 }
 .title_red{
-	background: #ca2a8f;
+	background: #eb2593;
 	color: #FFF;
 	&:before{
 		content: "";
@@ -112,7 +113,7 @@ a{
 }
 .more{
 	font-size: 11px;
-	color: #ca2a8f;
+	color: #eb2593;
 	text-transform: uppercase;
 }
 .more_db{
@@ -121,7 +122,7 @@ a{
 }
 .time{
 	font-size: 11px;
-	color: #ca2a8f;
+	color: #eb2593;
 }
 
 .meta{
@@ -154,7 +155,7 @@ a{
 		line-height: 27px;
 		@include border-radius(4px);
 		@include background-clip(padding-box);
-		background-color: #a2d1f3;
+		background-color: #8dd2f5;
 		color: #000;
 		font-size: 11px;
 		text-transform: uppercase;
@@ -180,8 +181,9 @@ a{
 	}
 	.button__ico{
 		padding: 0 20px 5px 40px;
-		background: url(../img/ico_mess.png) 11px 12px no-repeat #a2d1f3;
+		background: url(../img/ico_mess.png) 11px 12px no-repeat #8dd2f5;
 		line-height: 34px;
+		color: #221952;
 	}
 }
 .button_tl{
@@ -206,7 +208,7 @@ a{
 		width: 200px;
 		font-weight: normal;
 		float: left;
-	}
+	} 
 	.anonse__descr_w{
 		width: auto;
 	}
@@ -216,7 +218,7 @@ a{
 	line-height: 20px;
 	padding: 0 3px 0 5px;
 	background-color: #a3cbe9;
-	color: #251f51;
+	color: #221952;
 	position: absolute;
 	top: 10px;
 	left: 0;
