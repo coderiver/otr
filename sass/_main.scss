@@ -367,8 +367,20 @@ ul.boss__list{
 	li{
 		font-size: 14px;
 		color: #777;
+		position: relative;
 		&:first-child{
 			color: #221951;
+		}
+		&:before{
+			content: "";
+			display: inline-block;
+			height: 6px;
+			width: 6px;
+			@include border-radius(3px);
+			background: #eb2593;
+			position: absolute;
+			top: 6px;
+			left: -12px;
 		}
 	}
 }
@@ -403,8 +415,13 @@ ul.o-tw{
 					border-bottom: none;
 				}
 				a{
-					padding-left: 15px;
+					padding-left: 10px;
+					&:before{
+						content: "-";
+						margin-right: 3px;
+					}
 				}
+
 			}
 		}
 	}
