@@ -455,16 +455,61 @@ ul.o-tw_bb-none{
 		}
 	}
 	.quest-form__body{
-		width: 640px;
+		width: 620px;
+		padding: 20px 15px 25px;
 		background: #eaeaea;
 		color: #000;
 		font-size: 14px;
 	}
 }
 .row{
+	line-height: 27px;
+	margin-bottom: 10px;
 	label{
+		float: left;
+		width: 200px;
 		span{
 			color: #eb2593;
 		}
+	}
+	input, textarea{
+		width: 400px;
+		padding: 0 10px;
+		height: 27px;
+		border: none;
+		float: right;
+	}
+	textarea{
+		min-height: 110px;
+		max-width: 400px;
+		padding: 10px;
+	}
+}
+.row_captcha{
+	.row_captcha__input{
+		display: inline-block;
+		position: relative;
+		vertical-align: top;
+		margin-right: 15px;
+	}
+	input{
+		width: 88px;
+		float: left;
+	}
+	a.captcha{
+		position: absolute;
+		top: 30px;
+		right: 0px;
+		color: #eb2593;
+	}
+}
+.row_lh15{
+	line-height: 15px;
+}
+.row__note{
+	color: #636363;
+	font-size: 11px;
+	span{
+		color: #eb2593;
 	}
 }

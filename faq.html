@@ -98,9 +98,53 @@
 			</div>
 			<div class="quest-form__body">
 				<div class="row">
-					<label for="name">Имя:
-						<span>*</span>
+					<label for="name">Имя:<span>*</span>
 					</label>
+					<input type="text" name="name">
+					<div class="clr"></div>
+				</div>
+				<div class="row">
+					<label for="city">Населенный пункт<span>*</span>
+					</label>
+					<input type="text" name="city">
+					<div class="clr"></div>
+				</div>
+				<div class="row">
+					<label for="mail">E-mail<span>*</span>
+					</label>
+					<input type="text" name="mail">
+					<div class="clr"></div>
+				</div>
+				<div class="row">
+					<label for="mail-retry">E-mail еще раз<span>*</span>
+					</label>
+					<input type="text" name="mail-retry">
+					<div class="clr"></div>
+				</div>
+				<div class="row">
+					<label for="message">Сообщение<span>*</span>
+					</label>
+					<textarea name="message" cols="30" rows="10"></textarea>
+					<div class="clr"></div>
+				</div>
+				<div class="row row_captcha">
+					<label for="message">Код с картинки<span>*</span>
+					</label>
+					<div class="row_captcha__input">
+						<input type="text" name="message">
+						<a href="#" class="captcha">Обновить</a>
+					</div>
+
+					<img src="img/captcha.jpg" alt="">
+					<div class="clr"></div>
+				</div>
+				<div class="row row_lh15">
+					<div class="row__note">
+						<span>*</span> Все поля обязательны для заполнения
+					</div>
+				</div>
+				<div class="wrap-button">
+					<a href="#" class="button button__p0-20">Отправить</a>
 				</div>
 			</div>
 		</div>
