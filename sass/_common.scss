@@ -137,15 +137,7 @@ a{
 		border-color: transparent transparent transparent #eb2593;
 	}
 }
-.title_border{
-	content: "";
-	position: absolute;
-	width: 640px;
-	height: 1px;
-	background: #dcdcdc;
-	top: 30px;
-	left: 0;
-}
+
 .title_2{
 	display: inline-block;
 	background: #79caf0;
@@ -376,6 +368,9 @@ a{
 		right: -9px;
 	}
 }
+.foto-user__general .ololo-1_pos{
+	top: 7px;
+}
 .foto-user__meta{
 	position: absolute;
 	top: 32px;
@@ -383,11 +378,15 @@ a{
 	padding: 0 8px;
 	color: #FFF;
 	 font-size: 11px;
-	 text-transform: uppercase;
 	 height: 20px;
 	 line-height: 20px;
 	 background: #52759f;
 }
+.foto-user__meta_pos{
+	top: 9px;
+	right: 0;
+}
+
 .super-arrow{
 	content: "";
 	display: inline-block;
@@ -480,6 +479,15 @@ i.letter{
 .mb20{
 	margin-bottom: 20px;
 }
+.mb10{
+	margin-bottom: 10px;
+}
+.m-10-0-10{
+	margin: 10px 0 10px !important;
+}
 .db{
 	display: block !important;
+}
+.fl_l{
+	float: left;
 }
