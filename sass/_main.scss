@@ -19,7 +19,8 @@
 		font-size: 20px;
 		text-transform: uppercase;
 		display: inline-block;
-		margin: 10px 0 5px;
+		margin: 15px 0 5px;
+		// fix margin: 10px 0 5px;
 	}
 	.h3{
 		font-size: 18px;
@@ -40,6 +41,7 @@
 	}
 	.entry__text{
 		line-height: 1.2;
+		padding: 5px 0;
 	}
 	.entry__video{
 		margin: 20px 0 10px;
@@ -558,4 +560,74 @@ ul.o-tw_bb-none{
 			padding-bottom: 1px;
 		}
 	}
+}
+
+/////////////////// * page ONVILE  *////////////
+.title-with-border{
+	position: relative;
+}
+i.border{
+	display: inline-block;
+	width: 640px;
+	background-color: #dddddd;
+	height: 1px;
+	position: absolute;
+	top: 18px;
+	left: 0;
+}
+// tw-show
+.tw-show{
+	position: relative;
+	margin: 10px 0 25px;
+	font-size: 14px;
+}
+.tw-show__item{
+	margin: 9px 0;
+	display: block;
+	color: #000;
+	.tw-show__top{
+		padding-bottom: 2px;
+		text-transform: uppercase;
+	}
+	.tw-show__time{
+		color: #eb2593;
+		&:after{
+			content: " / ";
+		}
+	}
+}
+.tw-show__item_gr{
+	color: #787878;
+	.tw-show__time{
+		color: #787878;
+	}
+}
+.wrap-tw-show__item_active{
+	position: relative;
+}
+.tw-show__item_active{
+	padding: 10px 20px 10px 30px;
+	background: #EB2593;
+	color: #FFF;
+	font-weight: bold;
+	margin-left: -30px;
+	margin-top: 18px;
+	&:before{
+		content: "";
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 0 10px 10px 0;
+		border-color: transparent #221952 transparent transparent;
+		display: block;
+		position: absolute;
+		bottom: -10px;
+		left: -30px;
+	}
+	.tw-show__time{
+		color: #fff;
+	}
+}
+.mt15{
+	margin-top: 15px;
 }

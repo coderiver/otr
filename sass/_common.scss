@@ -137,6 +137,15 @@ a{
 		border-color: transparent transparent transparent #eb2593;
 	}
 }
+.title_border{
+	content: "";
+	position: absolute;
+	width: 640px;
+	height: 1px;
+	background: #dcdcdc;
+	top: 30px;
+	left: 0;
+}
 .title_2{
 	display: inline-block;
 	background: #79caf0;
@@ -470,4 +479,7 @@ i.letter{
 }
 .mb20{
 	margin-bottom: 20px;
+}
+.db{
+	display: block !important;
 }
