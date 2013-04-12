@@ -159,7 +159,7 @@
 	padding: 18px 0 0;
 	background: #fff;
 	.logo{
-		@include sized-sprite($icons, logo);
+		@include sized-sprite($icons, otr_logo);
 		margin-right: 55px;
 		display: inline-block;
 		vertical-align: top;
@@ -168,7 +168,7 @@
 
 }
 .separator{
-	padding: 0 0px 0 8px;
+	padding: 0 0px 0 8px; 
 }
 .search{
 	position: relative;
