@@ -103,6 +103,8 @@ a:hover { text-decoration: underline; }
 
 i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-repeat; display: inline-block; }
 
+.mb20 { margin-bottom: 20px; }
+
 /*  layout */
 .l { width: 640px; float: left; /*  */ }
 .l .l-col1 { float: left; width: 20%; }
