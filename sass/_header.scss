@@ -27,6 +27,7 @@
 					text-decoration: none;
 					background-color: #dcf1fb;
 					color: #221952;
+					@include transition(all .1s ease-in-out);
 				}
 			}
 			a{
@@ -71,9 +72,8 @@
 						display: block;
 						border-top: #dcf1fb;
 						&:hover{
-							border-top: 1px solid #f0f8fd;
 							background: #FFF;
-							line-height: 18px;
+							@include transition(all .1s ease-in-out);
 						}
 					}
 				}
@@ -89,17 +89,20 @@
 	li.nav__select{
 		background-color: #eb2593;
 		position: relative;
-		&:after{
-			content: "";
-			position: absolute;
-			right: -10px;
-			top: 0;
-			width: 0px;
-			height: 0px;
-			border-style: solid;
-			border-width: 0px 0px 40px 10px;
-			border-color: transparent transparent transparent #eb2593;
-		}
+			&:after{
+				content: "";
+				position: absolute;
+				right: -10px;
+				top: 0;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 0px 0px 40px 10px;
+				border-color: transparent transparent transparent #eb2593;
+				&:hover{
+					@include transition(all .1s ease-in-out);
+				}
+			}
 		&:hover{
 			&:after{
 				content: "";
@@ -111,6 +114,7 @@
 				border-style: solid;
 				border-width: 0px 0px 40px 10px;
 				border-color:  transparent transparent transparent #dcf1fb;
+				@include transition(all .1s ease-in-out);
 			}
 		}
 	}

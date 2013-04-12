@@ -258,6 +258,11 @@ a{
 		display: inline-block;
 		padding: 0 40px;
 		font-weight: bold;
+		&:hover{
+			background-color: #c5e6f7;
+			@include transition(all .3s ease-in-out);
+
+		}
 	}
 	.button__p0-20{
 		padding: 0 20px;
@@ -456,4 +461,10 @@ a{
 }
 .mail{
 	color: #eb2593;
+}
+i.letter{
+	width: 16px;
+	height: 10px;
+	background: url(../img/ico_mess.png) no-repeat;
+	display: inline-block;
 }
