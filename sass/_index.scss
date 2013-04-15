@@ -541,11 +541,43 @@ ul.list-news{
 	margin: 0px 13px 0;
 	display: inline-block;
 	width: 944px;
+	vertical-align: top;
 	.picture-day__prew, .picture-day__next{
 		display: inline-block;
 		position: absolute;
 		top: 0;
 	}
+}
+//ss-picture-day_mini
+.ss-picture-day_mini{
+	width: 640px;
+	height: 183px;
+	margin-bottom: 5px;
+}
+.picture-day_mini{
+	width: 640px;
+	height: 125px;
+	.picture-day__item{
+		width: 110px;
+		margin: 0 0 0 15px;
+	}
+	.picture-day__meta{
+		text-align: center;
+	}
+	.picture-day__img{
+		width: 110px;
+		height: 78px;
+		line-height: 73px;
+		img{
+			max-width: 110px;
+			min-height: 78px;
+		}
+	}
+}
+.picture-day__nav_mini{
+	width: 610px;
+	height: 27px;
+	background: url(../img/nav_bg.png) 10px 0 repeat-x;
 }
 // wrap
 .wrap{
