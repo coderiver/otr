@@ -117,6 +117,8 @@ i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-re
 
 .db { display: block !important; }
 
+.dinb { display: inline-block; }
+
 .fl_l { float: left; }
 
 /*  layout */
@@ -177,6 +179,8 @@ i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-re
 .qq-preview i { font-size: 12px; color: #eb2593; text-transform: uppercase; font-style: normal; font-size: 10px; display: block; }
 
 .mar0-0-15 { margin: 0 0 15px; }
+
+.mb-10 { margin-bottom: 10px; }
 
 .programm { margin-top: -4px; position: relative; }
 .programm h2 { font-size: 29px; text-transform: uppercase; color: #221952; display: inline-block; }
@@ -290,6 +294,8 @@ i.border { display: inline-block; width: 640px; background-color: #dddddd; heigh
 
 .etc .meta { padding: 0px 0 12px; float: left; }
 .etc .count { float: right; font-size: 11px; color: #777; }
+
+.foto-meta { display: inline-block; float: right; font-size: 11px; font-weight: bold; text-transform: uppercase; }
 
 /* NAV */
 .nav { width: 100%; background: #221952; position: relative; }

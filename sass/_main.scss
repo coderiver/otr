@@ -223,6 +223,9 @@
 .mar0-0-15{
 	margin: 0 0 15px;
 }
+.mb-10{
+	margin-bottom: 10px;
+}
 //programm
 .programm{
 	margin-top: -4px;
@@ -713,4 +716,11 @@ i.border{
 		font-size: 11px;
 		color: #777;
 	}
+}
+.foto-meta{
+	display: inline-block;
+	float: right;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
