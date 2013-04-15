@@ -235,6 +235,7 @@ a{
 	}
 	a.comments{
 		padding-left: 2px;
+		color: #777;
 		&:before{
 			content: "";
 			@include sized-sprite($icons, comments);
@@ -368,7 +369,7 @@ a{
 		right: -9px;
 	}
 }
-.foto-user__general .ololo-1_pos{
+.foto-user__general .ololo-1_pos, .Photo-Album .ololo-1_pos{
 	top: 7px;
 }
 .foto-user__meta{
@@ -386,7 +387,9 @@ a{
 	top: 9px;
 	right: 0;
 }
-
+.foto-user__meta_black{
+	background: rgba(0, 10, 57, 0.4);
+}
 .super-arrow{
 	content: "";
 	display: inline-block;

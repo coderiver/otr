@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 .meta { padding: 5px 0 2px; font-size: 11px; color: #777; }
 .meta a { color: #777; text-decoration: underline; }
 .meta a:hover { text-decoration: none; }
-.meta a.comments { padding-left: 2px; }
+.meta a.comments { padding-left: 2px; color: #777; }
 .meta a.comments:before { content: ""; background: url('../img/icons-s0201fcd806.png') 0 -1188px no-repeat; width: 10px; height: 10px; display: inline-block; padding-right: 3px; vertical-align: middle; }
 
 .wrap-button { text-align: center; }
@@ -73,11 +73,13 @@ a:hover { text-decoration: underline; }
 .foto-user .ololo-1_big { top: 30px; height: 26px; font-size: 14px; text-transform: uppercase; position: absolute; line-height: 27px; -webkit-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); -moz-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); }
 .foto-user .ololo-1_big:after { content: ""; background: url('../img/icons-s0201fcd806.png') 0 -584px no-repeat; width: 9px; height: 26px; -webkit-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); -moz-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); position: absolute; top: 0; right: -9px; }
 
-.foto-user__general .ololo-1_pos { top: 7px; }
+.foto-user__general .ololo-1_pos, .Photo-Album .ololo-1_pos { top: 7px; }
 
 .foto-user__meta { position: absolute; top: 32px; right: 4px; padding: 0 8px; color: #FFF; font-size: 11px; height: 20px; line-height: 20px; background: #52759f; }
 
 .foto-user__meta_pos { top: 9px; right: 0; }
+
+.foto-user__meta_black { background: rgba(0, 10, 57, 0.4); }
 
 .super-arrow { content: ""; display: inline-block; background: url('../img/icons-s0201fcd806.png') 0 -378px no-repeat; width: 24px; height: 24px; position: absolute; top: 100px; left: 161px; }
 
@@ -142,8 +144,11 @@ i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-re
 .foto-user { padding: 15px 0 20px; border-bottom: 1px solid #dcdcdc; position: relative; }
 .foto-user .foto-user__img { width: 640px; overflow: hidden; margin-bottom: 10px; }
 .foto-user .foto-user__img img { max-width: 640px; vertical-align: middle; }
-.foto-user .foto-user__img_average { width: 420px; height: 296px; }
-.foto-user .foto-user__img_average img { max-width: 420px; min-height: 296px; }
+.foto-user .foto-user__img_average { width: 420px; height: 294px; }
+.foto-user .foto-user__img_average img { max-width: 420px; min-height: 294px; }
+.foto-user .foto-user__img_average img:hover { cursor: pointer; }
+
+.foto-user_list { margin-right: -18px; border-bottom: none; }
 
 .perquisition { margin-bottom: 40px; }
 .perquisition .h2 { width: 640px; padding-bottom: 5px; margin-bottom: 12px; display: inline-block; border-bottom: 1px solid #dcdcdc; font-size: 18px; font-weight: bold; color: #221952; text-transform: uppercase; }
@@ -275,8 +280,16 @@ i.border { display: inline-block; width: 640px; background-color: #dddddd; heigh
 .mt15 { margin-top: 15px; }
 
 .foto-user__general { width: 420px; position: relative; float: left; display: inline-block; }
+.foto-user__general .wrap__meta { width: 94%; padding: 0 3%; font-size: 12px; line-height: 1.4; background: rgba(0, 10, 57, 0.4); color: #FFF; font-weight: bold; position: absolute; bottom: 32px; left: 0; }
+.foto-user__general .etc { position: static; }
 
-.Photo-Album { width: 199px; height: 143px; background: red; float: right; margin: 0px 0px 10px 10px; }
+.Photo-Album { width: 199px; height: 165px; position: relative; float: right; margin: 0px 20px 0px 0px; }
+.Photo-Album img { height: 133px; width: 199px; display: inline-block; }
+.Photo-Album img:hover { cursor: pointer; }
+.Photo-Album .wrap__meta { width: 94%; padding: 0 3%; font-size: 12px; line-height: 1.4; background: rgba(0, 10, 57, 0.4); color: #FFF; font-weight: bold; position: absolute; bottom: 32px; left: 0; }
+
+.etc .meta { padding: 0px 0 12px; float: left; }
+.etc .count { float: right; font-size: 11px; color: #777; }
 
 /* NAV */
 .nav { width: 100%; background: #221952; position: relative; }

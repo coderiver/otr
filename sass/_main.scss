@@ -82,14 +82,20 @@
 	}
 	.foto-user__img_average{
 		width: 420px;
-		height: 296px;
+		height: 294px;
 		img{
 			max-width: 420px;
-			min-height: 296px;
+			min-height: 294px;
+			&:hover{
+				cursor: pointer;
+			}
 		}
 	}
 }
-
+.foto-user_list{
+	margin-right: -18px;
+	border-bottom: none;
+}
 // perquisition
 .perquisition{
 	margin-bottom: 40px;
@@ -654,12 +660,57 @@ i.border{
 	position: relative;
 	float: left;
 	display: inline-block;
+	.wrap__meta{
+		width: 94%;
+		padding: 0 3%;
+		font-size: 12px;
+		line-height: 1.4;
+		background: rgba(0, 10, 57, 0.4);
+		color: #FFF;
+		font-weight: bold;
+		position: absolute;
+		bottom: 32px;
+		left: 0;
+	}
+	.etc{
+		position: static;
+	}
 }
-
 .Photo-Album{
 	width: 199px;
-	height: 143px;
-	background: red;
+	height: 165px;
+	position: relative;
 	float: right;
-	margin: 0px 0px 10px 10px;
+	margin: 0px 20px 0px 0px;
+	img{
+		height: 133px;
+		width: 199px;
+		display: inline-block;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.wrap__meta{
+		width: 94%;
+		padding: 0 3%;
+		font-size: 12px;
+		line-height: 1.4;
+		background: rgba(0, 10, 57, 0.4);
+		color: #FFF;
+		font-weight: bold;
+		position: absolute;
+		bottom: 32px;
+		left: 0;
+	}
+}
+.etc{
+	.meta{
+		padding: 0px 0 12px;
+		float: left;
+	}
+	.count{
+		float: right;
+		font-size: 11px;
+		color: #777;
+	}
 }
