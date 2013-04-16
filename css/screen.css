@@ -150,7 +150,7 @@ i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-re
 .entry .h4 { font-size: 18px; font-weight: normal; margin-bottom: 15px; }
 .entry .efir-time { display: inline-block; font-weight: bold; float: right; font-size: 12px; margin-top: 5px; text-align: right; }
 .entry .efir-time .efir-time__time { color: #221952; text-transform: uppercase; }
-.entry .entry__text { line-height: 1.2; padding: 5px 0; }
+.entry .entry__text { line-height: 1.2; padding: 15px 0; }
 .entry .entry__video { margin: 20px 0 10px; }
 .entry .entry__video_alt { margin: 0px 0 10px; }
 .entry p { padding: 10px 0; line-height: 1.2; }
@@ -229,9 +229,13 @@ i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-re
 
 .programm__menu a.active { background: #221952; color: #FFF; }
 
-.wrap-boss { margin-bottom: 10px; }
+.wrap-boss { margin-bottom: 30px; }
+.wrap-boss .wrap-button .button_interview { margin-top: 27px; }
 
 .boss { padding: 14px 0; border-bottom: 1px solid #ddd; }
+.boss .biography { margin-top: 16px; }
+.boss .biography p { margin-bottom: 10px; font-size: 14px; }
+.boss .biography p * { font-size: 14px; }
 
 .boss__img { width: 230px; height: 130px; line-height: 128px; background: #FFF; padding: 9px; border: 1px solid #e4e4e4; display: inline-block; overflow: hidden; vertical-align: top; }
 .boss__img img { max-width: 230px; height: 130px; vertical-align: middle; }
@@ -256,6 +260,7 @@ ul.o-tw li ul li a { padding-left: 10px; }
 ul.o-tw li ul li a:before { content: "-"; margin-right: 3px; }
 
 ul.o-tw_bb-none li { border-bottom: none; }
+ul.o-tw_bb-none li a.sel { background: #FFF; }
 
 .quest-form { margin: 20px 0 25px; }
 .quest-form .quest-form__top { display: inline-block; height: 31px; line-height: 31px; padding: 0 30px; background: #221952; -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; -ms-border-radius: 3px 3px 0 0; -o-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; font-size: 11px; font-weight: bold; color: #fff; text-transform: uppercase; }
@@ -368,14 +373,15 @@ i.border { display: inline-block; width: 640px; background-color: #dddddd; heigh
 .nav { width: 100%; background: #221952; position: relative; }
 .nav ul { width: 970px; margin: 0 auto; list-style: none; overflow: hidden; }
 .nav ul li { height: 38px; line-height: 38px; float: left; border-left: 1px solid #484275; }
+.nav ul li.nav__hovered a { text-decoration: none; background-color: #dcf1fb; color: #221952; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 .nav ul li:hover ul { display: block; }
 .nav ul li:hover ul li a { display: block; }
 .nav ul li:hover a { text-decoration: none; background-color: #dcf1fb; color: #221952; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
-.nav ul li a { color: #fff; font: 14px Arial,sans-serif; font-weight: bold; text-decoration: none; padding: 0 24px; height: 38px; line-height: 38px; display: inline-block; }
+.nav ul li a { color: #fff; font: 14px Arial,sans-serif; font-weight: bold; text-decoration: none; padding: 0 23px; height: 38px; line-height: 38px; display: inline-block; }
 .nav ul li ul { display: none; position: absolute; background-color: #dcf1fb; height: auto; width: auto; padding: 0px 20px 0; top: 37px; z-index: 3000; }
 .nav ul li ul li { float: none; background-color: #dcf1fb; border-top: 1px dotted #b7dbf5; padding: 0; border-left: none; height: 21px; line-height: 21px; }
 .nav ul li ul li:first-child { border-top: none; }
-.nav ul li ul li:last-child { border-top: none; }
+.nav ul li ul li:last-child { /* border-top: none; */ }
 .nav ul li ul li a { height: 20px; line-height: 20px; font-size: 13px; color: #221952; padding: 0; display: block; border-top: #dcf1fb; }
 .nav ul li ul li a:hover { background: #FFF; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 .nav ul li.nav__small { border-left: 0; }
