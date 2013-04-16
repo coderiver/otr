@@ -130,6 +130,13 @@ function slider_news() {
 
         clearInterval(cycle); // stop cycle on click
     });
+
+    $('#sent-redactor').click(function() {
+        $(".quest-form_alt").css("display", "block");
+    });
+    $('.close').click(function() {
+        $(".quest-form_alt").css("display", "none");
+    });
 }
 slider_news();
 

@@ -54,6 +54,9 @@
 	.entry__video{
 		margin: 20px 0 10px;
 	}
+	.entry__video_alt{
+		margin: 0px 0 10px;
+	}
 	p{
 		padding: 10px 0;
 		line-height: 1.2;
@@ -513,7 +516,7 @@ ul.o-tw_bb-none{
 	}
 	.quest-form__body{
 		width: 610px;
-		padding: 20px 15px 25px;
+		padding: 20px 20px 25px;
 		background: #eaeaea;
 		color: #000;
 		font-size: 14px;
@@ -524,7 +527,7 @@ ul.o-tw_bb-none{
 	margin-bottom: 10px;
 	label{
 		float: left;
-		width: 200px;
+		width: 190px;
 		span{
 			color: #eb2593;
 		}
@@ -701,7 +704,7 @@ i.border{
 		color: #FFF;
 		font-weight: bold;
 		position: absolute;
-		bottom: 32px;
+		bottom: 37px;
 		left: 0;
 	}
 	.etc{
@@ -827,5 +830,102 @@ i.border{
 		}
 	}
 }
+////////////////////////// PAGE talk_show /////////
+// entry__active-efir
+.entry__active-efir{
+	line-height: 35px;
+	width: 640px;
+	display: inline-block;
+	.entry__active-left{
+		float: left;
+		text-transform: uppercase;
+		font-weight: bold;
+		span{
+			margin-right: 5px;
+			line-height: 41px;
+		}
+	}
+	.wrap-button{
+		float: right;
+	}
+	.wrap-button_red{
+		.button{
+			background: #eb2593;
+			color: #FFF;
+			@include transition(all .3s ease-in-out);
+			&:hover{
+				background: #d52c8a;
+				@include transition(all .3s ease-in-out);
 
-
+			}
+		}
+	}
+}
+//quest-form_alt
+.quest-form_alt{
+	width: 340px;
+	position: absolute;
+	top: 274px;
+	left: 460px;
+	display: none;
+	.quest-form__wrap{
+		width: 380px;
+		background: #FFF;
+		@include border-radius(1px);
+		padding: 20px 30px;
+		@include box-shadow(0 0 6px rgba(0,0,0,.26));
+		position: relative;
+		z-index: 1000;
+	}
+	.quest-form__body{
+		width: 340px;
+		margin-bottom: 20px;
+	}
+	.row{
+		label{
+			width: 75px;
+		}
+		input{
+			width: 240px;
+		}
+		textarea{
+			max-width: 320px;
+		}
+	}
+	.row_captcha{
+		label{
+			width: 115px;
+		}
+		input{
+			width: 63px;
+			border: 1px solid #adadad;
+		}
+		.captcha{
+			font-size: 12px;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	.wrap-button{
+		.button_gr{
+			background: #878787;
+			color: #fff;
+		}
+	}
+	.quest-form__top{
+		padding: 0;
+		color: #221951;
+		font-weight: bold;
+		background: none;
+	}
+	.close{
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		width: 19px;
+		height: 19px;
+		background: url(../img/close.jpg) 0 0 no-repeat;
+	}
+}

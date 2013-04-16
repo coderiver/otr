@@ -1,0 +1,769 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<meta name="viewport" content="width=device-width"/>
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN nav -->
+<div class="nav">
+	<ul>
+		<li><a href="#">ТЕЛЕПРОГРАММА</a></li>
+		<li><a href="#">НОВОСТИ</a></li>
+		<li><a href="#">ТОК-ШОУ</a></li>
+		<li><a href="#">ПРОГРАММЫ</a></li>
+		<li><a href="#">ФОТО</a></li>
+		<li class="nav__select"><a href="#">Делайте ТВ с нами!</a></li>
+		<li class="nav__small"><a href="#">О телеканале</a></li>
+	</ul>
+</div>
+<!-- END nav -->
+
+<div class="wrap-header">
+	<!-- BEGIN header -->
+	<div class="header">
+		<a class="logo" href="#">Общественное телевидение России</a>
+		<form class="search">
+			<input type="text" placeholder="Поиск...">
+			<button type="submit" value=""><span>Поиск</span></button>
+		</form>
+		<!-- BEGIN icons -->
+		<div class="icons">
+			<a href="#"><img src="img/icons/vk.png"></a>
+			<a href="#"><img src="img/icons/fb.png"></a>
+			<a href="#"><img src="img/icons/tw.png"></a>
+			<a href="#"><img src="img/icons/od.png"></a>
+		</div>
+		<!-- END icons -->
+		<!-- BEGIN reg -->
+		<ul class="reg">
+			<li>
+				<a href="#">Регистрация</a>
+				<span class="separator">|</span>
+			</li>
+			<li>
+				<div class="wrap-button">
+					<a href="#" class="button button_gray button__p0-20">Вход</a>
+				</div>
+			</li>
+		</ul>
+		<!-- END reg -->
+		<!-- BEGIN radio -->
+		<a class="radio">
+			<div class="radio__img"></div>
+			<b class="radio__descr">ОТР РАДИО</b>
+		</a>
+		<!-- END radio -->
+	</div>
+	<!-- END header -->
+</div>
+
+<!-- BEGIN conteiner -->
+<div class="conteiner">
+
+	<!-- BEGIN wrap-scrollable -->
+	<div class="wrap-scrollable">
+		<h2>Актуальные темы:</h2>
+		<div class="scrollable">
+			<span class="scrollable__prev"><i></i></span>
+			<span class="scrollable__next"><i></i></span>
+			<div class="scrollable__list">
+				<ul style="width: 1324px; left: 0px;">
+					<li><a href="#">Закон Магнитского</a></li>
+					<li><a href="#">Дело «Оборонсервиса»</a></li>
+					<li><a href="#">Смена папы</a></li>
+					<li><a href="#">ЧС в Минобороны </a></li>
+					<li><a href="#">Лига чемпионов</a></li>
+					<li><a href="#">Закон Магнитского</a></li>
+					<li><a href="#">Дело «Оборонсервиса»</a></li>
+					<li><a href="#">Смена папы</a></li>
+					<li><a href="#">ЧС в Минобороны </a></li>
+					<li><a href="#">Лига чемпионов</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- END wrap-scrollable -->
+
+	<!-- BEGIN l -->
+	<div class="l">
+		<!-- BEGIN entry -->
+		<div class="entry">
+			<h1 class="h1">мы-граждане</h1>
+			<h2 class="h2">Выпуск: СПИСОК МАГНИЦКОГО – ЧТО ДАЛЬШЕ</h2>
+			<div class="entry__active-efir">
+				<div class="entry__active-left">
+					<span>Эфир</span><div class="wrap-button wrap-button_red"><a href="#" class="button button__p0-20"> 07/05/2013 в 12:00</a>
+					</div>
+				</div>
+
+				<div class="wrap-button">
+					<a href="#" class="button button__ico button__ico_alt" id="sent-redactor">Связаться с редактором</a>
+				</div>
+			</div>
+
+
+			<!-- BEGIN quest-form -->
+			<div class="quest-form quest-form_alt">
+				<div class="quest-form__wrap">
+					<div class="quest-form__top">
+						<span>Связаться с редактором</span>
+						<a href="#" class="close"></a>
+					</div>
+					<div class="quest-form__body">
+						<div class="row">
+							<label for="name">Имя:<span>*</span>
+							</label>
+							<input type="text" name="name">
+							<div class="clr"></div>
+						</div>
+						<div class="row">
+							<label for="tel">Телефон<span>*</span>
+							</label>
+							<input type="text" name="tel">
+							<div class="clr"></div>
+						</div>
+						<div class="row">
+							<label for="mail">E-mail<span>*</span>
+							</label>
+							<input type="text" name="mail">
+							<div class="clr"></div>
+						</div>
+						<div class="row">
+							<textarea name="message" cols="30" rows="10"></textarea>
+							<div class="clr"></div>
+						</div>
+						<div class="row row_captcha">
+							<label for="message">Код с картинки<span>*</span>
+							</label>
+							<div class="row_captcha__input">
+								<input type="text" name="message">
+								<a href="#" class="captcha">Обновить</a>
+							</div>
+
+							<img src="img/captcha.jpg" alt="">
+							<div class="clr"></div>
+						</div>
+						<div class="row row_lh15">
+							<div class="row__note">
+								<span>*</span> Все поля обязательны для заполнения
+							</div>
+						</div>
+					</div>
+					<div class="wrap-button">
+						<a href="#" class="button button_gr button__p0-20">Отправить</a>
+					</div>
+				</div>
+			</div>
+			<!-- END quest-form -->
+
+
+
+			<div class="entry__video entry__video_alt">
+				<img src="img/video.jpg" alt="">
+			</div>
+			<div class="entry__social-but">
+				<img src="img/social_but.jpg" alt="">
+			</div>
+
+		</div>
+		<!-- BEGIN entry -->
+
+		<!-- BEGIN wrap -->
+		<div class="wrap wrap_pad2">
+			<div class="title title_2">ОБСУЖДЕНИЕ</div>
+			<!-- comment 1-->
+			<div class="soc-comm">
+				<div class="soc-comm__top">
+					<div class="soc-comm__ico">
+						<img src="img/icons/ico_fb.png" alt="">
+					</div>
+					<a href="#" class="soc-comm__user">Toha</a>
+					<div class="soc-comm__day">
+						<span>2 дня назад</span>
+						<span>#1</span>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="soc-comm__text">
+					Такой двигатель может перевернуть весь мир. Но, вопрос заключается в том, пустят ли его в массовое производство. Слишком много людей участвует в производствах, связанных с поршневыми двигателями внутреннего сгорания.
+				</div>
+			</div>
+			<!-- comment 2-->
+			<div class="soc-comm">
+				<div class="soc-comm__top">
+					<div class="soc-comm__ico">
+						<img src="img/icons/ico_fb.png" alt="">
+					</div>
+					<a href="#" class="soc-comm__user">Toha</a>
+					<div class="soc-comm__day">
+						<span>2 дня назад</span>
+						<span>#1</span>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="soc-comm__text">
+					Кто ж Вам сейчас мешает поставить буржуйку и с диким восторгом крутить динамо машину с педалями?
+				</div>
+			</div>
+			<!-- comment 3-->
+			<div class="soc-comm">
+				<div class="soc-comm__top">
+					<div class="soc-comm__ico">
+						<img src="img/icons/ico_fb.png" alt="">
+					</div>
+					<a href="#" class="soc-comm__user">Toha</a>
+					<div class="soc-comm__day">
+						<span>2 дня назад</span>
+						<span>#1</span>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="soc-comm__text">
+					Такой двигатель может перевернуть весь мир. Но, вопрос заключается в том, пустят ли его в массовое производство. Слишком много людей участвует в производствах, связанных с поршневыми двигателями внутреннего сгорания.
+				</div>
+			</div>
+			<!-- comment 4-->
+			<div class="soc-comm">
+				<div class="soc-comm__top">
+					<div class="soc-comm__ico">
+						<img src="img/icons/ico_fb.png" alt="">
+					</div>
+					<a href="#" class="soc-comm__user">Toha</a>
+					<div class="soc-comm__day">
+						<span>2 дня назад</span>
+						<span>#1</span>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="soc-comm__text">
+					Кто ж Вам сейчас мешает поставить буржуйку и с диким восторгом крутить динамо машину с педалями?
+				</div>
+			</div>
+			<!-- comment 5-->
+			<div class="soc-comm">
+				<div class="soc-comm__top">
+					<div class="soc-comm__ico">
+						<img src="img/icons/ico_fb.png" alt="">
+					</div>
+					<a href="#" class="soc-comm__user">Toha</a>
+					<div class="soc-comm__day">
+						<span>2 дня назад</span>
+						<span>#1</span>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="soc-comm__text">
+					Такой двигатель может перевернуть весь мир. Но, вопрос заключается в том, пустят ли его в массовое производство. Слишком много людей участвует в производствах, связанных с поршневыми двигателями внутреннего сгорания.
+				</div>
+			</div>
+			<div class="wrap-button">
+				<a href="#" class="button button_interview button_mt25">ещё КОММЕНТАРИИ</a>
+			</div>
+			<div class="soc-form">
+				<textarea placeholder="Комментарий"></textarea>
+				<input  type="submit" value="Добавить" class="sub">
+			</div>
+		</div>
+		<!-- END wrap -->
+
+		<!-- BEGIN banners -->
+		<div class="banners">
+			<a href="#">
+				<img src="img/banner1.jpg" alt="">
+			</a>
+			<a href="#">
+				<img src="img/banner2.jpg" alt="">
+			</a>
+		</div>
+		<!-- END banners -->
+
+		<div class="title-with-border">
+			<h2 class="title title_2-2">Все выпуски программы</h2>
+			<i class="border"></i>
+		</div>
+
+		<!-- BEGIN all-news -->
+		<div class="all-news all-news_alt">
+			<!-- item 1 -->
+			<div class="all-news__item">
+				<a href="#" class="item__href">
+					<img src="img/all-news.jpg" alt="">
+					<i class="super-arrow"></i>
+				</a>
+				<div class="meta">
+					<b class="time">20:45</b>
+					<span>Сегодня, Новосибирск</span>
+					<a href="#" class="comments">12</a>
+				</div>
+				<a href="#" class="item__note">
+					Россиянки заняли четвертое место в эстафете на ЧМ по биатлону
+				</a>
+			</div>
+			<!-- item 2 -->
+			<div class="all-news__item">
+				<a href="#" class="item__href">
+					<img src="img/all-news.jpg" alt="">
+					<i class="super-arrow"></i>
+					<b class="ololo-1">от зрителей</b>
+				</a>
+				<div class="meta">
+					<b class="time">20:45</b>
+					<span>Сегодня, Новосибирск</span>
+					<a href="#" class="comments">12</a>
+				</div>
+				<a href="#" class="item__note">
+					Россиянки заняли четвертое место в эстафете на ЧМ по биатлону
+				</a>
+			</div>
+			<!-- item 3 -->
+			<div class="all-news__item">
+				<a href="#" class="item__href">
+					<img src="img/all-news.jpg" alt="">
+					<i class="super-arrow"></i>
+					<b class="ololo-1">от зрителей</b>
+				</a>
+				<div class="meta">
+					<b class="time">20:45</b>
+					<span>Сегодня, Новосибирск</span>
+					<a href="#" class="comments">12</a>
+				</div>
+				<a href="#" class="item__note">
+					Россиянки заняли четвертое место в эстафете на ЧМ по биатлону
+				</a>
+			</div>
+			<!-- item 4 -->
+			<div class="all-news__item">
+				<a href="#" class="item__href">
+					<img src="img/all-news.jpg" alt="">
+					<i class="super-arrow"></i>
+				</a>
+				<div class="meta">
+					<b class="time">20:45</b>
+					<span>Сегодня, Новосибирск</span>
+					<a href="#" class="comments">12</a>
+				</div>
+				<a href="#" class="item__note">
+					Россиянки заняли четвертое место в эстафете на ЧМ по биатлону
+				</a>
+			</div>
+			<!-- item 5 -->
+			<div class="all-news__item">
+				<a href="#" class="item__href">
+					<img src="img/all-news.jpg" alt="">
+					<i class="super-arrow"></i>
+				</a>
+				<div class="meta">
+					<b class="time">20:45</b>
+					<span>Сегодня, Новосибирск</span>
+					<a href="#" class="comments">12</a>
+				</div>
+				<a href="#" class="item__note">
+					Россиянки заняли четвертое место в эстафете на ЧМ по биатлону
+				</a>
+			</div>
+			<!-- item 6 -->
+			<div class="all-news__item">
+				<a href="#" class="item__href">
+					<img src="img/all-news.jpg" alt="">
+					<i class="super-arrow"></i>
+					<b class="ololo-1">от зрителей</b>
+				</a>
+				<div class="meta">
+					<b class="time">20:45</b>
+					<span>Сегодня, Новосибирск</span>
+					<a href="#" class="comments">12</a>
+				</div>
+				<a href="#" class="item__note">
+					Россиянки заняли четвертое место в эстафете на ЧМ по биатлону
+				</a>
+			</div>
+			<div class="wrap-button">
+				<a href="#" class="button">ещё новости</a>
+			</div>
+		</div>
+		<!-- END all-news -->
+	</div>
+	<!-- END l -->
+
+	<!-- BEGIN r -->
+	<div class="r">
+		<!-- BEGIN wrap -->
+		<div class="wrap">
+			<div class="title title_2">В эфире</div>
+			<a href"#" class="wrap__item">
+				<div class="wrap__meta">
+					Ток-шоу: Будет ли война за Арктику?
+				</div>
+				<div class="tw__img">
+					<img src="img/tw.jpg" alt="">
+					<i class="super-arrow super-arrow_tw"></i>
+				</div>
+			</a>
+			<div class="wrap__note">Далее:</div>
+			<div class="anonse">
+				<i class="anonse__date">12-50</i>
+				<a  htrf="#" class="anonse__descr">Ток-шоу: Список Магницкого - что дальше?</a>
+			</div>
+			<div class="anonse">
+				<i class="anonse__date">12-50</i>
+				<a  htrf="#" class="anonse__descr">Ток-шоу: Список Магницкого - что дальше?</a>
+			</div>
+			<div class="wrap-button">
+				<a href="#" class="button button__p0-20">дальше в программе</a>
+			</div>
+		</div>
+		<!-- END wrap -->
+
+		<!-- BEGIN wrap -->
+		<div class="wrap">
+			<div class="micro-news">
+				<div class="title title_2">Главное</div>
+				<a href"#" class="wrap__item">
+					<div class="wrap__meta">
+						20:45 Сегодня, Воронеж
+					</div>
+					<div class="tw__img">
+						<img src="img/some-foto.jpg" alt="">
+						<i class="super-arrow super-arrow_tw"></i>
+					</div>
+				</a>
+				<a class="micro-news__title">
+					Россиянки заняли четвертое место в эстафете на ЧМ по биатлону
+				</a>
+				Отвечает проректор по науке Московского автомобильно-дорожного государственного университета, доктор технических наук, профессор Андрей Иванов
+			</div>
+			<div class="anonse">
+				<i class="anonse__date">12-50 <span>09/03/13</span></i>
+				<b class="anonse__descr anonse__descr anonse__descr_w">Закон Магнитского</b>
+			</div>
+			<div class="anonse">
+				<i class="anonse__date">12-50 <span>09/03/13</span></i>
+				<b class="anonse__descr anonse__descr anonse__descr_w">Борьба с коррупцией</b>
+			</div>
+			<div class="anonse">
+				<i class="anonse__date">12-50 <span>09/03/13</span></i>
+				<b class="anonse__descr anonse__descr anonse__descr_w">Нелегальная миграция</b>
+			</div>
+			<div class="wrap-button">
+				<a href="#" class="button button__p0-20 button_m3-0-5">Все сюжетые</a>
+			</div>
+		</div>
+		<!-- END wrap -->
+
+		<!-- BEGIN wrap -->
+		<div class="wrap wrap_pad">
+			<div class="sexy-title sexy-title_pos">Мы-граждане!</div>
+
+			<div class="qq-preview">
+				<i>Среда 12.12 в 11:30</i>
+				<b>Как стимулировать экономику?</b>
+			</div>
+			<div class="qq-preview">
+				<i>Среда 12.12 в 11:30</i>
+				<b>Что делать с гражданским обществом?</b>
+			</div>
+			<div class="qq-preview">
+				<i>Среда 12.12 в 11:30</i>
+				<b>Как стимулировать экономику?</b>
+			</div>
+		</div>
+		<!-- END wrap -->
+
+		<!-- BEGIN wrap -->
+		<div class="wrap wrap_mb0">
+			<div class="title title_2 title_red">Делайте ТВ с нами!</div>
+			<a href"#" class="wrap__item">
+				<div class="tw__img">
+					<img src="img/tw.jpg" alt="">
+					<i class="super-arrow super-arrow_tw"></i>
+				</div>
+			</a>
+			<div class="wrap__note wrap__note_red">репортаж дня от зрителей:</div>
+			<div class="meta">
+				<b class="time">20:45</b>
+				<span>Сегодня, Новосибирск</span>
+				<a href="#" class="comments">12</a>
+			</div>
+			<a href="#">
+				Россиянки заняли четвертое место в эстафете на ЧМ по биатлону
+			</a>
+		</div>
+		<!-- END wrap -->
+		<!-- BEGIN god-loves-you -->
+		<div class="god-loves-you">
+			<div class="god-loves-you__meta">
+				как это работает
+			</div>
+			<div class="god-loves-you__1">
+				<div class="god-loves-you__circle">
+					<img src="img/icons/ico_video.png" alt="">
+				</div>
+				<div class="god-loves-you__text">
+					Вы присылаете материалы
+				</div>
+				<div class="my__arrow"></div>
+			</div>
+			<div class="god-loves-you__2">
+				<div class="god-loves-you__circle">
+					<img src="img/icons/ico_thumb.png" alt="">
+				</div>
+				<div class="god-loves-you__text">
+					Эксперты ОТР выбирают лучшие
+				</div>
+				<div class="my__arrow"></div>
+			</div>
+			<div class="god-loves-you__3">
+				<div class="god-loves-you__circle god-loves-you__circle_bl">
+					<img src="img/icons/ico_tv.png" alt="">
+				</div>
+				<div class="god-loves-you__text">
+					Материал идет в эфир и на сайт
+				</div>
+			</div>
+			<div class="wrap-button ">
+				<a href="#" class="button button__ico">отправить тексты и видео</a>
+			</div>
+			<div class="god-loves-you__counter">
+				<b>Уже опубликовано материалов от зрителей:</b>
+				<i>247290</i>
+			</div>
+		</div>
+		<!-- END god-loves-you -->
+		<!-- BEGIN wrap -->
+		<div class="wrap">
+			<!-- BEGIN interview -->
+			<div class="interview">
+				<div class="title title_2">опрос</div>
+				<a href="#" class="interview__meta">Предыдущие опросы</a>
+				<h3>Каким вы хотите видеть канал <br>
+					ОТР?
+				</h3>
+				<!-- item 1 -->
+				<div class="itnerview__wrap">
+					<div class="interview__item">
+						<b>Качественные фильмы</b>
+						<span>(33% 233 голосов)</span>
+					</div>
+					<div class="interview__shkala">
+						<div class="interview__active"></div>
+					</div>
+				</div>
+				<!-- item 2 -->
+				<div class="itnerview__wrap">
+					<div class="interview__item">
+						<b>Качественные фильмы</b>
+						<span>(33% 233 голосов)</span>
+					</div>
+					<div class="interview__shkala">
+						<div class="interview__active interview__active2"></div>
+					</div>
+				</div>
+				<!-- item 3 -->
+				<div class="itnerview__wrap">
+					<div class="interview__item">
+						<b>Качественные фильмы</b>
+						<span>(33% 233 голосов)</span>
+					</div>
+					<div class="interview__shkala">
+						<div class="interview__active interview__active3"></div>
+					</div>
+				</div>
+				<!-- item 4 -->
+				<div class="itnerview__wrap">
+					<div class="interview__item">
+						<b>Качественные фильмы</b>
+						<span>(33% 233 голосов)</span>
+					</div>
+					<div class="interview__shkala">
+						<div class="interview__active interview__active4"></div>
+					</div>
+				</div>
+				<!-- item 5 -->
+				<div class="itnerview__wrap">
+					<div class="interview__item">
+						<b>Качественные фильмы</b>
+						<span>(33% 233 голосов)</span>
+					</div>
+					<div class="interview__shkala">
+						<div class="interview__active"></div>
+					</div>
+				</div>
+				<!-- item 6 -->
+				<div class="itnerview__wrap">
+					<div class="interview__item">
+						<b>Качественные фильмы</b>
+						<span>(33% 233 голосов)</span>
+					</div>
+					<div class="interview__shkala">
+						<div class="interview__active"></div>
+					</div>
+				</div>
+				<div class="wrap-button">
+					<a href="#" class="button button_interview">Принять участие в опросе</a>
+				</div>
+			</div>
+			<!-- END interview -->
+		</div>
+		<!-- END wrap -->
+
+		<!-- BEGIN wrap -->
+		<div class="wrap">
+			<div class="social">
+				<a href="#" class="social__button">Facebook</a>
+				<a href="#" class="social__button">вконтакте</a>
+				<a href="#" class="social__button">twitter</a>
+				<div class="title title_2">мы в соцсетях</div>
+				<img src="img/social.jpg" alt="">
+			</div>
+		</div>
+		<!-- END wrap -->
+	</div>
+	<!-- END r -->
+
+	<div class="clr"></div>
+
+	<div class="ss-picture-day">
+		<div class="title title_2 title_pic">фото дня</div>
+		<!-- BEGIN picture-day -->
+		<div class="picture-day">
+
+			<div class="picture-day__items">
+				<!-- item 1 -->
+				<div class="picture-day__item">
+					<a class="picture-day__img">
+						<img src="img/slider_news-2.jpg" alt="">
+					</a>
+					<div class="picture-day__meta">четверг, 12 февраля</div>
+					<a class="picture-day__descr">
+						Европейский парламент выразил разочарование в связи с тем, что  создалась политическая…
+					</a>
+				</div>
+				<!-- item 2 -->
+				<div class="picture-day__item">
+					<a class="picture-day__img">
+						<img src="img/somefoto2.jpg" alt="">
+					</a>
+					<div class="picture-day__meta">четверг, 12 февраля</div>
+					<a class="picture-day__descr">
+						Европейский парламент выразил разочарование в связи с тем, что  создалась политическая…
+					</a>
+				</div>
+				<!-- item 3 -->
+				<div class="picture-day__item">
+					<a class="picture-day__img">
+						<img src="img/banner1.jpg" alt="">
+					</a>
+					<div class="picture-day__meta">четверг, 12 февраля</div>
+					<a class="picture-day__descr">
+						Европейский парламент выразил разочарование в связи с тем, что  создалась политическая…
+					</a>
+				</div>
+				<!-- item 4 -->
+				<div class="picture-day__item">
+					<a class="picture-day__img">
+						<img src="img/all-news.jpg" alt="">
+					</a>
+					<div class="picture-day__meta">четверг, 12 февраля</div>
+					<a class="picture-day__descr">
+						Европейский парламент выразил разочарование в связи с тем, что  создалась политическая…
+					</a>
+				</div>
+				<!-- item 1 -->
+				<div class="picture-day__item">
+					<a class="picture-day__img">
+						<img src="img/slider_news-2.jpg" alt="">
+					</a>
+					<div class="picture-day__meta">четверг, 12 февраля</div>
+					<a class="picture-day__descr">
+						Европейский парламент выразил разочарование в связи с тем, что  создалась политическая…
+					</a>
+				</div>
+				<!-- item 2 -->
+				<div class="picture-day__item">
+					<a class="picture-day__img">
+						<img src="img/somefoto2.jpg" alt="">
+					</a>
+					<div class="picture-day__meta">четверг, 12 февраля</div>
+					<a class="picture-day__descr">
+						Европейский парламент выразил разочарование в связи с тем, что  создалась политическая…
+					</a>
+				</div>
+				<!-- item 3 -->
+				<div class="picture-day__item">
+					<a class="picture-day__img">
+						<img src="img/banner1.jpg" alt="">
+					</a>
+					<div class="picture-day__meta">четверг, 12 февраля</div>
+					<a class="picture-day__descr">
+						Европейский парламент выразил разочарование в связи с тем, что  создалась политическая…
+					</a>
+				</div>
+				<!-- item 4 -->
+				<div class="picture-day__item">
+					<a class="picture-day__img">
+						<img src="img/all-news.jpg" alt="">
+					</a>
+					<div class="picture-day__meta">четверг, 12 февраля</div>
+					<a class="picture-day__descr">
+						Европейский парламент выразил разочарование в связи с тем, что  создалась политическая…
+					</a>
+				</div>
+			</div>
+			<!-- END picture-day -->
+		</div>
+		<div class="picture-day__nav">
+			<a class="picture-day__prew"></a>
+				<div class="wrap-button">
+					<a href="#" class="button button__scroll">прислать свое фото</a>
+				</div>
+			<a class="picture-day__next"></a>
+		</div>
+		<!-- END picture-day -->
+	</div>
+</div>
+<!-- END conteiner -->
+
+<!-- BEGIN footer -->
+<div class="wrap-footer">
+	<div class="footer">
+		<ul class="seconary-nav">
+			<li><a href="#">О нас</a></li>
+			<li><a href="#">Пресса</a></li>
+			<li><a href="#">Контакты</a></li>
+			<li><a href="#">Первые лица </a></li>
+			<li><a href="#">Общественный совет</a></li>
+		</ul>
+		<!-- BEGIN footer__feft -->
+		<div class="footer__left">
+			<a href="#" class="footer__logo">Общественное телевидение России</a>
+			<p>&copy; 2012-2013 АНО «Общественное телевидение России»<br>
+			Свидетельство о регистрации средства массовой информации ЭЛ №
+
+			ФС 77 - 51750</p>
+
+			<p>Любое использование материалов допускается только с согласия редакции.</p>
+		</div>
+		<!-- END footer__feft -->
+		<!-- BEGIN footer__right -->
+		<div class="footer__right">
+			<div>
+				Адрес редакции:
+				<b>127427, Москва, Ул. Академика Королёва, 19</b>
+			</div>
+			<div>
+				Телефон редакции:
+				<b>+7 (495) 000-00-00</b>
+			</div>
+		</div>
+		<!-- END footer__right -->
+	</div>
+</div>
+<!-- END footer -->
+</body>
+</html>

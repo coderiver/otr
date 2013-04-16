@@ -447,6 +447,17 @@ ul.list-news{
 		content: "";
 	}
 }
+.all-news_alt{
+	&:before{
+		position: absolute;
+		width: 640px;
+		height: 1px;
+		background: none;
+		top: 0;
+		left: 0;
+		content: "";
+	}
+}
 .all-news_bt-none{
 	padding: 0px;
 	&:before{

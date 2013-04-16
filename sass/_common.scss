@@ -263,7 +263,7 @@ a{
 		@include transition(all .3s ease-in-out);
 		&:hover{
 			text-decoration: none;
-			background: #55b8e7;
+			background-color: #55b8e7;
 			@include transition(all .3s ease-in-out);
 		}
 	}
@@ -288,6 +288,9 @@ a{
 		background: url(../img/ico_mess.png) 11px 12px no-repeat #8dd2f5;
 		line-height: 34px;
 		color: #221952;
+	}
+	.button__ico_alt{
+		background: url(../img/ico_mess2.png) 13px 11px no-repeat #8dd2f5;
 	}
 	.button_gray{
 		background: #c7c7c7;
