@@ -165,7 +165,11 @@
 		vertical-align: top;
 		font: 0/0 a;
 	}
-
+	.wrap-button{
+		position: relative;
+		top: -6px;
+		right: 0;
+	}
 }
 .separator{
 	padding: 0 0px 0 8px;
@@ -203,7 +207,7 @@
 .icons{
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 34px 0 14px;
+	margin: 0 15px;
 	a{
 		display: inline-block;
 		vertical-align: middle;
@@ -229,9 +233,9 @@ ul.reg{
 }
 .radio{
 	display: inline-block;
-	position: relative;
-	top: -7px;
-	left: 47px;
+	position: absolute;
+	top: 10px;
+	right: 95px;
 	cursor: pointer;
 	.radio__img{
 		@include sized-sprite($icons, "vol");

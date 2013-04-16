@@ -302,6 +302,9 @@ a{
 .wrap-button_dib{
 	display: inline-block;
 }
+.header div.wrap-button_alt{
+	top: 0;
+}
 .button_tl{
 	text-align: left;
 }
@@ -344,13 +347,13 @@ a{
 	position: absolute;
 	top: 10px;
 	left: 0;
-	@include box-shadow(0px 3px 0 rgba(0,0,0,.25));
+	@include box-shadow(0px 3px 0 rgba(0,0,0,.51));
 	&:after{
 		content: "";
-		@include sized-sprite($icons, ololo-border4);
+		@include sized-sprite($icons, ololo-border);
 		position: absolute;
 		top: 0;
-		right: -10px;
+		right: -11px;
 	}
 }
 .foto-user .ololo-1_big{
