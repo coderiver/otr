@@ -40,7 +40,6 @@
 		}
 		&:hover{
 			background: #868686;
-			@include transition(all .3s ease-in-out);
 			cursor: pointer;
 		}
 	}
@@ -65,7 +64,7 @@
 		}
 		&:hover{
 			background: #868686;
-			@include transition(all .3s ease-in-out);
+			cursor: pointer;
 		}
 	}
 	.scrollable__list {
@@ -91,7 +90,7 @@
 			background-color: #8dd2f5;
 			&:hover{
 				background-color: #221952;
-				@include transition(all .3s ease-in-out);
+				@include transition(all .2s ease-in-out);
 			}
 			&:active{
 				background: #221952;

@@ -260,10 +260,11 @@ a{
 		display: inline-block;
 		padding: 0 40px;
 		font-weight: bold;
+		@include transition(all .3s ease-in-out);
 		&:hover{
-			background-color: #c5e6f7;
+			text-decoration: none;
+			background: #55b8e7;
 			@include transition(all .3s ease-in-out);
-
 		}
 	}
 	.button__p0-20{
@@ -343,7 +344,7 @@ a{
 	position: absolute;
 	top: 10px;
 	left: 0;
-	@include box-shadow(2px 3px 0 rgba(0,0,0,.41));
+	@include box-shadow(0px 3px 0 rgba(0,0,0,.41));
 	&:after{
 		content: "";
 		@include sized-sprite($icons, ololo-border);
@@ -511,4 +512,7 @@ i.letter{
 }
 .mar25-0-15{
 	margin: 25px 0 15px !important;
+}
+.mt15{
+	margin-top: 15px;
 }

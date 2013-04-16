@@ -45,8 +45,8 @@ a:hover { text-decoration: underline; }
 .meta a.comments:before { content: ""; background: url('../img/icons-s0201fcd806.png') 0 -1188px no-repeat; width: 10px; height: 10px; display: inline-block; padding-right: 3px; vertical-align: middle; }
 
 .wrap-button { text-align: center; }
-.wrap-button .button { height: 27px; line-height: 27px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background-color: #8dd2f5; color: #000; font-size: 11px; text-transform: uppercase; display: inline-block; padding: 0 40px; font-weight: bold; }
-.wrap-button .button:hover { background-color: #c5e6f7; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.wrap-button .button { height: 27px; line-height: 27px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background-color: #8dd2f5; color: #000; font-size: 11px; text-transform: uppercase; display: inline-block; padding: 0 40px; font-weight: bold; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.wrap-button .button:hover { text-decoration: none; background: #55b8e7; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .wrap-button .button__p0-20 { padding: 0 20px; }
 .wrap-button .button_m3-0-5 { margin: 5px 0 3px; }
 .wrap-button .button_mt19 { margin-top: 19px; }
@@ -67,7 +67,7 @@ a:hover { text-decoration: underline; }
 .anonse .anonse__descr:hover { text-decoration: underline; }
 .anonse .anonse__descr_w { width: auto; }
 
-.ololo-1 { height: 20px; line-height: 20px; padding: 0 3px 0 5px; background-color: #a3cbe9; color: #221952; position: absolute; top: 10px; left: 0; -webkit-box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.41); -moz-box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.41); box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.41); }
+.ololo-1 { height: 20px; line-height: 20px; padding: 0 3px 0 5px; background-color: #a3cbe9; color: #221952; position: absolute; top: 10px; left: 0; -webkit-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); -moz-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); }
 .ololo-1:after { content: ""; background: url('../img/icons-s0201fcd806.png') 0 -1110px no-repeat; width: 11px; height: 23px; position: absolute; top: 0; right: -11px; }
 
 .foto-user .ololo-1_big { top: 30px; height: 26px; font-size: 14px; text-transform: uppercase; position: absolute; line-height: 27px; -webkit-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); -moz-box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.41); }
@@ -131,6 +131,8 @@ i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-re
 
 .mar25-0-15 { margin: 25px 0 15px !important; }
 
+.mt15 { margin-top: 15px; }
+
 /*  layout */
 .l { width: 640px; float: left; /*  */ }
 .l .l-col1 { float: left; width: 20%; }
@@ -169,7 +171,7 @@ i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-re
 
 .ololo-1_slider { top: 5px; }
 
-.foto-user__meta_slider { top: 8px; }
+.foto-user__meta_slider { top: 8px; right: 0; }
 
 .perquisition { margin-bottom: 40px; }
 .perquisition .h2 { width: 640px; padding-bottom: 5px; margin-bottom: 12px; display: inline-block; border-bottom: 1px solid #dcdcdc; font-size: 18px; font-weight: bold; color: #221952; text-transform: uppercase; }
@@ -321,6 +323,18 @@ i.border { display: inline-block; width: 640px; background-color: #dddddd; heigh
 
 .foto-meta_slider { margin-top: 25px; margin-right: 30px; }
 
+.photo-more { width: 580px; margin: 15px 30px; padding: 0; position: relative; }
+.photo-more:hover { cursor: pointer; }
+.photo-more .photo-more__items { width: 2000em; }
+.photo-more .photo-more__item img { max-width: 580px; vertical-align: middle; }
+
+.photo-more__navi .photo-more__prew, .photo-more__navi .photo-more__next { height: 103px; width: 20px; background: #78c9f0; position: absolute; top: 111px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; display: block; }
+.photo-more__navi .photo-more__prew:hover, .photo-more__navi .photo-more__next:hover { -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; background: #55b8e7; }
+.photo-more__navi .photo-more__prew { left: -30px; }
+.photo-more__navi .photo-more__prew:after { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 6.5px 8px 6.5px 0; border-color: transparent #fff transparent transparent; position: absolute; top: 45px; right: 7px; }
+.photo-more__navi .photo-more__next { right: -30px; }
+.photo-more__navi .photo-more__next:after { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 6.5px 0 6.5px 8px; border-color: transparent transparent transparent #fff; position: absolute; top: 45px; left: 7px; }
+
 /* NAV */
 .nav { width: 100%; background: #221952; position: relative; }
 .nav ul { width: 970px; margin: 0 auto; list-style: none; overflow: hidden; }
@@ -401,14 +415,14 @@ ul.seconary-nav li a:hover { text-decoration: underline; }
 .scrollable { overflow: hidden; }
 .scrollable .scrollable__prev { position: relative; float: left; width: 20px; height: 27px; border-radius: 3px; background: #d5d5d5; z-index: 10; }
 .scrollable .scrollable__prev i { width: 0px; height: 0px; border-style: solid; border-width: 6.5px 8px 6.5px 0; border-color: transparent #fff transparent transparent; position: absolute; top: 8px; right: 7px; }
-.scrollable .scrollable__prev:hover { background: #868686; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; cursor: pointer; }
+.scrollable .scrollable__prev:hover { background: #868686; cursor: pointer; }
 .scrollable .scrollable__next { position: relative; float: right; width: 20px; height: 27px; border-radius: 3px; background: #d5d5d5; z-index: 10; cursor: pointer; }
 .scrollable .scrollable__next i { width: 0px; height: 0px; border-style: solid; border-width: 6.5px 0 6.5px 8px; border-color: transparent transparent transparent #fff; position: absolute; top: 8px; left: 8px; }
-.scrollable .scrollable__next:hover { background: #868686; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.scrollable .scrollable__next:hover { background: #868686; cursor: pointer; }
 .scrollable .scrollable__list { position: relative; height: 27px; margin: 0 22px; overflow: hidden; }
 .scrollable .scrollable__list ul { position: absolute; top: 0; left: 0; width: 2000px; white-space: nowrap; list-style: none; }
 .scrollable .scrollable__list li { height: 27px; line-height: 27px; margin-right: 2px; float: left; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background-color: #8dd2f5; }
-.scrollable .scrollable__list li:hover { background-color: #221952; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.scrollable .scrollable__list li:hover { background-color: #221952; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 .scrollable .scrollable__list li:active { background: #221952; }
 .scrollable .scrollable__list li a { padding: 0px 13px; display: block; color: #221952; font-weight: bold; text-decoration: none; }
 .scrollable .scrollable__list li a:hover { color: #fff; }
