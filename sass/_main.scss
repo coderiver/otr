@@ -760,16 +760,26 @@ i.border{
 // photo-more
 .photo-more{
 	width: 580px;
+	height: 330px;
 	margin: 15px 30px;
 	padding: 0;
 	position: relative;
 	&:hover{
 		cursor: pointer;
 	}
+	.photo-more__wrap{
+		width: 580px;
+		height: 400px;
+		position: relative;
+		overflow: hidden;
+	}
 	.photo-more__items{
 		width: 2000em;
+		position: absolute;
 	}
 	.photo-more__item{
+		display: inline-block;
+		position: relative;
 		img{
 			max-width: 580px;
 			vertical-align: middle;

@@ -25,6 +25,14 @@ $.fn.scrollableAddClones = function(addItems) {
 
 $(document).ready(function() {
 
+    // scrollable 2
+    $('.photo-more').scrollable({
+        items: '.photo-more__items',
+        next:'.photo-more__next',
+        prev:'.photo-more__prew',
+        circular:true
+    });
+
 	// scrollable
 	$('.picture-day').scrollable({
 		next:'.picture-day__next',
@@ -50,12 +58,11 @@ $(document).ready(function() {
     //       jQuery(".test1").css("display","none");
     //    });
 
-
 //tape
 function tape_move() {
     var parent = $('.scrollable__list').width();
     var el = $('.scrollable__list ul');
-    var item = $('.scrollable__list ul li');   
+    var item = $('.scrollable__list ul li');
     var el_width = 0;
     item.each(function() {
         el_width += $(this).width() + 2;
@@ -63,14 +70,14 @@ function tape_move() {
     })
     var max_pos = el_width - parent;
     el.css('width', el_width + 'px');
-    $('.scrollable__next').hover(function() {        
+    $('.scrollable__next').hover(function() {
         var left = el.position().left;
         el.animate({left: -max_pos}, 1000);
     },
     function() {
         el.stop();
     });
-    $('.scrollable__prev').hover(function() {        
+    $('.scrollable__prev').hover(function() {
         var left = el.position().left;
         el.animate({left: 0}, 1000);
     },
@@ -115,7 +122,7 @@ function slider_news() {
     $('.list-news li').click(function(){
         $('.list-news li').removeClass("is-active");
         $(this).addClass("is-active");
-        
+
                 var img = $('.list-news .is-active').children(".list-news__img").html();
                 var text = $('.list-news .is-active').children(".list-news__body").html();
                 $('.super-news__img').html(img);
