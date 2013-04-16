@@ -165,7 +165,7 @@ i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-re
 .foto-user .foto-user__img img { max-width: 576px; vertical-align: middle; }
 .foto-user .foto-user__img_slider { width: 580px; }
 .foto-user .foto-user__img_slider:hover { cursor: pointer; }
-.foto-user .foto-user__img_average { width: 420px; height: 294px; }
+.foto-user .foto-user__img_average { width: 420px; height: 294px; display: block; }
 .foto-user .foto-user__img_average img { max-width: 420px; min-height: 294px; }
 .foto-user .foto-user__img_average img:hover { cursor: pointer; }
 
@@ -315,10 +315,12 @@ i.border { display: inline-block; width: 640px; background-color: #dddddd; heigh
 .foto-user__general .wrap__meta { width: 94%; padding: 0 3%; font-size: 12px; line-height: 1.4; background: rgba(0, 10, 57, 0.4); color: #FFF; font-weight: bold; position: absolute; bottom: 37px; left: 0; }
 .foto-user__general .etc { position: static; }
 
-.Photo-Album { width: 199px; height: 165px; position: relative; float: right; margin: 0px 20px 0px 0px; }
-.Photo-Album img { height: 133px; width: 199px; display: inline-block; }
-.Photo-Album img:hover { cursor: pointer; }
-.Photo-Album .wrap__meta { width: 94%; padding: 0 3%; font-size: 12px; line-height: 1.4; background: rgba(0, 10, 57, 0.4); color: #FFF; font-weight: bold; position: absolute; bottom: 32px; left: 0; }
+.photo-album { display: block; }
+.photo-album img { height: 133px; width: 199px; display: inline-block; }
+.photo-album img:hover { cursor: pointer; }
+.photo-album .wrap__meta { width: 94%; padding: 0 3%; font-size: 12px; line-height: 1.4; background: rgba(0, 10, 57, 0.4); color: #FFF; font-weight: bold; position: absolute; bottom: 32px; left: 0; }
+
+.photo-album-wrap { width: 199px; height: 165px; position: relative; float: right; margin: 0px 20px 0px 0px; }
 
 .etc .meta { padding: 0px 0 12px; float: left; }
 .etc .count { float: right; font-size: 11px; color: #777; }

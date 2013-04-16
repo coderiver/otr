@@ -97,6 +97,7 @@
 	.foto-user__img_average{
 		width: 420px;
 		height: 294px;
+		display: block;
 		img{
 			max-width: 420px;
 			min-height: 294px;
@@ -711,12 +712,8 @@ i.border{
 		position: static;
 	}
 }
-.Photo-Album{
-	width: 199px;
-	height: 165px;
-	position: relative;
-	float: right;
-	margin: 0px 20px 0px 0px;
+.photo-album{
+	display: block;
 	img{
 		height: 133px;
 		width: 199px;
@@ -737,6 +734,13 @@ i.border{
 		bottom: 32px;
 		left: 0;
 	}
+}
+.photo-album-wrap{
+	width: 199px;
+	height: 165px;
+	position: relative;
+	float: right;
+	margin: 0px 20px 0px 0px;
 }
 .etc{
 	.meta{
