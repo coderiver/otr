@@ -176,7 +176,7 @@ function slider_news() {
         }
     });
 
-    //
+    // change lang
     $('.programm__lang_eng').click(function() {
         $(".programm__abc_eng").css("display", "block");
         $(".programm__abc_ru").css("display", "none");

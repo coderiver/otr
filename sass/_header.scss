@@ -218,6 +218,30 @@
 		display: inline-block;
 		vertical-align: middle;
 	}
+	.vk{
+		@include sized-sprite($icons, "vk");
+		&:hover{
+			@include sized-sprite($icons, "vk_hover");
+		}
+	}
+	.fb{
+		@include sized-sprite($icons, "fb");
+		&:hover{
+			@include sized-sprite($icons, "fb_hover");
+		}
+	}
+	.tw{ 
+		@include sized-sprite($icons, "tw");
+		&:hover{
+			@include sized-sprite($icons, "tw_hover");
+		}
+	}
+	.od{
+		@include sized-sprite($icons, "od");
+		&:hover{
+			@include sized-sprite($icons, "od_hover");
+		}
+	}
 }
 ul.reg{
 	display: inline-block;
