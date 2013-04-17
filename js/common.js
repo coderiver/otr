@@ -154,7 +154,37 @@ function slider_news() {
     //    $(".js-select-prog").text(text);
     // });
 
+    // add\remove onClick class "active"
+    $('.programm__lang').click(function(){
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        }
+        else {
+            $('.programm__lang').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
 
+    // add\remove onClick class "active"
+    $('.programm__menu a').click(function(){
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        }
+        else {
+            $('.programm__menu a').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
+    //
+    $('.programm__lang_eng').click(function() {
+        $(".programm__abc_eng").css("display", "block");
+        $(".programm__abc_ru").css("display", "none");
+    });
+    $('.programm__lang_ru').click(function() {
+        $(".programm__abc_eng").css("display", "none");
+        $(".programm__abc_ru").css("display", "block");
+    });
 
 }
 slider_news();
