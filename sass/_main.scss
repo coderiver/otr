@@ -895,6 +895,25 @@ i.border{
 		}
 	}
 }
+dl{
+	margin: 10px 0;
+	@extend %clr;
+	dt{
+		color: #eb2593;
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 100px;
+		float: left;
+	}
+	dd{
+		margin-left: 100px;
+		i{
+			font-style: normal;
+			color: #707070;
+		}
+	}
+
+}
 //quest-form_alt
 .quest-form_alt{
 	width: 340px;
@@ -983,8 +1002,10 @@ i.border{
 			margin-left: 7px;
 			float: left;
 			background: #eaeaea;
+			@include transition(all .1s ease-in-out);
 			&:hover{
 				background: #8dd2f5;
+				@include transition(all .1s ease-in-out);
 			}
 			&:first-child{
 				margin-left: 0px;
