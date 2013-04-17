@@ -131,12 +131,31 @@ function slider_news() {
         clearInterval(cycle); // stop cycle on click
     });
 
+    // for quest-form_alt
     $('#sent-redactor').click(function() {
         $(".quest-form_alt").css("display", "block");
     });
     $('.close').click(function() {
         $(".quest-form_alt").css("display", "none");
     });
+
+    // for select
+    $(".js-select-prog__select").change(function(){
+        var text = $(this).val();
+        $(".js-select-prog").text(text);
+    });
+    // for select selected
+    var text = $(".js-select-prog__select").val();
+    $(".js-select-prog").text(text);
+
+    // for select selected in cycle  (does not work)
+    // $(".js-select-prog__select").each(function(){
+    //   var text = $(this).val();
+    //    $(".js-select-prog").text(text);
+    // });
+
+
+
 }
 slider_news();
 
