@@ -681,6 +681,10 @@ i.border{
 		}
 	}
 }
+.tw-show_alt{
+	width: 510px;
+	margin-left: 30px;
+}
 .tw-show__item_gr{
 	color: #787878;
 	.tw-show__time{
@@ -957,5 +961,64 @@ i.border{
 		width: 19px;
 		height: 19px;
 		background: url(../img/close.jpg) 0 0 no-repeat;
+	}
+}
+/////////////	page SHEDULE ///////////////
+
+//tabs
+.wrap-tabs{
+	width: 476px;
+	margin-top: 35px;
+	padding: 0 30px;
+	position: relative;
+	border-bottom: 4px solid #eaeaea;
+	ul.tabs{
+		list-style: none;
+		@extend %clr;
+		li{
+			width: 62px;
+			height: 27px;
+			padding: 6px 0 4px;
+			@include border-radius(3px 3px 0 0);
+			margin-left: 7px;
+			float: left;
+			background: #eaeaea;
+			&:hover{
+				background: #8dd2f5;
+			}
+			&:first-child{
+				margin-left: 0px;
+			}
+		}
+		a{
+			font-size: 11px;
+			color: #000;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+			&:hover{
+				text-decoration: none;
+				color: #221952;
+			}
+		}
+	}
+	.tabs__prew, .tabs__next{
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		position: absolute;
+		top: 11px;
+		display: block;
+	}
+	.tabs__prew{
+		border-width: 6.5px 8px 6.5px 0;
+		border-color: transparent #7d8081 transparent transparent ;
+		left: 6px;
+	}
+	.tabs__next{
+		border-width: 6.5px 0 6.5px 8px;
+		border-color: transparent transparent transparent #7d8081;
+		right: 6px;
+
 	}
 }
