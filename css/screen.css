@@ -51,6 +51,8 @@ a:hover { text-decoration: underline; }
 .wrap-button { text-align: center; }
 .wrap-button .button { height: 27px; line-height: 27px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background-color: #8dd2f5; color: #000; font-size: 11px; text-transform: uppercase; display: inline-block; padding: 0 40px; font-weight: bold; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .wrap-button .button:hover { text-decoration: none; background-color: #55b8e7; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.wrap-button .button_fill-form { height: 27px; line-height: 27px; padding: 0 20px; display: inline-block; background: #c7c7c7; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; font-size: 11px; font-weight: bold; color: #000; }
+.wrap-button .button_fill-form:hover { text-decoration: none; background: #868686; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .wrap-button .button__p0-20 { padding: 0 20px; }
 .wrap-button .button_m3-0-5 { margin: 5px 0 3px; }
 .wrap-button .button_mt19 { margin-top: 19px; }
@@ -60,6 +62,7 @@ a:hover { text-decoration: underline; }
 .wrap-button .button__ico_alt { background: url(../img/ico_mess2.png) 13px 11px no-repeat #8dd2f5; }
 .wrap-button .button_gray { background: #c7c7c7; color: #fff; font-weight: bold; }
 .wrap-button .button_gray:hover { background: #868686; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.wrap-button .button_gray-color { color: #000; }
 
 .wrap-button_dib { display: inline-block; }
 
@@ -130,6 +133,8 @@ i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-re
 
 .fl_l { float: left; }
 
+.fl_r { float: right; }
+
 .bb_none { border-bottom: none !important; }
 
 .pt10 { padding-top: 10px !important; }
@@ -139,6 +144,12 @@ i.letter { width: 16px; height: 10px; background: url(../img/ico_mess.png) no-re
 .mar25-0-15 { margin: 25px 0 15px !important; }
 
 .mt15 { margin-top: 15px; }
+
+ul.super-list { list-style: none; }
+ul.super-list li { color: #000; text-transform: none; font-weight: normal; position: relative; margin-left: 14px; margin-bottom: 5px; }
+ul.super-list li:before { content: ""; display: inline-block; height: 6px; width: 6px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background: #eb2593; position: absolute; top: 6px; left: -12px; }
+
+.uppercase { text-transform: uppercase; }
 
 dl, .wrap-tabs ul.tabs { *zoom: 1; }
 dl:before, .wrap-tabs ul.tabs:before, dl:after, .wrap-tabs ul.tabs:after { content: " "; display: table; }
@@ -174,7 +185,7 @@ dl:after, .wrap-tabs ul.tabs:after { clear: both; }
 
 .foto-user { padding: 15px 0 20px; border-bottom: 1px solid #dcdcdc; position: relative; }
 .foto-user .foto-user__img { width: 640px; overflow: hidden; margin-bottom: 10px; }
-.foto-user .foto-user__img img { max-width: 576px; vertical-align: middle; }
+.foto-user .foto-user__img img { max-width: 640px; vertical-align: middle; }
 .foto-user .foto-user__img_slider { width: 580px; }
 .foto-user .foto-user__img_slider:hover { cursor: pointer; }
 .foto-user .foto-user__img_average { width: 420px; height: 294px; display: block; }
@@ -284,7 +295,7 @@ ul.o-tw_bb-none li a.sel { background: #FFF; }
 .row input, .row textarea { width: 390px; padding: 0 10px; height: 27px; border: none; float: right; }
 .row textarea { min-height: 110px; max-width: 390px; padding: 10px; }
 
-.row_captcha .row_captcha__input { display: inline-block; position: relative; vertical-align: top; margin-right: 15px; }
+.row_captcha .row_captcha__input { display: inline-block; position: relative; vertical-align: top; margin-right: 15px; margin-left: 10px; }
 .row_captcha .row_captcha__input input { margin-bottom: 1px; }
 .row_captcha input { width: 88px; float: left; }
 .row_captcha a.captcha { position: absolute; top: 30px; right: 0px; color: #eb2593; }
@@ -383,6 +394,7 @@ dl dd i { font-style: normal; color: #707070; }
 .quest-form_alt .row_captcha input { width: 63px; border: 1px solid #adadad; }
 .quest-form_alt .row_captcha .captcha { font-size: 12px; text-decoration: underline; }
 .quest-form_alt .row_captcha .captcha:hover { text-decoration: none; }
+.quest-form_alt .row_captcha .row_captcha__input { margin-left: 0; }
 .quest-form_alt .wrap-button .button_gr { background: #878787; color: #fff; }
 .quest-form_alt .quest-form__top { padding: 0; color: #221951; font-weight: bold; background: none; }
 .quest-form_alt .close { position: absolute; top: 20px; right: 30px; width: 19px; height: 19px; background: url(../img/close.jpg) 0 0 no-repeat; }
@@ -429,6 +441,11 @@ dl dd i { font-style: normal; color: #707070; }
 
 .login-form__od { position: relative; right: 20px; margin-right: 0; }
 
+.entry .s-list { margin-top: 15px; margin-bottom: 25px; padding: 25px 15px; }
+.entry .s-list .s-list__title { text-transform: uppercase; color: #221951; font-weight: bold; margin-bottom: 13px; }
+
+.quest-form_alt2 { margin: 0 0 25px; }
+
 dl, .wrap-tabs ul.tabs { *zoom: 1; }
 dl:before, .wrap-tabs ul.tabs:before, dl:after, .wrap-tabs ul.tabs:after { content: " "; display: table; }
 dl:after, .wrap-tabs ul.tabs:after { clear: both; }
@@ -467,6 +484,9 @@ dl:after, .wrap-tabs ul.tabs:after { clear: both; }
 .header .logo { background: url('../img/icons-s8a1707999f.png') 0 -193px no-repeat; width: 212px; height: 51px; margin-right: 55px; display: inline-block; vertical-align: top; font: 0/0 a; }
 .header .wrap-button { position: relative; top: -6px; }
 .header #enter { left: -6px; }
+.header .user-logged { width: 310px; display: inline-block; }
+.header .user-logged .user-logged__name { width: 155px; margin-left: 10px; float: left; color: #221952; }
+.header .user-logged .user-logged__button { float: right; }
 
 .separator { padding: 0 0px 0 8px; }
 

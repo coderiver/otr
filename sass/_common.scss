@@ -267,7 +267,23 @@ a{
 			@include transition(all .3s ease-in-out);
 		}
 	}
-
+	.button_fill-form{
+		height: 27px;
+		line-height: 27px;
+		padding: 0 20px;
+		display: inline-block;
+		background: #c7c7c7;
+		@include border-radius(4px);
+		@include transition(all .3s ease-in-out);
+		font-size: 11px;
+		font-weight: bold;
+		color: #000;
+		&:hover{
+			text-decoration: none;
+			background: #868686;
+			@include transition(all .3s ease-in-out);
+		}
+	}
 	.button__p0-20{
 		padding: 0 20px;
 	}
@@ -301,6 +317,9 @@ a{
 			background: #868686;
 			@include transition(all .3s ease-in-out);
 		}
+	}
+	.button_gray-color{
+		color: #000;
 	}
 }
 .wrap-button_dib{
@@ -508,6 +527,9 @@ i.letter{
 .fl_l{
 	float: left;
 }
+.fl_r{
+	float: right;
+}
 .bb_none{
 	border-bottom: none !important;
 }
@@ -522,4 +544,29 @@ i.letter{
 }
 .mt15{
 	margin-top: 15px;
+}
+ul.super-list{
+	list-style: none;
+	li{
+		color: #000;
+		text-transform: none;
+		font-weight: normal;
+		position: relative;
+		margin-left: 14px;
+		margin-bottom: 5px;
+		&:before{
+			content: "";
+			display: inline-block;
+			height: 6px;
+			width: 6px;
+			@include border-radius(3px);
+			background: #eb2593;
+			position: absolute;
+			top: 6px;
+			left: -12px;
+		}
+	}
+}
+.uppercase{
+	text-transform: uppercase;
 }

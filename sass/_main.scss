@@ -84,7 +84,7 @@
 		overflow: hidden;
 		margin-bottom: 10px;
 		img{
-			max-width: 576px;
+			max-width: 640px;
 			vertical-align: middle;
 		}
 	}
@@ -578,6 +578,7 @@ ul.o-tw_bb-none{
 		position: relative;
 		vertical-align: top;
 		margin-right: 15px;
+		margin-left: 10px;
 		input{
 			margin-bottom: 1px;
 		}
@@ -959,6 +960,9 @@ dl{
 				text-decoration: none;
 			}
 		}
+		.row_captcha__input{
+			margin-left: 0;
+		}
 	}
 	.wrap-button{
 		.button_gr{
@@ -1178,4 +1182,23 @@ dl{
 	position: relative;
 	right: 20px;
 	margin-right: 0;
+}
+/////////////	page WORK ///////////////
+
+// s-list
+.entry{
+	.s-list{
+		margin-top: 15px;
+		margin-bottom: 25px;
+		padding: 25px 15px;
+		.s-list__title{
+			text-transform: uppercase;
+			color: #221951;
+			font-weight: bold;
+			margin-bottom: 13px;
+		}
+	}
+}
+.quest-form_alt2{
+	margin: 0 0 25px;
 }

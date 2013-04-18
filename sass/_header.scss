@@ -178,6 +178,19 @@
 	#enter{
 		left: -6px;
 	}
+	.user-logged{
+		width: 310px;
+		display: inline-block;
+		.user-logged__name{
+			width: 155px;
+			margin-left: 10px;
+			float: left;
+			color: #221952;
+		}
+		.user-logged__button{
+			float: right;
+		}
+	}
 }
 .separator{
 	padding: 0 0px 0 8px;
