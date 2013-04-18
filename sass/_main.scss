@@ -522,7 +522,7 @@ ul.o-tw_bb-none{
 
 /////////////////// * page FAQ  *////////////
 
-// quest-form
+
 .quest-form{
 	margin: 20px 0 25px;
 
@@ -869,7 +869,6 @@ i.border{
 .entry__active-efir{
 	line-height: 35px;
 	width: 640px;
-	display: inline-block;
 	.entry__active-left{
 		float: left;
 		text-transform: uppercase;
@@ -896,7 +895,7 @@ i.border{
 	}
 }
 dl{
-	margin: 10px 0;
+	margin: 7px 0;
 	@extend %clr;
 	dt{
 		color: #eb2593;
@@ -917,9 +916,7 @@ dl{
 //quest-form_alt
 .quest-form_alt{
 	width: 340px;
-	position: absolute;
-	top: 274px;
-	left: 460px;
+	position: relative;
 	display: none;
 	.quest-form__wrap{
 		width: 380px;
@@ -927,8 +924,10 @@ dl{
 		@include border-radius(1px);
 		padding: 20px 30px;
 		@include box-shadow(0 0 6px rgba(0,0,0,.26));
-		position: relative;
 		z-index: 1000;
+		position: absolute;
+		top: 10px;
+		right: -365px;
 	}
 	.quest-form__body{
 		width: 340px;
@@ -1042,4 +1041,88 @@ dl{
 		right: 6px;
 
 	}
+}
+/////////////	page LOGIN ///////////////
+
+// login-form
+.login-form{
+	position: relative;
+	.login-form__wrap{
+		width: 470px;
+		position: absolute;
+		top: -90px;
+		right: 255px;
+		z-index: 1000;
+		padding: 20px 35px 35px;
+	}
+	.login-form__body{
+		margin: 10px 0 20px;
+		padding: 20px 20px 25px;
+		background: #eaeaea;
+		color: #000;
+		font-size: 14px;
+	}
+	.login-form__top{
+		padding: 0;
+		color: #000;
+		font-weight: bold;
+		background: none;
+		display: inline-block;
+		font-size: 11px;
+		@include border-radius(3px);
+		.login-form__enter{
+			text-transform: uppercase;
+			color: #221951;
+		}
+		.login-form__topper{
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+		.login-form__ico{
+			margin-top: 15px;
+			margin-bottom: 25px;
+			font-size: 14px;
+			font-weight: normal;
+			text-align: center;
+			.login-form__fb-ico,.login-form__tw-ico,.login-form__g-ico,.login-form__vk-ico,.login-form__od-ico{
+				@include transition(all .2s ease-in-out);
+				margin: 0px auto 5px;
+				&:hover{
+					opacity: 0.8;
+					cursor: pointer;
+					@include transition(all .2s ease-in-out);
+				}
+			}
+			.login-form__fb-ico{
+				@include sized-sprite($icons, fb_big);
+			}
+			.login-form__tw-ico{
+				@include sized-sprite($icons, tw_big);
+			}
+			.login-form__g-ico{
+				@include sized-sprite($icons, g_big);
+			}
+			.login-form__vk-ico{
+				@include sized-sprite($icons, vk_big);
+			}
+			.login-form__od-ico{
+				@include sized-sprite($icons, od_big);
+			}
+		}
+	}
+	.close{
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		width: 19px;
+		height: 19px;
+		background: url(../img/close.jpg) 0 0 no-repeat
+	}
+}
+.login-form__fb, .login-form__tw, .login-form__g, .login-form__vk, .login-form__od{
+	display: inline-block;
+	margin-right: 30px;
+}
+.login-form__od{
+	margin-right: 0;
 }
