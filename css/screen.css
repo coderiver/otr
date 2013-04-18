@@ -445,6 +445,22 @@ dl dd i { font-style: normal; color: #707070; }
 .entry .s-list .s-list__title { text-transform: uppercase; color: #221951; font-weight: bold; margin-bottom: 13px; }
 
 .quest-form_alt2 { margin: 0 0 25px; }
+.quest-form_alt2 .row { position: relative; line-height: 1; margin-bottom: 12px; }
+.quest-form_alt2 .row label { padding-top: 2px; }
+.quest-form_alt2 .row input { float: left; }
+.quest-form_alt2 .row textarea { min-height: 40px; float: left; }
+.quest-form_alt2 .row_captcha__input { margin-left: 0; }
+.quest-form_alt2 .js-select-post { width: 388px; height: 25px; padding: 0 10px; line-height: 25px; vertical-align: top; color: #777; border: 1px solid #93d4f4; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; background-color: #fff; -webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); display: inline-block; position: absolute; top: 0; left: 190px; font-size: 12px; }
+.quest-form_alt2 .js-select-post:after { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 5px 4.5px 0 4.5px; border-color: #221952 transparent transparent transparent; position: absolute; top: 12px; right: 8px; }
+.quest-form_alt2 .js-select-post__select { width: 410px; height: 27px; position: absolute; left: 190px; opacity: 0; }
+.quest-form_alt2 .small { width: 55px; }
+.quest-form_alt2 .average { width: 245px; }
+
+.quest-form_alt2 .quest-form__body { padding: 15px 15px 40px; }
+.quest-form_alt2 .quest-form__body .quest-form__section { width: 600px; border-bottom: 1px solid #fff; margin: 0 0 15px; }
+.quest-form_alt2 .wrap-button .button_gr { background: #878787; color: #fff; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.quest-form_alt2 .wrap-button .button_gr:hover { background: #787979; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.quest-form_alt2 .row__meta { float: right; font-size: 11px; color: #636363; }
 
 dl, .wrap-tabs ul.tabs { *zoom: 1; }
 dl:before, .wrap-tabs ul.tabs:before, dl:after, .wrap-tabs ul.tabs:after { content: " "; display: table; }

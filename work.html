@@ -170,58 +170,113 @@
 		<!-- BEGIN quest-form -->
 		<div class="quest-form quest-form_alt2">
 			<div class="quest-form__top">
-				<span>Есть мнение, вопросы, предложения? <b>Пишите нам!</b></span>
+				<span>Заполните анкету</span>
 			</div>
 			<div class="quest-form__body">
-				<div class="row">
-					<label for="name">Имя:<span>*</span>
-					</label>
-					<input type="text" name="name">
-					<div class="clr"></div>
-				</div>
-				<div class="row">
-					<label for="city">Населенный пункт<span>*</span>
-					</label>
-					<input type="text" name="city">
-					<div class="clr"></div>
-				</div>
-				<div class="row">
-					<label for="mail">E-mail<span>*</span>
-					</label>
-					<input type="text" name="mail">
-					<div class="clr"></div>
-				</div>
-				<div class="row">
-					<label for="mail-retry">E-mail еще раз<span>*</span>
-					</label>
-					<input type="text" name="mail-retry">
-					<div class="clr"></div>
-				</div>
-				<div class="row">
-					<label for="message">Сообщение<span>*</span>
-					</label>
-					<textarea name="message" cols="30" rows="10"></textarea>
-					<div class="clr"></div>
-				</div>
-				<div class="row row_captcha">
-					<label for="message">Код с картинки<span>*</span>
-					</label>
-					<div class="row_captcha__input">
-						<input type="text" name="message">
-						<a href="#" class="captcha">Обновить</a>
+				<!-- BEGIN quest-form__section 1 -->
+				<div class="quest-form__section">
+					<div class="row">
+						<label for="post">На какую должность претендуете:
+						</label>
+						<div class="js-select-post"></div>
+						<select name="post" class="js-select-post__select">
+							<option value="должность 1">должность 1</option>
+							<option value="должность 2">должность 2</option>
+							<option value="должность 3">должность 3</option>
+						</select>
+						<div class="clr"></div>
 					</div>
+					<div class="row">
+						<label for="fio">ФИО
+						</label>
+						<input type="text" name="fio">
+						<div class="clr"></div>
+					</div>
+					<div class="row">
+						<label for="age">Возраст
+						</label>
+						<input type="text" name="age" class="small">
+						<div class="clr"></div>
+					</div>
+					<div class="row">
+						<label for="tel">Телефон
+						</label>
+						<input type="text" name="tel" class="average">
+						<div class="clr"></div>
+					</div>
+					<div class="row">
+						<label for="mail">E-mail
+						</label>
+						<input type="text" name="mail" class="average">
+						<div class="clr"></div>
+					</div>
+					<div class="row">
+						<label for="foto">Ваше фото
+						</label>
+						<input type="text" name="foto" class="average">
+						<div class="wrap-button wrap-button_alt fl_r">
+							<a href="#" class="button button__p0-20 button_gr">Выбрать файл</a>
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="row">
+						<div class="row__meta">
+							Внимание! Размер фото не более 800х600 пикселей
+						</div>
+						<div class="clr"></div>
+					</div>
+				</div>
+				<!-- END quest-form__section 1 -->
+				<div class="quest-form__section">
+					<div class="row">
+						<label for="fio">Ожидания по зарплате
+						</label>
+						<input type="text" name="fio">
+						<div class="clr"></div>
+					</div>
+					<div class="row">
+						<label for="message">Образование
+						</label>
+						<textarea name="message" cols="30" rows="10"></textarea>
+						<div class="clr"></div>
+					</div>
+					<div class="row">
+						<label for="message">Опыт работы за последние 5 лет
+						</label>
+						<textarea name="message" cols="30" rows="10"></textarea>
+						<div class="clr"></div>
+					</div>
+				</div>
+				<!-- BEGIN quest-form__section 2 -->
+				<div class="div">
+					<div class="row">
+						<label for="message">Сообщение<span>*</span>
+						</label>
+						<textarea name="message" cols="30" rows="10"></textarea>
+						<div class="clr"></div>
+					</div>
+					<div class="row row_captcha">
+						<label for="message">Код с картинки<span>*</span>
+						</label>
+						<div class="row_captcha__input">
+							<input type="text" name="message">
+							<a href="#" class="captcha">Обновить</a>
+						</div>
 
-					<img src="img/captcha.jpg" alt="">
+						<img src="img/captcha.jpg" alt="">
+						<div class="clr"></div>
+					</div>
+					<div class="row row_lh15">
+						<div class="row__note">
+							<span>*</span> Все поля обязательны для заполнения
+						</div>
+					</div>
 					<div class="clr"></div>
-				</div>
-				<div class="row row_lh15">
-					<div class="row__note">
-						<span>*</span> Все поля обязательны для заполнения
+					<div class="wrap-button">
+						<a href="#" class="button button__p0-20 button_gr">Отправить</a>
 					</div>
 				</div>
-				<div class="wrap-button">
-					<a href="#" class="button button__p0-20">Отправить</a>
-				</div>
+				<!-- END quest-form__section 2 -->
 			</div>
 		</div>
 		<!-- END quest-form -->

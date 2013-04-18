@@ -147,14 +147,23 @@ function slider_news() {
         $(".quest-form_alt").css("display", "none");
     });
 
-    // for select
+    // for select selected "prog"
     $(".js-select-prog__select").change(function(){
         var text = $(this).val();
         $(".js-select-prog").text(text);
     });
-    // for select selected
+
+    // for select return first val "prog"
     var text = $(".js-select-prog__select").val();
     $(".js-select-prog").text(text);
+
+    // for select selected "post"
+    $(".js-select-post__select").change(function(){
+        var text = $(this).val();
+        $(".js-select-post").text(text);
+    });
+
+
 
     // for select selected in cycle  (does not work)
     // $(".js-select-prog__select").each(function(){

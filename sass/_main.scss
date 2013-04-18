@@ -1201,4 +1201,90 @@ dl{
 }
 .quest-form_alt2{
 	margin: 0 0 25px;
+	.row{
+		position: relative;
+		line-height: 1;
+		margin-bottom: 12px;
+		label{
+			padding-top: 2px;
+		}
+		input{
+			float: left;
+		}
+		textarea{
+			min-height: 40px;
+			float: left;
+		}
+	}
+	.row_captcha__input{
+		margin-left: 0;
+	}
+	.js-select-post{
+		width: 388px;
+		height: 25px;
+		padding: 0 10px;
+		line-height: 25px;
+		vertical-align: top;
+		color: #777;
+		border: 1px solid #93d4f4;
+		@include border-radius(2px);
+		background-color: #fff;
+		@include box-shadow(inset 1px 2px 4px rgba(0,0,0,.1));
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 190px;
+		font-size: 12px;
+		&:after{
+			content: "";
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 5px 4.5px 0 4.5px;
+			border-color: #221952 transparent transparent transparent;
+			position: absolute;
+			top: 12px;
+			right: 8px;
+		}
+	}
+	.js-select-post__select{
+		width: 410px;
+		height: 27px;
+		position: absolute;
+		left: 190px;
+		opacity: 0;
+	}
+	.small{
+		width: 55px;
+	}
+	.average{
+		width: 245px;
+	}
+}
+// quest-form_alt2
+.quest-form_alt2{
+	.quest-form__body{
+		padding: 15px 15px 40px;
+		.quest-form__section{
+			width: 600px;
+			border-bottom: 1px solid #fff;
+			margin: 0 0 15px;
+		}
+	}
+	.wrap-button{
+		.button_gr{
+			background: #878787;
+			color: #fff;
+			@include transition(all .3s ease-in-out);
+			&:hover{
+				background: #787979;
+				@include transition(all .3s ease-in-out);
+			}
+		}
+	}
+	.row__meta{
+		float: right;
+		font-size: 11px;
+		color: #636363;
+	}
 }
