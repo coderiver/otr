@@ -43,18 +43,12 @@
 		<!-- BEGIN reg -->
 		<ul class="reg">
 			<li>
-				<div class="wrap-button">
+				<div class="wrap-button" id="enter">
 					<a href="#" class="button button_gray button__p0-20">Вход</a>
 				</div>
 			</li>
 		</ul>
 		<!-- END reg -->
-		<!-- BEGIN radio -->
-		<a class="radio">
-			<div class="radio__img"></div>
-			<b class="radio__descr">ОТР РАДИО</b>
-		</a>
-		<!-- END radio -->
 	</div>
 	<!-- END header -->
 </div>
@@ -125,22 +119,32 @@
 
 			<div class="login-form__body">
 				<div class="row">
-					<label for="name">Имя:<span>*</span>
-					</label>
-					<input type="text" name="name">
-					<div class="clr"></div>
-				</div>
-				<div class="row">
-					<label for="mail">E-mail<span>*</span>
+					<label for="mail">E-mail
 					</label>
 					<input type="text" name="mail">
 					<div class="clr"></div>
 				</div>
+				<div class="row">
+					<label for="pass">Пароль
+					</label>
+					<input type="text" name="pass">
+					<div class="pass">Восстановить пароль</div>
+					<div class="clr"></div>
+				</div>
+				<div class="row row_check">
+					<input type="checkbox" name="check" class="check"><label for="check">Запомнить меня</label>
+				</div>
+				<div class="row row_button">
+					<div class="wrap-button">
+						<a href="#" class="button button__p0-20">Войти</a>
+					</div>
+					<div class="wrap-button">
+						<a href="#" class="button button_gr button__p0-20">Регистрация</a>
+					</div>
+				</div>
 			</div>
 
-			<div class="wrap-button">
-				<a href="#" class="button button_gr button__p0-20">Отправить</a>
-			</div>
+
 
 		</div>
 	</div>

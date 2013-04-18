@@ -174,7 +174,9 @@
 	.wrap-button{
 		position: relative;
 		top: -6px;
-		right: 0;
+	}
+	#enter{
+		left: -6px;
 	}
 }
 .separator{
@@ -230,7 +232,7 @@
 			@include sized-sprite($icons, "fb_hover");
 		}
 	}
-	.tw{ 
+	.tw{
 		@include sized-sprite($icons, "tw");
 		&:hover{
 			@include sized-sprite($icons, "tw_hover");

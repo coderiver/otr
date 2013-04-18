@@ -399,8 +399,7 @@ dl dd i { font-style: normal; color: #707070; }
 .wrap-tabs .tabs__next { border-width: 6.5px 0 6.5px 8px; border-color: transparent transparent transparent #7d8081; right: 6px; }
 
 .login-form { position: relative; }
-.login-form .login-form__wrap { width: 470px; position: absolute; top: -90px; right: 255px; z-index: 1000; padding: 20px 35px 35px; }
-.login-form .login-form__body { margin: 10px 0 20px; padding: 20px 20px 25px; background: #eaeaea; color: #000; font-size: 14px; }
+.login-form .login-form__wrap { width: 470px; position: absolute; top: -92px; right: 262px; z-index: 1000; padding: 20px 35px 35px; }
 .login-form .login-form__top { padding: 0; color: #000; font-weight: bold; background: none; display: inline-block; font-size: 11px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
 .login-form .login-form__top .login-form__enter { text-transform: uppercase; color: #221951; }
 .login-form .login-form__top .login-form__topper { font-size: 14px; margin-bottom: 20px; }
@@ -413,10 +412,22 @@ dl dd i { font-style: normal; color: #707070; }
 .login-form .login-form__top .login-form__ico .login-form__vk-ico { background: url('../img/icons-s8a1707999f.png') 0 -370px no-repeat; width: 56px; height: 56px; }
 .login-form .login-form__top .login-form__ico .login-form__od-ico { background: url('../img/icons-s8a1707999f.png') 0 -436px no-repeat; width: 56px; height: 56px; }
 .login-form .close { position: absolute; top: 20px; right: 30px; width: 19px; height: 19px; background: url(../img/close.jpg) 0 0 no-repeat; }
+.login-form .login-form__body { margin: 15px 0 0px; padding: 20px 25px 25px; background: #eaeaea; color: #000; font-size: 14px; }
+.login-form .login-form__body .row { margin-bottom: 15px; }
+.login-form .login-form__body label { width: 75px; }
+.login-form .login-form__body input { width: 220px; float: left; }
+.login-form .login-form__body .wrap-button { display: inline-block; margin-right: 20px; }
+.login-form .login-form__body .wrap-button .button_gr { background: #878787; color: #fff; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.login-form .login-form__body .wrap-button .button_gr:hover { background: #787979; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.login-form .login-form__body .pass { width: 85px; margin-left: 15px; float: left; font-size: 12px; color: #eb2593; line-height: 1.2; }
+.login-form .login-form__body .row_check { width: 100%; height: 15px; display: block; }
+.login-form .login-form__body .row_check input { margin-left: 75px; width: 13px; height: 13px; line-height: 13px; }
+.login-form .login-form__body .row_check label { width: 125px; line-height: 13px; margin-left: 6px; }
+.login-form .login-form__body .row_button { margin-left: 75px; }
 
 .login-form__fb, .login-form__tw, .login-form__g, .login-form__vk, .login-form__od { display: inline-block; margin-right: 30px; }
 
-.login-form__od { margin-right: 0; }
+.login-form__od { position: relative; right: 20px; margin-right: 0; }
 
 dl, .wrap-tabs ul.tabs { *zoom: 1; }
 dl:before, .wrap-tabs ul.tabs:before, dl:after, .wrap-tabs ul.tabs:after { content: " "; display: table; }
@@ -454,7 +465,8 @@ dl:after, .wrap-tabs ul.tabs:after { clear: both; }
 /* header*/
 .header { width: 970px; margin: 0 auto; position: relative; left: -7px; padding: 18px 0 0; background: #fff; }
 .header .logo { background: url('../img/icons-s8a1707999f.png') 0 -193px no-repeat; width: 212px; height: 51px; margin-right: 55px; display: inline-block; vertical-align: top; font: 0/0 a; }
-.header .wrap-button { position: relative; top: -6px; right: 0; }
+.header .wrap-button { position: relative; top: -6px; }
+.header #enter { left: -6px; }
 
 .separator { padding: 0 0px 0 8px; }
 

@@ -131,6 +131,14 @@ function slider_news() {
         clearInterval(cycle); // stop cycle on click
     });
 
+    // for login-form
+    $('#enter').click(function() {
+        $(".login-form").css("display", "block");
+    });
+    $('.close').click(function() {
+        $(".login-form").css("display", "none");
+    });
+
     // for quest-form_alt
     $('#sent-redactor').click(function() {
         $(".quest-form_alt").css("display", "block");
