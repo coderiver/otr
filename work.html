@@ -184,6 +184,7 @@
 							<option value="должность 2">должность 2</option>
 							<option value="должность 3">должность 3</option>
 						</select>
+
 						<div class="clr"></div>
 					</div>
 					<div class="row">
@@ -264,7 +265,7 @@
 					</div>
 					<div class="quest-form__kid">
 						<div class="row">
-							<label for="link"><b>1.</b> Ссылка
+							<label for="link"><b class="num">1.</b> Ссылка
 							</label>
 							<input type="text" name="link">
 							<div class="clr"></div>
@@ -295,21 +296,23 @@
 				<!-- END quest-form__section 3 -->
 
 				<!-- BEGIN quest-form__section 4 -->
-				<div class="quest-form__section">
-					<div class="row row_captcha">
-						<label for="message">Код с картинки<span>*</span>
-						</label>
-						<div class="row_captcha__input">
-							<input type="text" name="message">
-							<a href="#" class="captcha">Обновить</a>
-						</div>
-
-						<img src="img/captcha.jpg" alt="">
-						<div class="clr"></div>
+				<div class="row row_captcha row_captcha-small">
+					<label for="message">Введите код
+					</label>
+					<img src="img/captcha_small.jpg" alt="">
+					<div class="row_captcha__input">
+						<input type="text" name="message">
 					</div>
+
 					<div class="clr"></div>
+				</div>
+
+				<div class="pressbutton">
 					<div class="wrap-button">
-						<a href="#" class="button button__p0-20 button_gr">Отправить</a>
+						<a href="#" class="button button__p0-20">Отправить</a>
+					</div>
+					<div class="wrap-button">
+						<a href="#" class="button button__p0-20 button_gr">Очистить форму</a>
 					</div>
 				</div>
 				<!-- END quest-form__section 4 -->
@@ -436,7 +439,32 @@
 
 	<!-- BEGIN r -->
 	<div class="r">
-
+		<!-- BEGIN wrap -->
+		<div class="wrap">
+			<div class="title title_2">В эфире</div>
+			<a href"#"="" class="wrap__item">
+				<div class="wrap__meta">
+					Ток-шоу: Будет ли война за Арктику?
+				</div>
+				<div class="tw__img">
+					<img src="img/tw.jpg" alt="">
+					<i class="super-arrow super-arrow_tw"></i>
+				</div>
+			</a>
+			<div class="wrap__note">Далее:</div>
+			<div class="anonse">
+				<i class="anonse__date">12-50</i>
+				<a htrf="#" class="anonse__descr">Ток-шоу: Список Магницкого - что дальше?</a>
+			</div>
+			<div class="anonse">
+				<i class="anonse__date">12-50</i>
+				<a htrf="#" class="anonse__descr">Ток-шоу: Список Магницкого - что дальше?</a>
+			</div>
+			<div class="wrap-button">
+				<a href="#" class="button button__p0-20">дальше в программе</a>
+			</div>
+		</div>
+		<!-- END wrap -->
 		<!-- BEGIN wrap -->
 		<div class="wrap">
 			<div class="micro-news">
