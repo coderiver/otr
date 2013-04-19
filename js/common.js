@@ -174,7 +174,6 @@ function slider_news() {
     // add\remove onClick class "active"
     $('.programm__lang').click(function(){
         if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
         }
         else {
             $('.programm__lang').removeClass('active');
@@ -183,9 +182,18 @@ function slider_news() {
     });
 
     // add\remove onClick class "active"
+    $('.button').click(function(){
+        if ($(this).hasClass('button_active')) {
+        }
+        else {
+            $('.button').removeClass('button_active');
+            $(this).addClass('button_active');
+        }
+    });
+
+    // add\remove onClick class "active"
     $('.programm__menu a').click(function(){
         if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
         }
         else {
             $('.programm__menu a').removeClass('active');

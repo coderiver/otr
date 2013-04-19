@@ -652,6 +652,14 @@ ul.o-tw_bb-none{
 .title-with-border{
 	position: relative;
 }
+.title-with-border_ts-alt{
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.title-with-border_ts-alt2{
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
 i.border{
 	display: inline-block;
 	width: 640px;
@@ -811,6 +819,9 @@ i.border{
 		position: relative;
 		overflow: hidden;
 	}
+	.photo-more__wrap_ts-alt{
+		height: 330px;
+	}
 	.photo-more__items{
 		width: 2000em;
 		position: absolute;
@@ -823,6 +834,9 @@ i.border{
 			vertical-align: middle;
 		}
 	}
+}
+.photo-more_ts-alt{
+	margin: 15px 30px 0;
 }
 .photo-more__navi{
 	.photo-more__prew, .photo-more__next{

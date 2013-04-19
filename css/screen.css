@@ -151,6 +151,11 @@ ul.super-list li:before { content: ""; display: inline-block; height: 6px; width
 
 .uppercase { text-transform: uppercase; }
 
+.active-button { margin-bottom: 10px; }
+.active-button .wrap-button { margin-right: 5px; }
+.active-button .wrap-button .button { text-transform: none; }
+.active-button .wrap-button .button_active { background: #221952; color: #FFF; }
+
 dl, .wrap-tabs ul.tabs { *zoom: 1; }
 dl:before, .wrap-tabs ul.tabs:before, dl:after, .wrap-tabs ul.tabs:after { content: " "; display: table; }
 dl:after, .wrap-tabs ul.tabs:after { clear: both; }
@@ -318,6 +323,10 @@ ul.o-tw_bb-none li a.sel { background: #FFF; }
 
 .title-with-border { position: relative; }
 
+.title-with-border_ts-alt { margin-top: 15px; margin-bottom: 20px; }
+
+.title-with-border_ts-alt2 { margin-top: 40px; margin-bottom: 15px; }
+
 i.border { display: inline-block; width: 640px; background-color: #dddddd; height: 1px; position: absolute; top: 18px; left: 0; }
 
 .tw-show { position: relative; margin: 10px 0 25px; font-size: 14px; }
@@ -361,9 +370,12 @@ i.border { display: inline-block; width: 640px; background-color: #dddddd; heigh
 .photo-more { width: 580px; height: 330px; margin: 15px 30px; padding: 0; position: relative; }
 .photo-more:hover { cursor: pointer; }
 .photo-more .photo-more__wrap { width: 580px; height: 400px; position: relative; overflow: hidden; }
+.photo-more .photo-more__wrap_ts-alt { height: 330px; }
 .photo-more .photo-more__items { width: 2000em; position: absolute; }
 .photo-more .photo-more__item { display: inline-block; position: relative; }
 .photo-more .photo-more__item img { max-width: 580px; vertical-align: middle; }
+
+.photo-more_ts-alt { margin: 15px 30px 0; }
 
 .photo-more__navi .photo-more__prew, .photo-more__navi .photo-more__next { height: 103px; width: 20px; background: #78c9f0; position: absolute; top: 111px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; display: block; }
 .photo-more__navi .photo-more__prew:hover, .photo-more__navi .photo-more__next:hover { -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; background: #55b8e7; }
@@ -705,6 +717,8 @@ ul.list-news .is-active .body { font-weight: bold; }
 .picture-day_mini .picture-day__img img { max-width: 110px; min-height: 78px; }
 
 .picture-day__nav_mini { width: 610px; height: 27px; background: url(../img/nav_bg.png) 10px 0 repeat-x; }
+
+.picture-day_alt { width: 640px; height: 125px; padding: 10px 0px 0px; margin-top: 0px; text-align: center; background: #221952; position: relative; overflow: hidden; }
 
 .wrap { padding: 35px 18px 12px 11px; background-color: #fff; -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.26); -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.26); box-shadow: 0 0 6px rgba(0, 0, 0, 0.26); position: relative; margin-bottom: 35px; }
 .wrap a.wrap__item { display: block; position: relative; margin-bottom: 10px; }

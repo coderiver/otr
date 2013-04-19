@@ -570,3 +570,16 @@ ul.super-list{
 .uppercase{
 	text-transform: uppercase;
 }
+.active-button{
+	margin-bottom: 10px;
+	.wrap-button{
+		margin-right: 5px;
+		.button{
+			text-transform: none;
+		}
+		.button_active{
+			background: #221952;
+			color: #FFF;
+		}
+	}
+}
