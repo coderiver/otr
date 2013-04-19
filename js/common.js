@@ -200,6 +200,15 @@ function slider_news() {
             $(this).addClass('active');
         }
     });
+    // add\remove onClick class "active"
+    // $('.tabs li').click(function(){
+    //     if ($(this).hasClass('active')) {
+    //     }
+    //     else {
+    //         $('.tabs li').removeClass('active');
+    //         $(this).addClass('active');
+    //     }
+    // });
 
     // change lang
     $('.programm__lang_eng').click(function() {
@@ -211,11 +220,15 @@ function slider_news() {
         $(".programm__abc_ru").css("display", "block");
     });
 
-    $('.tabs a').click(function(){
-        alert($(this).attr('href'));
-        $('.tabcontent').hide();
-        asd = $(this).attr('href');
-        $(asd).show();
+    //tabs
+    $(".tabs-item").hide();
+    $(".tab-item-2").show();
+    $(".tabs li").click(function(){
+        $(".tabs li").removeClass("active");
+        $(this).addClass("active");
+        var tab_act = $(this).attr("data-tab");
+        $(".tabs-item").hide();
+        $(tab_act).show();
     });
 
 }
