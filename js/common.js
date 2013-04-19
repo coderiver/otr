@@ -211,6 +211,13 @@ function slider_news() {
         $(".programm__abc_ru").css("display", "block");
     });
 
+    $('.tabs a').click(function(){
+        alert($(this).attr('href'));
+        $('.tabcontent').hide();
+        asd = $(this).attr('href');
+        $(asd).show();
+    });
+
 }
 slider_news();
 
