@@ -283,6 +283,7 @@
 		@include box-shadow(inset 1px 2px 4px rgba(0,0,0,.1));
 		display: inline-block;
 		position: absolute;
+		top: 0;
 		right: 0;
 		font-size: 12px;
 		&:after{
@@ -305,6 +306,7 @@
 		padding: 0 2px;
 		line-height: 25px;
 		position: absolute;
+		top: 0;
 		right: 0;
 		vertical-align: top;
 		color: #777;
@@ -1369,7 +1371,7 @@ dl{
 	.ss-picture-day{
 		.picture-day_alt2{
 			width: 575px;
-			height: 105px;
+			height: 115px;
 			margin: 0 25px 0 29px;
 			background: #FFF;
 			.picture-day__item{
@@ -1387,7 +1389,7 @@ dl{
 			}
 		}
 		.picture-day__nav_mini{
-			top: -75px;
+			top: -85px;
 			background: none;
 			.picture-day__prew{
 				left: -9px;
@@ -1398,7 +1400,7 @@ dl{
 		}
 	}
 	.ss-picture-day_white{
-		height: 140px;
+		height: 150px;
 		padding: 0 18px 0 11px;
 		margin-bottom: 20px;
 	}

@@ -240,9 +240,9 @@ dl:after, .wrap-tabs ul.tabs:after { clear: both; }
 
 .programm { margin-top: -4px; position: relative; }
 .programm h2 { font-size: 29px; text-transform: uppercase; color: #221952; display: inline-block; }
-.programm .js-select-prog { width: 205px; height: 25px; padding: 0 10px; line-height: 25px; vertical-align: top; margin-top: 6px; color: #777; border: 1px solid #c2c2c2; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; background-color: #fff; -webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); display: inline-block; position: absolute; right: 0; font-size: 12px; }
+.programm .js-select-prog { width: 205px; height: 25px; padding: 0 10px; line-height: 25px; vertical-align: top; margin-top: 6px; color: #777; border: 1px solid #c2c2c2; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; background-color: #fff; -webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); display: inline-block; position: absolute; top: 0; right: 0; font-size: 12px; }
 .programm .js-select-prog:after { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 5px 4.5px 0 4.5px; border-color: #221952 transparent transparent transparent; position: absolute; top: 12px; right: 8px; }
-.programm select { width: 227px; height: 25px; opacity: 0; margin-top: 6px; padding: 0 2px; line-height: 25px; position: absolute; right: 0; vertical-align: top; color: #777; border: 1px solid #c2c2c2; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; background-color: #fff; -webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); }
+.programm select { width: 227px; height: 25px; opacity: 0; margin-top: 6px; padding: 0 2px; line-height: 25px; position: absolute; top: 0; right: 0; vertical-align: top; color: #777; border: 1px solid #c2c2c2; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; background-color: #fff; -webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); }
 .programm .programm__abc, .programm .programm__abc { text-transform: uppercase; font-size: 16px; margin-top: 15px; display: inline-block; }
 .programm .programm__abc a, .programm .programm__abc a { margin-right: 1px; color: #eb2593; cursor: pointer; }
 .programm .programm__abc .gray, .programm .programm__abc .gray { color: #c6c6c6; }
@@ -488,14 +488,14 @@ dl dd i { font-style: normal; color: #707070; }
 .quest-form_alt2 .pressbutton { margin-top: 30px; padding-left: 180px; }
 .quest-form_alt2 .pressbutton .wrap-button { display: inline-block; margin-right: 25px; }
 
-.entry .ss-picture-day .picture-day_alt2 { width: 575px; height: 105px; margin: 0 25px 0 29px; background: #FFF; }
+.entry .ss-picture-day .picture-day_alt2 { width: 575px; height: 115px; margin: 0 25px 0 29px; background: #FFF; }
 .entry .ss-picture-day .picture-day_alt2 .picture-day__item { width: 120px; margin: 0 20px 0 4px; }
 .entry .ss-picture-day .picture-day_alt2 .picture-day__img { width: 120px; height: 86px; line-height: 86px; }
 .entry .ss-picture-day .picture-day_alt2 .picture-day__img img { max-width: 120px; min-height: 86px; }
-.entry .ss-picture-day .picture-day__nav_mini { top: -75px; background: none; }
+.entry .ss-picture-day .picture-day__nav_mini { top: -85px; background: none; }
 .entry .ss-picture-day .picture-day__nav_mini .picture-day__prew { left: -9px; }
 .entry .ss-picture-day .picture-day__nav_mini .picture-day__next { right: 9px; }
-.entry .ss-picture-day_white { height: 140px; padding: 0 18px 0 11px; margin-bottom: 20px; }
+.entry .ss-picture-day_white { height: 150px; padding: 0 18px 0 11px; margin-bottom: 20px; }
 
 dl, .wrap-tabs ul.tabs { *zoom: 1; }
 dl:before, .wrap-tabs ul.tabs:before, dl:after, .wrap-tabs ul.tabs:after { content: " "; display: table; }
