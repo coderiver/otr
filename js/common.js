@@ -32,6 +32,49 @@ $(document).ready(function() {
         prev:'.photo-more__prew',
         circular:true
     });
+    $('.tabs__wrap').scrollable({
+        prev:'.tabs__prew',
+        next:'.tabs__next',
+        circular:false
+    });
+
+var scrollable = jQuery(".tabs__wrap").data("scrollable");
+
+// Set to the number of visible items
+  var size = 7;
+
+  // Handle the Scrollable control's onSeek event
+  scrollable.onSeek(function(event, index) {
+
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - size) {
+
+      // Disable the Next link
+      jQuery(".tabs__next").addClass("disabled");
+
+    }
+
+  });
+
+  // Handle the Scrollable control's onBeforeSeek event
+  scrollable.onBeforeSeek(function(event, index) {
+
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - size) {
+      
+      // Check to see if we're trying to move forward
+      if (index > this.getIndex()) {
+
+        // Cancel navigation
+        return false;
+
+      }
+
+    }
+
+  });
+
+
 
 	// scrollable
 	$('.picture-day').scrollable({

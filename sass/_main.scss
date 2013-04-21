@@ -1011,9 +1011,22 @@ dl{
 	padding: 0 30px;
 	position: relative;
 	border-bottom: 4px solid #eaeaea;
+	.tabs__wrap{
+		width: 482px;
+		overflow: hidden;
+		position: relative;
+		height: 60px;
+	}
+	.disabled{
+		opacity: .3;
+		cursor: default;
+	}
 	ul.tabs{
 		list-style: none;
 		@extend %clr;
+		width: 20000em;
+		position: absolute;
+		left: 0;
 		li{
 			width: 62px;
 			height: 27px;
