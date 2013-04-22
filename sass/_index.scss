@@ -201,13 +201,13 @@ ul.list-news{
 		margin-left: 19px;
 		border-top: 1px solid #ebebeb;
 		border-bottom: 1px solid #ebebeb;
-		background: #FFF;
 		position: relative;
 		&:last-child{
 			border-bottom: none;
 		}
 	}
 	.is-active {
+		font-weight: bold;
 		&:before{
 			content: "";
 			width: 15px;
@@ -215,12 +215,20 @@ ul.list-news{
 			display: block;
 			position: absolute;
 			top: 20px;
-			left: -19px;
+			left: 0px;
 			background: url(../img/bord_arrow.png) 0px 0px no-repeat;
 		}
 		.body {
 			font-weight: bold;
 		}
+	}
+	.is-active{
+	background: url(../img/bord_shadow.png) #e4f4fc 0 0 repeat-y;
+		margin-left: 0px;
+		padding: 0 0 0 19px;
+		border-top: none;
+		border-bottom: none;
+
 	}
 }
 .list-news__body {
@@ -229,7 +237,7 @@ ul.list-news{
 	line-height: 1.2;
 	color: #000;
 	display: inline-block;
-	cursor: pointer; 
+	cursor: pointer;
 	&:hover {
 		text-decoration: underline;
 	}

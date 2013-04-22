@@ -834,11 +834,13 @@ i.border{
 		display: inline-block;
 		position: relative;
 		img{
-			max-width: 580px;
+			width: 580px;
+			height: 328px;
 			vertical-align: middle;
 		}
 	}
 }
+// $(".tab-item-2").show();
 .photo-more_ts-alt{
 	margin: 15px 30px 0;
 }
@@ -1057,7 +1059,8 @@ dl{
 			@include transition(all .1s ease-in-out);
 		}
 	}
-	.tabs__prew, .tabs__next{
+	// $(".picture-day__item").first();
+	.tabs__prev, .tabs__next{
 		width: 0px;
 		height: 0px;
 		border-style: solid;
@@ -1065,7 +1068,7 @@ dl{
 		top: 11px;
 		display: block;
 	}
-	.tabs__prew{
+	.tabs__prev{
 		border-width: 6.5px 8px 6.5px 0;
 		border-color: transparent #7d8081 transparent transparent ;
 		left: 6px;

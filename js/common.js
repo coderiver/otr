@@ -54,7 +54,7 @@ if($('.picture-day').length>0){
     // scrollable
     $('.picture-day').scrollable({
         next:'.picture-day__next',
-        prev:'.picture-day__prev',
+        prev:'.picture-day__prew',
         circular:false
     });
     var scrollable = jQuery(".picture-day").data("scrollable");
@@ -102,7 +102,7 @@ function loadthis(elem){
 }
 
     //
-	
+
 
     // $('.list-news li').click(function(){
     //     $('.list-news li').removeClass("is-active");
