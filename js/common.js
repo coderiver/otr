@@ -24,7 +24,7 @@ $.fn.scrollableAddClones = function(addItems) {
 }
 
 $(document).ready(function() {
-
+    loadthis($("#picture-day__item_first"));
 
 if($('.tabs__wrap').length>0){
     $('.tabs__wrap').scrollable({
@@ -85,7 +85,7 @@ function loadthis(elem){
         loadthis($(this));
         return false;
     });
-
+    // $(tab_act).show();
     $('.photo-more__prev').click(function(){
         elemtogo = $('.picture-day__item.active').prev();
         $('.picture-day__item').removeClass('active');
@@ -100,7 +100,6 @@ function loadthis(elem){
     });
 
 }
-
     //
 
 
