@@ -843,7 +843,7 @@ i.border{
 	margin: 15px 30px 0;
 }
 .photo-more__navi{
-	.photo-more__prew, .photo-more__next{
+	.photo-more__prev, .photo-more__next{
 		height: 103px;
 		width: 20px;
 		background: #78c9f0;
@@ -855,7 +855,7 @@ i.border{
 			@include transition(all .3s ease-in-out);
 			background: rgb(85, 184, 231)		}
 	}
-	.photo-more__prew{
+	.photo-more__prev{
 		left: -30px;
 		&:after{
 			content: "";
