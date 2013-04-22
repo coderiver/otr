@@ -490,6 +490,11 @@ ul.list-news{
 	overflow:hidden;
 	width: 970px;
 	height: 250px;
+	z-index: 10;
+	.disabled{
+		opacity: .1;
+		cursor: default;
+	}
   .picture-day__items{
   	width:2000em;
  	position:absolute;
@@ -500,6 +505,12 @@ ul.list-news{
 		margin: 0 11px;
 		text-align: left;
 		float: left;
+		&.active .picture-day__img{
+			@include box-shadow(0 0 0 5px #a3cbe9);
+		}
+	}
+	a{
+		display: block;
 	}
 	.picture-day__img{
 		width: 220px;
@@ -538,12 +549,18 @@ ul.list-news{
 	left: 0;
 	cursor: pointer;
 	display: inline-block;
+	&.disabled{
+		opacity: .1;
+	}
 }
 .picture-day__next{
 	right: 0;
 	@include sized-sprite($icons, pic_arrow-r);
 	cursor: pointer;
 	display: inline-block;
+	&.disabled{
+		opacity: .1;
+	}
 }
 .picture-day__nav{
 	background: url(../img/nav_bg.png) 3px 0 repeat-x;

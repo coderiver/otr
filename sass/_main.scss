@@ -713,6 +713,7 @@ i.border{
 	font-weight: bold;
 	margin-left: -30px;
 	margin-top: 18px;
+	position: relative;
 	&:before{
 		content: "";
 		width: 0px;
@@ -723,7 +724,7 @@ i.border{
 		display: block;
 		position: absolute;
 		bottom: -10px;
-		left: -30px;
+		left: 0px;
 	}
 	.tw-show__time{
 		color: #fff;
@@ -809,7 +810,7 @@ i.border{
 // photo-more
 .photo-more{
 	width: 580px;
-	height: 330px;
+	//height: 330px;
 	margin: 15px 30px;
 	padding: 0;
 	position: relative;
@@ -1011,9 +1012,22 @@ dl{
 	padding: 0 30px;
 	position: relative;
 	border-bottom: 4px solid #eaeaea;
+	.tabs__wrap{
+		width: 482px;
+		overflow: hidden;
+		position: relative;
+		height: 60px;
+	}
+	.disabled{
+		opacity: .3;
+		cursor: default;
+	}
 	ul.tabs{
 		list-style: none;
 		@extend %clr;
+		width: 20000em;
+		position: absolute;
+		left: 0;
 		li{
 			width: 62px;
 			height: 27px;
@@ -1372,6 +1386,7 @@ dl{
 	.ss-picture-day{
 		.picture-day_alt2{
 			width: 575px;
+			width: 565px;
 			height: 115px;
 			margin: 0 25px 0 29px;
 			background: #FFF;

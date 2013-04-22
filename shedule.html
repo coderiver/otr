@@ -97,7 +97,8 @@
 		<div class="entry entry_bb ">
 			<h1 class="h1">Телепрограмма</h1>
 			<div class="wrap-tabs">
-				<ul class="tabs">
+				<div class="tabs__wrap">
+				<ul class="tabs items">
 					<li data-tab=".tab-item-1">
 						<a href="#">
 							<div>ПН</div>
@@ -140,9 +141,23 @@
 							<div>15.04</div>
 						</a>
 					</li>
+					<li data-tab=".tab-item-7">
+						<a href="#">
+							<div>ВС</div>
+							<div>15.04</div>
+						</a>
+					</li>
+					<li data-tab=".tab-item-7">
+						<a href="#">
+							<div>ВС</div>
+							<div>15.04</div>
+						</a>
+					</li>
 				</ul>
-				<a href="#" class="tabs__prew"></a>
-				<a href="#" class="tabs__next"></a>
+				</div>
+				<!-- end wrap -->
+				<div class="tabs__prev"></div>
+				<div href="#" class="tabs__next"></div>
 			</div>
 		</div>
 		<!-- BEGIN entry -->
@@ -193,16 +208,14 @@
 				</div>
 			</a>
 			<!-- BEGIN item active-->
-			<div class="wrap-tw-show__item_active">
-				<a href="#" class="tw-show__item tw-show__item_active">
-					<div class="tw-show__top">
-						<span class="tw-show__time">13:00</span>asdsadasd 1
-					</div>
-					<div class="tw-show__prog">
-						Расти большое. В Краснодаре создали каркас для искусственного сердца
-					</div>
-				</a>
-			</div>
+			<a href="#" class="tw-show__item tw-show__item_gr tw-show__item_active">
+				<div class="tw-show__top">
+					<span class="tw-show__time">13:00</span>asdsadasd 1
+				</div>
+				<div class="tw-show__prog">
+					Расти большое. В Краснодаре создали каркас для искусственного сердца
+				</div>
+			</a>
 			<!-- BEGIN item 1 normal-->
 			<a href="#" class="tw-show__item">
 				<div class="tw-show__top">
@@ -300,16 +313,14 @@
 				</div>
 			</a>
 			<!-- BEGIN item active-->
-			<div class="wrap-tw-show__item_active">
-				<a href="#" class="tw-show__item tw-show__item_active">
-					<div class="tw-show__top">
-						<span class="tw-show__time">13:00</span>asdsadasd 1
-					</div>
-					<div class="tw-show__prog">
-						Расти большое. В Краснодаре создали каркас для искусственного сердца
-					</div>
-				</a>
-			</div>
+			<a href="#" class="tw-show__item tw-show__item_active">
+				<div class="tw-show__top">
+					<span class="tw-show__time">13:00</span>asdsadasd 1
+				</div>
+				<div class="tw-show__prog">
+					Расти большое. В Краснодаре создали каркас для искусственного сердца
+				</div>
+			</a>
 		</div>
 		<!-- END tw-show 3-->
 
@@ -359,16 +370,14 @@
 				</div>
 			</a>
 			<!-- BEGIN item active-->
-			<div class="wrap-tw-show__item_active">
-				<a href="#" class="tw-show__item tw-show__item_active">
-					<div class="tw-show__top">
-						<span class="tw-show__time">13:00</span>asdsadasd 1
-					</div>
-					<div class="tw-show__prog">
-						Расти большое. В Краснодаре создали каркас для искусственного сердца
-					</div>
-				</a>
-			</div>
+			<a href="#" class="tw-show__item tw-show__item_active">
+				<div class="tw-show__top">
+					<span class="tw-show__time">13:00</span>asdsadasd 1
+				</div>
+				<div class="tw-show__prog">
+					Расти большое. В Краснодаре создали каркас для искусственного сердца
+				</div>
+			</a>
 			<!-- BEGIN item 1 normal-->
 			<a href="#" class="tw-show__item">
 				<div class="tw-show__top">
@@ -466,16 +475,14 @@
 				</div>
 			</a>
 			<!-- BEGIN item active-->
-			<div class="wrap-tw-show__item_active">
-				<a href="#" class="tw-show__item tw-show__item_active">
-					<div class="tw-show__top">
-						<span class="tw-show__time">13:00</span>asdsadasd 1
-					</div>
-					<div class="tw-show__prog">
-						Расти большое. В Краснодаре создали каркас для искусственного сердца
-					</div>
-				</a>
-			</div>
+			<a href="#" class="tw-show__item tw-show__item_grtw-show__item_active">
+				<div class="tw-show__top">
+					<span class="tw-show__time">13:00</span>asdsadasd 1
+				</div>
+				<div class="tw-show__prog">
+					Расти большое. В Краснодаре создали каркас для искусственного сердца
+				</div>
+			</a>
 		</div>
 		<!-- END tw-show 6-->
 
@@ -912,7 +919,7 @@
 			<!-- END picture-day -->
 		</div>
 		<div class="picture-day__nav">
-			<a class="picture-day__prew"></a>
+			<a class="picture-day__prev"></a>
 				<div class="wrap-button">
 					<a href="#" class="button button__scroll">прислать свое фото</a>
 				</div>
