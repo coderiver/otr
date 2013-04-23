@@ -492,8 +492,8 @@ dl dd i { font-style: normal; color: #707070; }
 
 .entry .ss-picture-day .picture-day_alt2 { width: 575px; width: 565px; height: 115px; margin: 0 25px 0 29px; background: #FFF; }
 .entry .ss-picture-day .picture-day_alt2 .picture-day__item { width: 120px; margin: 0 20px 0 4px; }
-.entry .ss-picture-day .picture-day_alt2 .picture-day__img { width: 120px; height: 86px; line-height: 86px; }
-.entry .ss-picture-day .picture-day_alt2 .picture-day__img img { max-width: 120px; min-height: 86px; }
+.entry .ss-picture-day .picture-day_alt2 .picture-day__img { width: 120px; height: 87px; line-height: 87px; }
+.entry .ss-picture-day .picture-day_alt2 .picture-day__img img { max-width: 120px; min-height: 87px; }
 .entry .ss-picture-day_white { height: 150px; padding: 0 18px 0 11px; margin-bottom: 20px; }
 .entry .ss-picture-day_white .picture-day__nav_mini { top: -85px; background: none; }
 .entry .ss-picture-day_white .picture-day__nav_mini .picture-day__prew { left: -9px; }
