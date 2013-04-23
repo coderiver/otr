@@ -24,7 +24,7 @@ $.fn.scrollableAddClones = function(addItems) {
 }
 
 $(document).ready(function() {
-    loadthis($("#picture-day__item_first"));
+    loadthis($("#picture-day__item-first"));
 
 if($('.tabs__wrap').length>0){
     $('.tabs__wrap').scrollable({
@@ -52,6 +52,7 @@ var scrollable = jQuery(".tabs__wrap").data("scrollable");
 
 if($('.picture-day').length>0){
     // scrollable
+    // jQuery('.photo-more__prev').addClass('disabled')
     $('.picture-day').scrollable({
         next:'.picture-day__next',
         prev:'.picture-day__prew',
@@ -62,14 +63,17 @@ if($('.picture-day').length>0){
   scrollable.onSeek(function(event, index) {
     if (this.getIndex() >= this.getSize() - size) {
       jQuery(".tabs__next").addClass("disabled");
+
     }
   });
 
   scrollable.onBeforeSeek(function(event, index) {
-    if (this.getIndex() >= this.getSize() - size) {
-      if (index > this.getIndex()) {
-        return false;
-      }
+    // if (this.getIndex() >= this.getSize() - size) {
+    if (this.getIndex() <= this.getSize() - size) {
+      // if (index > this.getIndex()) {
+        jQuery(".tabs__prew").addClass("disabled")
+      //   return false;
+      // }
     }
   });
   $(".picture-day").scrollableAddClones();
