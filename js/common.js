@@ -314,8 +314,16 @@ slider_news();
         $(tab_act).show();
     });
 
+    var field = $(".js-work-item").html();
 
-
+    $(".js-add-work").click(function(){
+        var last = $(".js-work-item .row:last");
+        $(field).insertAfter(last);
+        var counter = +($(this).attr("data-counter"));
+        ++counter;
+        $(this).attr("data-counter", counter);
+        return false;
+    });
 
 
 });
