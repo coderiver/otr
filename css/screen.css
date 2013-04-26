@@ -297,6 +297,7 @@ ul.o-tw_bb-none li a.sel { background: #FFF; }
 .row label { float: left; width: 190px; }
 .row label span { color: #eb2593; }
 .row input, .row textarea { width: 390px; padding: 0 10px; height: 27px; border: none; float: right; }
+.row input:focus, .row textarea:focus { -webkit-box-shadow: 0 0 0 1px #93d4f4; -moz-box-shadow: 0 0 0 1px #93d4f4; box-shadow: 0 0 0 1px #93d4f4; outline: none; }
 .row textarea { min-height: 110px; max-width: 390px; padding: 10px; }
 
 .row_captcha .row_captcha__input { display: inline-block; position: relative; vertical-align: top; margin-right: 15px; margin-left: 10px; }
