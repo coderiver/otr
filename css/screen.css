@@ -280,7 +280,7 @@ ul.boss__list li:before { content: ""; display: inline-block; height: 6px; width
 ul.o-tw { padding: 0; color: #221952; list-style: none; margin: 0 -18px 0 -11px; }
 ul.o-tw li { border-bottom: 1px dashed #9dd8f6; }
 ul.o-tw li a { font-size: 13px; color: #221952; padding: 3px 0 3px 18px; display: block; font-weight: normal; line-height: 1; }
-ul.o-tw li a:hover { background: #FFF; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-decoration: none; }
+ul.o-tw li a:hover, ul.o-tw li a.o-tw__selected { background: #FFF; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-decoration: none; }
 ul.o-tw li ul { list-style: none; }
 ul.o-tw li ul li:first-child { border-top: 1px dashed #9dd8f6; }
 ul.o-tw li ul li:last-child { border-bottom: none; }
