@@ -472,9 +472,10 @@ ul.boss__list{
 	}
 }
 ul.o-tw{
-	padding: 0 0px 0 4px;
+	padding: 0;
 	color: #221952;
 	list-style: none;
+	margin: 0 -18px 0 -11px;
 	li{
 		// width: 120px;
 		border-bottom: 1px dashed #9dd8f6;
@@ -482,9 +483,10 @@ ul.o-tw{
 			// width: 260px;
 			font-size: 13px;
 			color: #221952;
-			padding: 0;
+			padding: 3px 0 3px 18px;
 			display: block;
 			font-weight: normal;
+			line-height: 1;
 			&:hover{
 				// width: 260px;
 				background: #FFF;
@@ -502,7 +504,8 @@ ul.o-tw{
 					border-bottom: none;
 				}
 				a{
-					padding-left: 10px;
+					padding-left: 28px;
+
 					&:before{
 						content: "-";
 						margin-right: 3px;
