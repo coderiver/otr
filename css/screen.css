@@ -519,12 +519,14 @@ dl:after, .wrap-tabs ul.tabs:after { clear: both; }
 .nav ul li:hover ul li a { display: block; }
 .nav ul li:hover a { text-decoration: none; background-color: #dcf1fb; color: #221952; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 .nav ul li a { color: #fff; font: 14px Arial,sans-serif; font-weight: bold; text-decoration: none; padding: 0 23px; height: 38px; line-height: 38px; display: inline-block; }
-.nav ul li ul { display: none; position: absolute; background-color: #dcf1fb; height: auto; width: auto; padding: 0px 20px 0; top: 37px; z-index: 3000; }
-.nav ul li ul li { float: none; background-color: #dcf1fb; border-top: 1px dotted #b7dbf5; padding: 0; border-left: none; height: 21px; line-height: 21px; }
+.nav ul li ul { display: none; position: absolute; background-color: #dcf1fb; height: auto; width: auto; padding: 5px 0px 0; top: 37px; z-index: 3000; }
+.nav ul li ul li { float: none; background-color: #dcf1fb; border-top: 1px dotted #b7dbf5; padding: 0; border-left: none; height: auto; line-height: 1.1; }
 .nav ul li ul li:first-child { border-top: none; }
 .nav ul li ul li:last-child { /* border-top: none; */ }
-.nav ul li ul li a { height: 20px; line-height: 20px; font-size: 13px; color: #221952; padding: 0; display: block; border-top: #dcf1fb; }
+.nav ul li ul li a { font-weight: normal; padding: 6px 23px; font-size: 13px; color: #221952; float: none; line-height: 1; display: block; height: auto; border-top: #dcf1fb; }
 .nav ul li ul li a:hover { background: #FFF; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
+.nav ul li ul li.all { border-top: none; display: block; height: auto; }
+.nav ul li ul li.all a { padding: 10px 23px; display: block; }
 .nav ul li.nav__small { border-left: 0; }
 .nav ul li.nav__small a { font-size: 12px; }
 .nav li.nav__select { background-color: #eb2593; position: relative; }
