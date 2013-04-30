@@ -583,3 +583,13 @@ ul.super-list{
 		}
 	}
 }
+.bgholder{
+	width: 580px;
+	height: 330px;
+	background-position: 50% 50%;
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	        display: inline-block;
+}

@@ -84,7 +84,7 @@ $('.picture-day').each(function(index, val) {
 
 function loadthisc(elem,context){
 	elem.addClass('active');
-	context.find('.loadhere').html('<div class="photo-more__item"><img src="'+elem.attr("data-img")+'" alt=""></div><p>'+elem.attr("data-text")+'<p></p>')
+	context.find('.loadhere').html('<div class="photo-more__item"><div class="bgholder" style="background-image:url('+elem.attr("data-img")+')"></div><p>'+elem.attr("data-text")+'<p></p>')
 	console.log(context);
 		if(context.find('.picture-day__item.active').is(':first-child')){
 			context.find('.photo-more__prev').hide();
