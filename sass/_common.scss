@@ -593,3 +593,8 @@ ul.super-list{
 	        background-size: cover;
 	        display: inline-block;
 }
+.picture-day__next,.picture-day__prev{
+	&.disabled{
+		display: none !important;
+	}
+}

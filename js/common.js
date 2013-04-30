@@ -64,14 +64,16 @@ $('.picture-day').each(function(index, val) {
 		// hiding small controls
 		var size = 4;
 		scrollable.onSeek(function(event, index) {
+			console.log(this.getIndex() + '====' + size);
 			if (this.getIndex() >= this.getSize() - size) {
-				jQuery(".tabs__next").addClass("disabled");
+				jQuery(".picture-day__next").addClass("disabled");
 			}
 		});
 
 	  	scrollable.onBeforeSeek(function(event, index) {
+	  		console.log(this.getIndex() + '====' + size);
 			if (this.getIndex() <= this.getSize() - size) {
-				jQuery(".tabs__prew").addClass("disabled");
+				jQuery(".picture-day__prev").addClass("disabled");
 			}
 		});
 	}

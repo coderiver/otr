@@ -157,6 +157,8 @@ ul.super-list li:before { content: ""; display: inline-block; height: 6px; width
 
 .bgholder { width: 580px; height: 330px; background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; display: inline-block; }
 
+.picture-day__next.disabled, .picture-day__prev.disabled { display: none !important; }
+
 dl, .wrap-tabs ul.tabs { *zoom: 1; }
 dl:before, .wrap-tabs ul.tabs:before, dl:after, .wrap-tabs ul.tabs:after { content: " "; display: table; }
 dl:after, .wrap-tabs ul.tabs:after { clear: both; }
