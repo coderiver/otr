@@ -60,7 +60,6 @@ $('.picture-day').each(function(index, val) {
 			circular:false
 		});
 		var scrollable = $(this).data("scrollable");
-
 		// hiding small controls
 		var size = 4;
 		scrollable.onSeek(function(event, index) {
@@ -69,7 +68,6 @@ $('.picture-day').each(function(index, val) {
 				jQuery(".picture-day__next").addClass("disabled");
 			}
 		});
-
 	  	scrollable.onBeforeSeek(function(event, index) {
 	  		console.log(this.getIndex() + '====' + size);
 			if (this.getIndex() <= this.getSize() - size) {
@@ -81,7 +79,6 @@ $('.picture-day').each(function(index, val) {
 		$(this).next().hide();
 	}
 });
-
 
 
 function loadthisc(elem,context){
@@ -110,30 +107,43 @@ $('.uberslider').each(function(event) {
 	toload = loc.find('.picture-day__item:first-child');
 	loadthisc(toload, loc);
 
+	var api = $(this).find('.picture-day').data("scrollable");
 	
 	//LOAD ON CLICK
 	$(this).find('.picture-day__item').click(function () {
+		var current = $('.picture-day__item.active').attr('data-number');
 		$(this).siblings().removeClass('active');
 		loadthisc($(this),loc);
 
-		
+		var number = $(this).attr('data-number');
 
+
+		if (number > current) {
+			api.next();
+		}
+		else {
+			api.prev();
+		}
 
 		return false;
+
+
+
 	});
 	//PREV
 	loc.find('.photo-more__prev').click(function(){
 		elemtogo = loc.find('.picture-day__item.active').prev();
 		loc.find('.picture-day__item').removeClass('active');
 		loadthisc(elemtogo,loc);
+		api.prev();
 		return false;
-
 	});
 	//  NEXT
 	loc.find('.photo-more__next').click(function(){
 		elemtogo = loc.find('.picture-day__item.active').next();
 		loc.find('.picture-day__item').removeClass('active');
 		loadthisc(elemtogo,loc);
+		api.next();
 		return false;
 	});
 
